@@ -94,11 +94,11 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC, variable selon la complexité du chantier, l'accessibilité et les matériaux choisis. Devis gratuit sur place.",
       items: [
-        { label: "Remplacement de tuiles (ponctuel)", range: "150 € - 500 €" },
-        { label: "Réfection toiture tuiles (au m²)", range: "80 € - 160 €/m²" },
-        { label: "Réfection toiture ardoises (au m²)", range: "120 € - 250 €/m²" },
-        { label: "Couverture zinc joint debout (au m²)", range: "100 € - 200 €/m²" },
-        { label: "Toiture neuve complète (100 m²)", range: "10 000 € - 25 000 €" },
+        { label: "Remplacement de tuiles (ponctuel)", range: "120 € - 380 €" },
+        { label: "Réfection toiture tuiles (au m²)", range: "55 € - 110 €/m²" },
+        { label: "Réfection toiture ardoises (au m²)", range: "85 € - 175 €/m²" },
+        { label: "Couverture zinc joint debout (au m²)", range: "72 € - 135 €/m²" },
+        { label: "Toiture neuve complète (100 m²)", range: "7 500 € - 18 000 €" },
       ],
     },
     signs: [
@@ -122,7 +122,7 @@ export const services: ServiceData[] = [
       "Chantier propre : protection et nettoyage systématiques",
     ],
     faq: [
-      { question: "Combien coûte une rénovation de toiture au m² en Gironde ?", answer: "Le prix d'une rénovation de toiture en Gironde varie entre 80 € et 250 €/m² selon le matériau (tuiles, ardoises, zinc), l'état de la charpente et la complexité du toit (pente, accessibilité, nombre de pénétrations). Pour une maison de 100 m² de toiture en tuiles mécaniques, comptez entre 10 000 € et 16 000 € tout compris. Nous réalisons un devis gratuit sur place pour vous donner un prix précis adapté à votre situation." },
+      { question: "Combien coûte une rénovation de toiture au m² en Gironde ?", answer: "Le prix d'une rénovation de toiture en Gironde varie en pratique entre environ 55 € et 175 €/m² selon le matériau (tuiles, ardoises, zinc), l'état de la charpente et la complexité du toit (pente, accessibilité, pénétrations). Pour une maison d'environ 100 m² de toiture en tuiles mécaniques, beaucoup de chantiers se situent entre 7 000 € et 13 000 € tout compris selon l'état réel. Nous réalisons un devis gratuit sur place pour un chiffrage précis." },
       { question: "Quelle est la durée de vie d'une toiture en tuiles ?", answer: "Une toiture en tuiles terre cuite bien entretenue dure entre 50 et 100 ans. Les tuiles mécaniques modernes ont une durée de vie de 50 à 70 ans. Les ardoises naturelles durent 75 à 100 ans. Le zinc a une durée de vie de 30 à 80 ans selon la qualité. L'entretien régulier (démoussage, vérification de la zinguerie) est la clé pour atteindre ces durées." },
       { question: "Faut-il un permis de construire pour refaire sa toiture ?", answer: "Pour une réfection à l'identique (même matériau, même couleur), une simple déclaration préalable de travaux suffit. Si vous changez de matériau (par exemple tuiles vers ardoises), modifiez la couleur ou la pente, un permis de construire peut être exigé. En zone protégée (ABF, patrimoine), l'accord de l'Architecte des Bâtiments de France est nécessaire. Nous vous accompagnons dans toutes les démarches administratives." },
       { question: "Combien de temps durent les travaux de rénovation de toiture ?", answer: "Pour une maison individuelle classique (80 à 120 m² de toiture), comptez 1 à 2 semaines de travaux pour une réfection complète, selon la météo et la complexité du chantier. Un simple remplacement de tuiles peut être réalisé en une demi-journée. Nous vous communiquons un planning précis avant le démarrage des travaux." },
@@ -168,12 +168,12 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC pose comprise. Tarifs variables selon la longueur, la hauteur et le matériau choisi.",
       items: [
-        { label: "Gouttière zinc (au ml posé)", range: "40 € - 80 €/ml" },
-        { label: "Gouttière cuivre (au ml posé)", range: "80 € - 150 €/ml" },
-        { label: "Gouttière aluminium laqué (au ml posé)", range: "35 € - 70 €/ml" },
-        { label: "Descente d'eau (pièce posée)", range: "150 € - 400 €" },
-        { label: "Abergement de cheminée complet", range: "400 € - 1 200 €" },
-        { label: "Nettoyage gouttières (maison)", range: "150 € - 350 €" },
+        { label: "Gouttière zinc (au ml posé)", range: "28 € - 55 €/ml" },
+        { label: "Gouttière cuivre (au ml posé)", range: "55 € - 105 €/ml" },
+        { label: "Gouttière aluminium laqué (au ml posé)", range: "25 € - 50 €/ml" },
+        { label: "Descente d'eau (pièce posée)", range: "110 € - 280 €" },
+        { label: "Abergement de cheminée complet", range: "300 € - 880 €" },
+        { label: "Nettoyage gouttières (maison)", range: "95 € - 240 €" },
       ],
     },
     signs: [
@@ -197,7 +197,7 @@ export const services: ServiceData[] = [
     ],
     faq: [
       { question: "Quel matériau choisir pour mes gouttières ?", answer: "En Gironde, le zinc naturel est le meilleur choix pour la plupart des maisons : durable (30-50 ans), esthétique et résistant à la corrosion. Le cuivre est idéal pour les belles demeures et bâtiments patrimoniaux (durée de vie 50-100 ans, belle patine verte avec le temps). L'aluminium laqué est un excellent compromis pour les budgets modérés, avec un large choix de coloris assortis à vos menuiseries. Le PVC est le moins cher mais aussi le moins durable (15-25 ans). Nous vous conseillons le matériau le plus adapté à votre maison et à votre budget." },
-      { question: "Combien coûte le remplacement de gouttières ?", answer: "Le remplacement complet des gouttières d'une maison standard (périmètre de 40 à 60 ml) coûte entre 2 000 € et 5 000 € en zinc, et entre 4 000 € et 9 000 € en cuivre, pose comprise. Un devis précis sera établi après notre visite gratuite." },
+      { question: "Combien coûte le remplacement de gouttières ?", answer: "Le remplacement complet des gouttières d'une maison standard (périmètre d'environ 40 à 60 ml) se situe souvent entre 1 400 € et 3 800 € en zinc, et entre 3 000 € et 7 000 € en cuivre, pose comprise, selon la configuration. Un devis précis sera établi après notre visite gratuite." },
       { question: "À quelle fréquence nettoyer les gouttières ?", answer: "Au minimum deux fois par an : à l'automne après la chute des feuilles, et au printemps pour vérifier l'état après l'hiver. Si vous avez des arbres à proximité, un troisième nettoyage en été est recommandé. Nous proposons des contrats d'entretien annuel pour vous simplifier la vie." },
       { question: "Gouttière zinc ou PVC : quel choix ?", answer: "Le zinc est nettement supérieur au PVC en termes de durabilité (30-50 ans contre 15-25 ans pour le PVC), de résistance au gel et aux UV, et d'esthétique. Le PVC est moins cher à l'achat mais se déforme avec le temps, jaunit au soleil et devient cassant avec le gel. Sur le long terme, le zinc est plus économique car il ne nécessite pas de remplacement prématuré." },
       { question: "Ma gouttière fuit à un raccord, faut-il tout changer ?", answer: "Pas nécessairement. Si le reste de la gouttière est en bon état, une réparation ponctuelle par soudure à l'étain ou remplacement d'un tronçon suffit. Nous diagnostiquons l'état global de votre installation et vous conseillons honnêtement : réparation si c'est suffisant, remplacement si le zinc est trop corrodé." },
@@ -241,11 +241,11 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC. Le coût dépend de la surface de charpente, de l'accessibilité et de l'étendue des dégâts.",
       items: [
-        { label: "Traitement préventif (au m²)", range: "15 € - 30 €/m²" },
-        { label: "Traitement curatif par injection (au m²)", range: "25 € - 50 €/m²" },
-        { label: "Remplacement d'un chevron", range: "200 € - 600 €" },
-        { label: "Remplacement d'une panne", range: "500 € - 1 500 €" },
-        { label: "Traitement mérule (selon surface)", range: "3 000 € - 15 000 €" },
+        { label: "Traitement préventif (au m²)", range: "12 € - 22 €/m²" },
+        { label: "Traitement curatif par injection (au m²)", range: "18 € - 38 €/m²" },
+        { label: "Remplacement d'un chevron", range: "150 € - 450 €" },
+        { label: "Remplacement d'une panne", range: "380 € - 1 100 €" },
+        { label: "Traitement mérule (selon surface)", range: "2 200 € - 11 000 €" },
       ],
     },
     signs: [
@@ -271,7 +271,7 @@ export const services: ServiceData[] = [
     faq: [
       { question: "Comment savoir si ma charpente est attaquée par des insectes ?", answer: "Les principaux signes sont : de petits trous ronds (1-4 mm) à la surface du bois, de la sciure fine (vermoulure) au sol sous les poutres, un bruit de grignotement audible la nuit dans les combles, et du bois qui sonne creux quand on le frappe. Les capricornes creusent des galeries ovales de 6-10 mm visibles en surface. En cas de doute, DT Couverture réalise un diagnostic gratuit de votre charpente." },
       { question: "Ma maison est en zone termitée, que faire ?", answer: "Si votre commune est classée en zone termitée (c'est le cas de la plupart des communes de Gironde), un diagnostic termites est obligatoire avant toute vente immobilière. Pour votre charpente, un traitement préventif est fortement recommandé même en l'absence de signes visibles. Nous appliquons des traitements certifiés qui protègent votre bois pendant 10 ans minimum." },
-      { question: "Combien coûte un traitement de charpente ?", answer: "Le prix d'un traitement curatif par injection varie entre 25 € et 50 €/m² de charpente, soit entre 2 500 € et 5 000 € pour une maison de 100 m² au sol. Un traitement préventif coûte entre 15 € et 30 €/m². Le remplacement de pièces endommagées s'ajoute au coût du traitement. Devis gratuit sur place." },
+      { question: "Combien coûte un traitement de charpente ?", answer: "Le prix d'un traitement curatif par injection se situe souvent entre 18 € et 38 €/m² de surface traitée, soit typiquement 1 800 € à 3 800 € pour une maison d'environ 100 m² au sol selon l'emprise réelle. Un traitement préventif coûte en général entre 12 € et 22 €/m². Le remplacement de pièces endommagées s'ajoute. Devis gratuit sur place." },
       { question: "Le traitement de charpente est-il dangereux pour la santé ?", answer: "Les produits que nous utilisons sont certifiés CTB-P+ (conformes aux normes européennes de sécurité). Ils ne présentent aucun danger une fois secs (24-48h après application). Pendant le traitement et les 48h suivantes, nous recommandons de ne pas séjourner dans les combles et de ventiler. Les produits sont sans odeur une fois secs." },
       { question: "Quelle est la différence entre capricornes et vrillettes ?", answer: "Le capricorne des maisons est un gros insecte (1-2 cm) dont les larves creusent des galeries ovales de 6-10 mm dans les résineux (pin, sapin, épicéa). La vrillette (petite ou grosse) est plus petite et s'attaque à tous les bois, créant des trous ronds de 1-4 mm. Les deux sont destructeurs mais le capricorne cause des dégâts structurels plus rapides. Le traitement par injection est efficace contre les deux." },
       { question: "Peut-on aménager des combles sans renforcer la charpente ?", answer: "Cela dépend du type de charpente. Les charpentes traditionnelles (avec pannes et chevrons) sont souvent aménageables sans renforcement majeur. Les charpentes industrielles (fermettes) nécessitent presque toujours un renforcement : remplacement des fermettes par une charpente traditionnelle ou pose de renforts métalliques. Nous réalisons une étude de faisabilité gratuite." },
@@ -316,11 +316,11 @@ export const services: ServiceData[] = [
       note: "Prix indicatifs TTC. Le coût dépend de la nature du problème, de l'accessibilité et de l'étendue des réparations.",
       items: [
         { label: "Diagnostic de fuite (seul)", range: "Gratuit" },
-        { label: "Remplacement tuiles (ponctuel)", range: "150 € - 500 €" },
-        { label: "Réfection solin cheminée", range: "300 € - 800 €" },
-        { label: "Reprise abergement complet", range: "500 € - 1 500 €" },
-        { label: "Bâchage d'urgence", range: "200 € - 600 €" },
-        { label: "Réfection noue zinc", range: "400 € - 1 200 €" },
+        { label: "Remplacement tuiles (ponctuel)", range: "120 € - 380 €" },
+        { label: "Réfection solin cheminée", range: "220 € - 620 €" },
+        { label: "Reprise abergement complet", range: "380 € - 1 100 €" },
+        { label: "Bâchage d'urgence", range: "150 € - 450 €" },
+        { label: "Réfection noue zinc", range: "300 € - 880 €" },
       ],
     },
     signs: [
@@ -347,7 +347,7 @@ export const services: ServiceData[] = [
       { question: "Ma toiture fuit, que faire en urgence ?", answer: "En premier lieu, protégez vos biens : déplacez les meubles, posez des récipients sous la fuite, coupez l'électricité si l'eau coule près d'un appareil électrique. Puis appelez-nous immédiatement au téléphone. Nous pouvons intervenir le jour même pour un bâchage d'urgence si nécessaire, puis planifier la réparation définitive." },
       { question: "L'assurance habitation couvre-t-elle les fuites de toiture ?", answer: "Cela dépend de la cause de la fuite. Les dégâts causés par une tempête (vents > 100 km/h), la grêle ou la neige sont généralement couverts par la garantie tempête de votre assurance. Les fuites dues au vieillissement ou au défaut d'entretien ne sont pas couvertes. Nous vous aidons à constituer votre dossier avec un rapport détaillé et des photos." },
       { question: "Pourquoi la fuite n'est-elle pas juste au-dessus de la tache au plafond ?", answer: "L'eau suit le chemin de moindre résistance : elle peut couler le long d'un chevron, d'une panne ou d'un écran sous-toiture sur plusieurs mètres avant de tomber verticalement. C'est pourquoi une tache au plafond du salon peut être causée par une tuile cassée à l'autre bout du toit. Le diagnostic par un professionnel est la seule façon de trouver l'origine réelle." },
-      { question: "Combien coûte la réparation d'une fuite de toiture ?", answer: "Le coût varie énormément selon la cause. Un simple remplacement de tuiles coûte 150 à 500 €. Une reprise de solin de cheminée coûte 300 à 800 €. Une réfection de noue en zinc coûte 400 à 1 200 €. Le diagnostic est gratuit : nous identifions le problème et vous chiffrons la réparation avant toute intervention." },
+      { question: "Combien coûte la réparation d'une fuite de toiture ?", answer: "Le coût varie selon la cause. Un remplacement ponctuel de tuiles se situe souvent entre 120 € et 380 €. Une reprise de solin de cheminée entre 220 € et 620 €. Une réfection de noue en zinc entre 300 € et 880 €. Le diagnostic est gratuit : nous identifions le problème et vous chiffrons la réparation avant toute intervention." },
       { question: "Comment prévenir les fuites de toiture ?", answer: "Un entretien régulier est la meilleure prévention : démoussage tous les 3-5 ans, nettoyage des gouttières 2 fois par an, vérification annuelle de la zinguerie et des points singuliers (cheminée, Velux, faîtage). Après chaque tempête, inspectez visuellement votre toit depuis le sol. Et n'attendez pas pour intervenir au moindre signe suspect." },
       { question: "Fuite au niveau de la cheminée : que faire ?", answer: "Les fuites au niveau de la cheminée sont très fréquentes. Elles proviennent le plus souvent d'un solin (jonction zinc/maçonnerie) vieilli, fissuré ou décollé, ou d'un abergement en zinc percé. La réparation consiste à refaire le solin et/ou l'abergement en zinc neuf avec une étanchéité soignée. C'est une intervention courante que nous maîtrisons parfaitement." },
     ],
@@ -394,11 +394,11 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC avant aides. Les aides (MaPrimeRénov', CEE) peuvent couvrir 40 à 70 % du coût.",
       items: [
-        { label: "Soufflage combles perdus (au m²)", range: "20 € - 35 €/m²" },
-        { label: "Isolation sous rampants (au m²)", range: "40 € - 80 €/m²" },
-        { label: "Sarking — isolation par l'extérieur (au m²)", range: "100 € - 200 €/m²" },
-        { label: "Maison 100 m² combles perdus (total)", range: "2 000 € - 3 500 €" },
-        { label: "Maison 100 m² sarking (total)", range: "10 000 € - 20 000 €" },
+        { label: "Soufflage combles perdus (au m²)", range: "15 € - 28 €/m²" },
+        { label: "Isolation sous rampants (au m²)", range: "30 € - 62 €/m²" },
+        { label: "Sarking — isolation par l'extérieur (au m²)", range: "75 € - 155 €/m²" },
+        { label: "Maison 100 m² combles perdus (total)", range: "1 600 € - 2 800 €" },
+        { label: "Maison 100 m² sarking (total)", range: "7 500 € - 15 000 €" },
       ],
     },
     signs: [
@@ -469,11 +469,11 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC. Les sinistres couverts par l'assurance sont pris en charge selon votre contrat.",
       items: [
-        { label: "Bâchage d'urgence (déplacement inclus)", range: "200 € - 600 €" },
-        { label: "Remplacement tuiles (ponctuel)", range: "150 € - 500 €" },
-        { label: "Réparation faîtage (au ml)", range: "40 € - 80 €/ml" },
-        { label: "Remplacement de rives (au ml)", range: "30 € - 60 €/ml" },
-        { label: "Réfection partielle après tempête", range: "1 000 € - 5 000 €" },
+        { label: "Bâchage d'urgence (déplacement inclus)", range: "150 € - 450 €" },
+        { label: "Remplacement tuiles (ponctuel)", range: "120 € - 380 €" },
+        { label: "Réparation faîtage (au ml)", range: "30 € - 60 €/ml" },
+        { label: "Remplacement de rives (au ml)", range: "22 € - 45 €/ml" },
+        { label: "Réfection partielle après tempête", range: "750 € - 3 800 €" },
       ],
     },
     signs: [
@@ -500,7 +500,7 @@ export const services: ServiceData[] = [
       { question: "Sous quel délai intervenez-vous en urgence ?", answer: "Nous nous engageons à intervenir sous 24h pour toute urgence toiture en Gironde. Pour les sinistres graves (trou dans le toit, eau qui coule abondamment), nous faisons notre maximum pour intervenir le jour même de votre appel. Appelez-nous directement par téléphone pour une prise en charge immédiate." },
       { question: "Comment déclarer un sinistre toiture à mon assurance ?", answer: "Contactez votre assurance par téléphone ou en ligne dans les 5 jours ouvrés suivant le sinistre (2 jours pour catastrophe naturelle). Décrivez les dégâts, prenez des photos avant toute intervention, et conservez les éléments endommagés si possible. Nous vous fournissons un rapport détaillé avec photos et un devis de remise en état pour compléter votre dossier." },
       { question: "L'assurance prend-elle en charge le bâchage d'urgence ?", answer: "Oui, dans la plupart des contrats d'assurance habitation, le bâchage d'urgence (mise hors d'eau) fait partie des frais de sauvegarde pris en charge. Conservez notre facture de bâchage pour la joindre à votre dossier de sinistre." },
-      { question: "Combien coûte une réparation de toiture après tempête ?", answer: "Le coût dépend de l'étendue des dégâts. Un remplacement ponctuel de quelques tuiles coûte 150 à 500 €. Une réfection partielle d'un versant après une grosse tempête peut atteindre 1 000 à 5 000 €. Une toiture entièrement ravagée nécessite une réfection complète (10 000 à 25 000 €). Le bâchage initial coûte 200 à 600 €." },
+      { question: "Combien coûte une réparation de toiture après tempête ?", answer: "Le coût dépend de l'étendue des dégâts. Un remplacement ponctuel de quelques tuiles se situe souvent entre 120 € et 380 €. Une réfection partielle d'un versant après une grosse tempête peut aller d'environ 750 € à 3 800 €. Une toiture très endommagée peut nécessiter une réfection plus lourde (souvent 7 500 € à 18 000 € selon surface et matériaux). Le bâchage initial coûte en général 150 à 450 €." },
       { question: "Que faire en attendant l'intervention du couvreur ?", answer: "Si de l'eau rentre, placez des récipients, protégez vos meubles avec des bâches plastique, coupez l'électricité dans les zones touchées. Ne montez pas sur le toit vous-même, c'est dangereux surtout par temps de vent ou de pluie. Si possible, accédez aux combles pour constater l'étendue des dégâts et prenez des photos pour votre assurance." },
     ],
   },
@@ -542,12 +542,12 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC fourniture et pose comprises. Varient selon la taille, le modèle et la complexité de la pose.",
       items: [
-        { label: "Velux standard (78×98) posé", range: "700 € - 1 200 €" },
-        { label: "Velux grand format (114×118) posé", range: "1 000 € - 1 800 €" },
-        { label: "Remplacement Velux existant", range: "600 € - 1 200 €" },
-        { label: "Volet roulant solaire Velux posé", range: "400 € - 700 €" },
-        { label: "Création d'ouverture + chevêtre + Velux", range: "1 500 € - 2 500 €" },
-        { label: "Store intérieur occultant posé", range: "100 € - 250 €" },
+        { label: "Velux standard (78×98) posé", range: "550 € - 950 €" },
+        { label: "Velux grand format (114×118) posé", range: "780 € - 1 350 €" },
+        { label: "Remplacement Velux existant", range: "450 € - 950 €" },
+        { label: "Volet roulant solaire Velux posé", range: "280 € - 520 €" },
+        { label: "Création d'ouverture + chevêtre + Velux", range: "1 150 € - 1 950 €" },
+        { label: "Store intérieur occultant posé", range: "75 € - 195 €" },
       ],
     },
     signs: [
@@ -570,7 +570,7 @@ export const services: ServiceData[] = [
     ],
     faq: [
       { question: "Faut-il une autorisation pour poser un Velux ?", answer: "Oui, une déclaration préalable de travaux est obligatoire pour créer une fenêtre de toit. Le formulaire Cerfa se dépose en mairie et le délai d'instruction est d'1 mois en général. En zone protégée (secteur sauvegardé, périmètre d'un monument historique), l'avis de l'Architecte des Bâtiments de France est également requis. DT Couverture prépare votre dossier complet." },
-      { question: "Combien coûte la pose d'un Velux ?", answer: "Le coût total (fourniture + pose) d'un Velux standard 78×98 cm est de 700 à 1 200 € pour un remplacement, et de 1 500 à 2 500 € pour une création d'ouverture (avec découpe de couverture et création de chevêtre). Un volet roulant solaire ajoute 400 à 700 €. Devis gratuit sur place." },
+      { question: "Combien coûte la pose d'un Velux ?", answer: "Le coût total (fourniture + pose) d'un Velux standard 78×98 cm se situe souvent entre 550 € et 950 € pour un remplacement, et entre 1 150 € et 1 950 € pour une création d'ouverture (découpe, chevêtre). Un volet roulant solaire ajoute en général 280 à 520 €. Devis gratuit sur place." },
       { question: "Quelle taille de Velux pour ma pièce ?", answer: "La règle d'or est 1/6 de la surface au sol en surface vitrée. Pour une chambre de 12 m², il faut environ 2 m² de vitrage, soit deux Velux de 78×98 cm ou un grand format 114×118 cm. Nous vous conseillons le nombre et la taille optimaux lors de notre visite." },
       { question: "Combien de temps dure la pose d'un Velux ?", answer: "Le remplacement d'un Velux existant prend une demi-journée. La création d'une ouverture (avec découpe, chevêtre et habillage) prend 1 à 2 jours par fenêtre. Pour un chantier de 3 Velux avec création d'ouverture, comptez 3 à 5 jours." },
       { question: "Velux ou puits de lumière : quelle différence ?", answer: "Le Velux (fenêtre de toit ouvrante) apporte lumière ET ventilation, et offre une vue sur l'extérieur. Le puits de lumière (conduit de lumière ou Solatube) est un tube réfléchissant qui amène la lumière dans les pièces sans vue ni ventilation, idéal pour les couloirs ou salles de bains. Pour une pièce de vie, le Velux est nettement préférable." },
@@ -615,12 +615,12 @@ export const services: ServiceData[] = [
     priceRange: {
       note: "Prix indicatifs TTC pour une maison individuelle. Tarifs variables selon la surface, la pente et l'accessibilité.",
       items: [
-        { label: "Démoussage seul (au m²)", range: "10 € - 20 €/m²" },
-        { label: "Démoussage + anti-mousse (au m²)", range: "15 € - 25 €/m²" },
-        { label: "Démoussage + anti-mousse + hydrofuge (au m²)", range: "25 € - 40 €/m²" },
-        { label: "Maison 100 m² — démoussage complet", range: "1 000 € - 2 000 €" },
-        { label: "Maison 100 m² — démoussage + hydrofuge", range: "2 500 € - 4 000 €" },
-        { label: "Nettoyage gouttières (inclus ou en supplément)", range: "150 € - 350 €" },
+        { label: "Démoussage seul (au m²)", range: "6 € - 14 €/m²" },
+        { label: "Démoussage + anti-mousse (au m²)", range: "10 € - 18 €/m²" },
+        { label: "Démoussage + anti-mousse + hydrofuge (au m²)", range: "18 € - 30 €/m²" },
+        { label: "Maison 100 m² — démoussage complet", range: "650 € - 1 500 €" },
+        { label: "Maison 100 m² — démoussage + hydrofuge", range: "1 800 € - 3 200 €" },
+        { label: "Nettoyage gouttières (inclus ou en supplément)", range: "95 € - 240 €" },
       ],
     },
     signs: [
@@ -706,11 +706,11 @@ export const cities: CityData[] = [
     localSpecificities: "Libourne est classée en zone à risque termites. La commune possède un secteur sauvegardé en centre-ville avec des contraintes architecturales ABF. Le climat au confluent de l'Isle et de la Dordogne est plus humide que la moyenne girondine, ce qui accélère le développement des mousses et requiert un entretien plus fréquent des toitures.",
     nearbyCommunes: ["Les Billaux", "Arveyres", "Génissac", "Lalande-de-Pomerol", "Néac", "Cadarsac", "Izon"],
     faq: [
-      { question: "Quel est le prix d'un couvreur à Libourne ?", answer: "Les tarifs d'un couvreur à Libourne varient selon la prestation : rénovation de toiture en tuiles de 80 à 160 €/m², pose de gouttières zinc de 40 à 80 €/ml, démoussage de 15 à 25 €/m², remplacement de tuiles cassées de 150 à 500 €. DT Couverture réalise un devis gratuit et détaillé sur place à Libourne et ses environs." },
+      { question: "Quel est le prix d'un couvreur à Libourne ?", answer: "Les tarifs varient selon la prestation : en pratique, rénovation de toiture en tuiles souvent 55 à 110 €/m², gouttières zinc posées environ 28 à 55 €/ml, démoussage 10 à 18 €/m² avec traitement, remplacement ponctuel de tuiles 120 à 380 €. DT Couverture réalise un devis gratuit et détaillé sur place à Libourne et ses environs." },
       { question: "DT Couverture intervient-il en urgence à Libourne ?", answer: "Oui, nous intervenons sous 24h à Libourne pour toute urgence toiture : fuite, bâchage après tempête, tuiles cassées. À seulement 10 km de notre siège, nous pouvons souvent être sur place dans l'heure." },
       { question: "Faut-il un permis pour refaire sa toiture à Libourne ?", answer: "Pour une réfection à l'identique, une déclaration préalable suffit. En centre-ville de Libourne (secteur sauvegardé), l'avis de l'ABF est nécessaire et peut imposer des matériaux spécifiques (tuiles canal, coloris). Nous vous accompagnons dans les démarches." },
       { question: "Ma maison à Libourne est-elle en zone termites ?", answer: "Oui, Libourne fait partie des communes de Gironde classées en zone à risque termites. Un diagnostic termites est obligatoire en cas de vente. Nous recommandons un traitement préventif de la charpente pour les maisons non traitées." },
-      { question: "Combien coûte l'isolation de toiture à Libourne ?", answer: "L'isolation de combles perdus par soufflage coûte 20 à 35 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut descendre à 5-15 €/m² selon vos revenus. Pour une maison libournaise de 100 m², comptez 500 à 1 500 € après aides." },
+      { question: "Combien coûte l'isolation de toiture à Libourne ?", answer: "L'isolation de combles perdus par soufflage se situe en général entre 15 et 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être nettement réduit selon vos revenus. Pour une maison d'environ 100 m² au sol, le reste à charge après aides est souvent de l'ordre de 400 à 1 200 € selon les dossiers." },
     ],
   },
   {
@@ -746,9 +746,9 @@ export const cities: CityData[] = [
     localSpecificities: "Le nord de la Gironde est exposé à des vents d'ouest soutenus en hiver et à des orages violents en été, ce qui sollicite fortement les couvertures. Les maisons de bourg coutrasiennes en pierre calcaire possèdent souvent des charpentes anciennes nécessitant un traitement préventif contre les insectes xylophages, très actifs dans le secteur.",
     nearbyCommunes: ["Abzac", "Les Peintures", "Le Fieu", "Les Eglisottes-et-Chalaures", "Saint-Médard-de-Guizières", "Guitres", "Saint-Seurin-sur-l'Isle"],
     faq: [
-      { question: "Combien coûte un démoussage de toiture à Coutras ?", answer: "Le démoussage d'une maison standard à Coutras (80-120 m² de toiture) coûte entre 1 000 et 2 000 € pour le nettoyage + traitement anti-mousse, et entre 2 500 et 4 000 € avec hydrofuge. Devis gratuit sur place." },
+      { question: "Combien coûte un démoussage de toiture à Coutras ?", answer: "Pour une maison standard (environ 80 à 120 m² de toiture), le démoussage + traitement anti-mousse se situe souvent entre 650 € et 1 500 €, et entre 1 800 € et 3 200 € avec hydrofuge selon la surface et l'accès. Devis gratuit sur place." },
       { question: "DT Couverture est-il proche de Coutras ?", answer: "Oui, notre siège est à Saint-Denis-de-Pile, à seulement 12 km de Coutras. Nous pouvons être sur place en 15-20 minutes pour un devis ou une intervention d'urgence." },
-      { question: "Rénovation toiture à Coutras : quel budget prévoir ?", answer: "La rénovation complète d'une toiture en tuiles mécaniques à Coutras coûte entre 80 et 160 €/m². Pour une maison de 100 m² de toiture, comptez 8 000 à 16 000 €. Le prix varie selon l'état de la charpente, le type de tuiles et l'accessibilité." },
+      { question: "Rénovation toiture à Coutras : quel budget prévoir ?", answer: "Pour une rénovation en tuiles mécaniques, beaucoup de chantiers se situent entre 55 et 110 €/m². Pour environ 100 m² de toiture, comptez souvent 7 000 à 13 000 € selon l'état de la charpente, le type de tuiles et l'accessibilité." },
       { question: "Traitez-vous les charpentes contre les termites à Coutras ?", answer: "Oui, nous réalisons le traitement préventif et curatif des charpentes contre tous les insectes xylophages, y compris les termites. Le traitement par injection sous pression est certifié CTB-P+ et garanti 10 ans." },
     ],
   },
@@ -787,7 +787,7 @@ export const cities: CityData[] = [
     faq: [
       { question: "Peut-on refaire sa toiture librement à Saint-Émilion ?", answer: "Non, Saint-Émilion étant classée UNESCO, l'Architecte des Bâtiments de France doit valider tout changement d'aspect extérieur. Même une réfection à l'identique nécessite une déclaration préalable. Nous connaissons ces procédures et vous accompagnons de A à Z." },
       { question: "Quel type de tuiles utiliser à Saint-Émilion ?", answer: "L'ABF impose généralement des tuiles canal en terre cuite aux teintes rouge vieilli ou ocre nuancé, fabriquées dans la tradition locale. Nous travaillons avec des fabricants agréés qui produisent des tuiles conformes aux exigences patrimoniales." },
-      { question: "Combien coûte une rénovation de toiture patrimoine à Saint-Émilion ?", answer: "Les toitures patrimoine sont plus coûteuses que les toitures standard : comptez 120 à 250 €/m² en tuiles canal traditionnelles, contre 80 à 160 €/m² en tuiles mécaniques classiques. Les matériaux nobles et les techniques traditionnelles expliquent ce surcoût." },
+      { question: "Combien coûte une rénovation de toiture patrimoine à Saint-Émilion ?", answer: "Les toitures patrimoine sont plus coûteuses que les toitures standard : en pratique, souvent 85 à 175 €/m² en tuiles canal traditionnelles, contre 55 à 110 €/m² en tuiles mécaniques classiques. Les matériaux nobles et les techniques traditionnelles expliquent ce surcoût." },
       { question: "Intervenez-vous sur les propriétés viticoles ?", answer: "Oui, nous travaillons régulièrement sur les propriétés viticoles de la juridiction de Saint-Émilion : toitures de chais, hangars agricoles, bâtiments d'accueil. Nous planifions les chantiers en dehors des périodes critiques (vendanges, vinification)." },
     ],
   },
@@ -824,10 +824,10 @@ export const cities: CityData[] = [
     localSpecificities: "Bordeaux est classée au patrimoine mondial de l'UNESCO pour son centre historique. L'ardoise naturelle est imposée sur la majorité des immeubles du centre. La ville est en zone termitée. Les ouvrages de zinguerie (mansardes, dômes, lucarnes) sont parmi les plus complexes de France. La métropole bordelaise (800 000 habitants) génère une forte demande en couverture.",
     nearbyCommunes: ["Mérignac", "Pessac", "Talence", "Bègles", "Le Bouscat", "Cenon", "Lormont", "Floirac", "Bruges", "Blanquefort", "Eysines", "Gradignan"],
     faq: [
-      { question: "Combien coûte un couvreur à Bordeaux ?", answer: "Les tarifs couvreur à Bordeaux varient selon la prestation : remplacement d'ardoises 150-600 €, rénovation toiture ardoises 120-250 €/m², réfection zinc mansarde 100-200 €/m², démoussage 15-25 €/m². Le coût est souvent plus élevé qu'en zone rurale en raison de la complexité des toitures (hauteur, ardoises, zinguerie) et des contraintes d'accès en centre-ville." },
+      { question: "Combien coûte un couvreur à Bordeaux ?", answer: "Les tarifs varient selon la prestation : remplacement ponctuel d'ardoises souvent 120-450 €, rénovation toiture ardoises en pratique 85-175 €/m², réfection zinc mansarde environ 72-135 €/m², démoussage avec traitement 10-18 €/m². Le coût est souvent un peu plus élevé qu'en zone rurale (complexité des toits, accès centre-ville)." },
       { question: "Travaillez-vous sur les immeubles bordelais ?", answer: "Oui, nous intervenons sur les immeubles de rapport, les hôtels particuliers et les copropriétés de Bordeaux. Nous gérons les contraintes d'échafaudage en centre-ville, les autorisations de voirie, et les exigences architecturales (ABF en secteur sauvegardé)." },
       { question: "Bordeaux est-il en zone termites ?", answer: "Oui, Bordeaux et la plupart des communes de la métropole sont classées en zone à risque termites. Un diagnostic termites est obligatoire en cas de vente, et le traitement préventif de la charpente est fortement recommandé." },
-      { question: "Quelle ardoise pour une toiture à Bordeaux ?", answer: "L'ardoise naturelle est le matériau de référence à Bordeaux, imposé en centre-ville et secteur sauvegardé. Les ardoises d'Angers (française, haut de gamme) et d'Espagne (bon rapport qualité-prix) sont les plus utilisées. Comptez 120 à 250 €/m² posé selon la qualité." },
+      { question: "Quelle ardoise pour une toiture à Bordeaux ?", answer: "L'ardoise naturelle est le matériau de référence à Bordeaux, imposé en centre-ville et secteur sauvegardé. Les ardoises d'Angers (française, haut de gamme) et d'Espagne (bon rapport qualité-prix) sont les plus utilisées. En pratique, comptez souvent 85 à 175 €/m² posé selon la qualité et la complexité." },
       { question: "Intervenez-vous dans toute la métropole bordelaise ?", answer: "Oui, nous intervenons à Bordeaux et dans toutes les communes de la métropole : Mérignac, Pessac, Talence, Bègles, Villenave-d'Ornon, Gradignan, Le Bouscat, Bruges, Cenon, Lormont, Floirac, Blanquefort, etc." },
     ],
   },
@@ -865,7 +865,7 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Cubzac-les-Ponts", "Gauriaguet", "Peujard", "Val-de-Virvée", "Saint-Gervais", "Berson", "Prignac-et-Marcamps"],
     faq: [
       { question: "Quel est le délai d'intervention à Saint-André-de-Cubzac ?", answer: "DT Couverture intervient sous 24-48h à Saint-André-de-Cubzac pour les urgences (fuite, tempête) et sous 1 à 2 semaines pour les travaux planifiés. Pour un devis gratuit, nous nous déplaçons généralement sous 48h." },
-      { question: "Combien coûte un démoussage à Saint-André-de-Cubzac ?", answer: "Le démoussage d'une maison du Cubzaguais coûte entre 1 000 et 2 000 € (nettoyage + anti-mousse) et entre 2 500 et 4 000 € avec hydrofuge, pour une toiture de 80 à 120 m². Devis gratuit sur place." },
+      { question: "Combien coûte un démoussage à Saint-André-de-Cubzac ?", answer: "Pour une toiture d'environ 80 à 120 m², le nettoyage + anti-mousse se situe souvent entre 650 € et 1 500 €, et entre 1 800 € et 3 200 € avec hydrofuge. Devis gratuit sur place." },
       { question: "Peut-on poser des panneaux solaires à Saint-André-de-Cubzac ?", answer: "Oui, la pose de panneaux solaires est possible sur la plupart des toitures du Cubzaguais. Nous pouvons vérifier et renforcer votre charpente si nécessaire pour supporter le poids des panneaux. Une déclaration préalable de travaux est requise." },
       { question: "Intervenez-vous aussi à Cubzac-les-Ponts et dans les communes voisines ?", answer: "Oui, nous couvrons tout le Cubzaguais : Saint-André-de-Cubzac, Cubzac-les-Ponts, Gauriaguet, Peujard, Val-de-Virvée, Saint-Gervais, Berson, Prignac-et-Marcamps et toutes les communes alentour." },
     ],

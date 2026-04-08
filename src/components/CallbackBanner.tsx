@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 export default function CallbackBanner() {
@@ -14,7 +13,7 @@ export default function CallbackBanner() {
     const form = e.currentTarget;
     const fd = new FormData(form);
     const nom = String(fd.get("nom") ?? "").trim();
-    const telephone = String(fd.get("telephone") ?? "").trim();
+    const tel = String(fd.get("tel") ?? "").trim();
     const rgpd = fd.get("rgpd") === "on";
 
     if (!rgpd) {
@@ -24,10 +23,15 @@ export default function CallbackBanner() {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/callback", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nom, telephone, rgpd: true }),
+        body: JSON.stringify({
+          type: "rappel",
+          nom,
+          tel,
+          rgpd: true,
+        }),
       });
       const data = (await res.json().catch(() => ({}))) as { error?: string };
       if (!res.ok) {
@@ -37,7 +41,7 @@ export default function CallbackBanner() {
       setSubmitted(true);
       form.reset();
     } catch {
-      setError("Impossible d’envoyer la demande. Vérifiez votre connexion.");
+      setError("Impossible d’envoyer le message. Vérifiez votre connexion.");
     } finally {
       setLoading(false);
     }
@@ -67,16 +71,17 @@ export default function CallbackBanner() {
               className="w-full lg:w-auto max-w-xl lg:max-w-none"
             >
               {error ? (
-                <p
-                  className="text-white text-sm font-medium mb-2 bg-dark/25 rounded px-2 py-1.5"
+                <div
+                  className="mb-3 rounded-lg border border-red-300 bg-white px-4 py-3 text-sm text-red-800 shadow-sm"
                   role="alert"
                 >
                   {error}
-                </p>
+                </div>
               ) : null}
               <div className="flex flex-col sm:flex-row gap-3 w-full">
                 <input
                   type="text"
+                  id="callback-nom"
                   name="nom"
                   placeholder="Votre nom"
                   required
@@ -85,7 +90,8 @@ export default function CallbackBanner() {
                 />
                 <input
                   type="tel"
-                  name="telephone"
+                  id="callback-tel"
+                  name="tel"
                   placeholder="Votre téléphone"
                   required
                   autoComplete="tel"
@@ -97,28 +103,32 @@ export default function CallbackBanner() {
                   className="btn bg-dark border-dark text-white hover:bg-primary-dark hover:border-primary-dark whitespace-nowrap disabled:opacity-60 disabled:pointer-events-none"
                 >
                   <i className="fas fa-paper-plane" />{" "}
-                  {loading ? "Envoi…" : "Être rappelé"}
+                  {loading ? "Envoi en cours…" : "Être rappelé"}
                 </button>
               </div>
-              <label className="mt-3 flex items-start gap-2 text-xs text-white/80 cursor-pointer max-w-xl lg:max-w-md">
+              <div className="mt-3 flex items-start gap-2 max-w-xl lg:max-w-md">
                 <input
                   type="checkbox"
+                  id="callback-rgpd"
                   name="rgpd"
                   required
-                  className="mt-0.5 shrink-0 rounded border-white/40"
+                  className="mt-1 cursor-pointer shrink-0"
                 />
-                <span>
-                  J&apos;accepte que mes coordonnées soient utilisées pour me
-                  rappeler, conformément à la{" "}
-                  <Link
+                <label
+                  htmlFor="callback-rgpd"
+                  className="text-xs text-white/90"
+                >
+                  J&apos;accepte que mes données soient utilisées pour traiter ma
+                  demande conformément à la{" "}
+                  <a
                     href="/politique-de-confidentialite"
-                    className="underline underline-offset-2 text-white hover:text-white"
+                    className="text-white underline underline-offset-2"
                   >
                     politique de confidentialité
-                  </Link>
+                  </a>
                   .
-                </span>
-              </label>
+                </label>
+              </div>
             </form>
           )}
         </div>
