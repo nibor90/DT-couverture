@@ -6,6 +6,39 @@ import StatsSection from "@/components/StatsSection";
 import CityAccordion from "@/components/CityAccordion";
 import ServiceIcon from "@/components/ServiceIcon";
 import GoogleReviewsBadge from "@/components/GoogleReviewsBadge";
+import HomeRealisationsMobileCarousel from "@/components/HomeRealisationsMobileCarousel";
+import TestimonialVideo from "@/components/TestimonialVideo";
+import { HOME_REALISATIONS_SHOWCASE } from "@/lib/realisations-shared";
+
+function RealisationCard({
+  r,
+  className = "",
+}: {
+  r: (typeof HOME_REALISATIONS_SHOWCASE)[number];
+  className?: string;
+}) {
+  return (
+    <div
+      className={`group rounded-2xl overflow-hidden bg-white shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 ${className}`}
+    >
+      <div className="relative aspect-[3/4] bg-primary-lighter overflow-hidden">
+        <img
+          src={r.src}
+          alt={r.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+        />
+        <div className="absolute top-4 left-4">
+          <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold font-heading shadow-sm">
+            {r.cat}
+          </span>
+        </div>
+      </div>
+      <div className="p-5">
+        <h4 className="font-bold text-sm leading-snug">{r.title}</h4>
+      </div>
+    </div>
+  );
+}
 
 export default function HomePage() {
   return (
@@ -103,7 +136,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold mb-3 text-dark">
                   {service.title}
                 </h3>
-                <p className="text-gray text-sm leading-7 mb-5">
+                <p className="text-gray text-sm leading-7 mb-5 hidden md:block">
                   {service.description}
                 </p>
                 <span className="text-secondary font-semibold text-sm font-heading inline-flex items-center gap-1.5 group-hover:gap-3 transition-all duration-300">
@@ -196,34 +229,14 @@ export default function HomePage() {
               zinguerie et charpente.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {[
-              { title: "Toiture neuve", cat: "Couverture", src: "/images/realisations/real-1.jpeg" },
-              { title: "Pose de fenêtre de toit", cat: "Velux", src: "/images/realisations/real-2.jpg" },
-              { title: "Noue zinc & tuiles romanes", cat: "Couverture", src: "/images/realisations/real-3.jpeg" },
-              { title: "Avant-toit bois", cat: "Charpente", src: "/images/realisations/real-4.jpeg" },
-              { title: "Rénovation lourde", cat: "Rénovation", src: "/images/realisations/real-5.jpeg" },
-            ].map((r) => (
-              <div
-                key={r.src}
-                className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="relative aspect-[3/4] bg-primary-lighter overflow-hidden">
-                  <img
-                    src={r.src}
-                    alt={r.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold font-heading shadow-sm">
-                      {r.cat}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h4 className="font-bold text-sm leading-snug">{r.title}</h4>
-                </div>
-              </div>
+          <div className="md:hidden">
+            <HomeRealisationsMobileCarousel items={HOME_REALISATIONS_SHOWCASE} />
+          </div>
+
+          {/* Tablette et plus : grille */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {HOME_REALISATIONS_SHOWCASE.map((r) => (
+              <RealisationCard key={r.src} r={r} />
             ))}
           </div>
           <div className="text-center mt-10">
@@ -257,14 +270,7 @@ export default function HomePage() {
                 key={i}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm border border-lighter-gray hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <video
-                  src={v.src}
-                  controls
-                  preload="metadata"
-                  playsInline
-                  className="w-full aspect-[9/16] object-cover bg-dark"
-                  aria-label={v.label}
-                />
+                <TestimonialVideo src={v.src} label={v.label} />
               </div>
             ))}
           </div>
