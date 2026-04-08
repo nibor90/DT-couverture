@@ -2,7 +2,6 @@ import Link from "next/link";
 import { siteConfig, services } from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
-import StatsSection from "@/components/StatsSection";
 import CityAccordion from "@/components/CityAccordion";
 import ServiceIcon from "@/components/ServiceIcon";
 import GoogleReviewsBadge from "@/components/GoogleReviewsBadge";
@@ -69,9 +68,23 @@ export default function HomePage() {
               <Link href="/contact" className="btn btn-primary btn-lg">
                 <i className="fas fa-file-alt" /> Demander un devis gratuit
               </Link>
-              <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
-                <i className="fas fa-phone-alt" /> {siteConfig.phone}
-              </a>
+              <div className="flex flex-col gap-2.5 items-center sm:items-start">
+                <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
+                  <i className="fas fa-phone-alt" /> {siteConfig.phone}
+                </a>
+                <div
+                  className="flex items-center gap-2 justify-center sm:justify-start pl-0 sm:pl-1"
+                  aria-live="polite"
+                >
+                  <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden>
+                    <span className="hero-online-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400/90" />
+                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 ring-2 ring-emerald-400/40" />
+                  </span>
+                  <span className="text-sm font-medium text-white/90 tracking-tight">
+                    Disponible dès maintenant
+                  </span>
+                </div>
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-8">
               {[
@@ -214,8 +227,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <StatsSection />
-
       {/* Réalisations */}
       <section className="py-20" id="realisations">
         <div className="container-custom">
@@ -261,16 +272,36 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { src: "/videos/temoignage-1.mp4", label: "Témoignage client 1" },
-              { src: "/videos/temoignage-2.mp4", label: "Témoignage client 2" },
-              { src: "/videos/temoignage-3.mp4", label: "Témoignage client 3" },
-              { src: "/videos/temoignage-4.mp4", label: "Témoignage client 4" },
+              {
+                src: "/videos/temoignage-1.mp4",
+                label: "Témoignage client 1",
+                mobilePoster: "/images/temoignages/poster-1.png",
+              },
+              {
+                src: "/videos/temoignage-2.mp4",
+                label: "Témoignage client 2",
+                mobilePoster: "/images/temoignages/poster-2.png",
+              },
+              {
+                src: "/videos/temoignage-3.mp4",
+                label: "Témoignage client 3",
+                mobilePoster: "/images/temoignages/poster-3.png",
+              },
+              {
+                src: "/videos/temoignage-4.mp4",
+                label: "Témoignage client 4",
+                mobilePoster: "/images/temoignages/poster-4.png",
+              },
             ].map((v, i) => (
               <div
                 key={i}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm border border-lighter-gray hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <TestimonialVideo src={v.src} label={v.label} />
+                <TestimonialVideo
+                  src={v.src}
+                  label={v.label}
+                  mobilePoster={v.mobilePoster}
+                />
               </div>
             ))}
           </div>

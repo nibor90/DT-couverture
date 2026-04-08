@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig, stats } from "@/lib/data";
-import StatsSection from "@/components/StatsSection";
+import { siteConfig } from "@/lib/data";
 import CtaBanner from "@/components/CtaBanner";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
@@ -107,8 +106,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <StatsSection />
 
       {/* Valeurs */}
       <section className="py-20 bg-off-white">

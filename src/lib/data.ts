@@ -924,13 +924,6 @@ export const testimonials = [
   },
 ];
 
-export const stats = [
-  { value: 10, suffix: "+", label: "Années d'expérience" },
-  { value: 500, suffix: "+", label: "Chantiers réalisés" },
-  { value: 100, suffix: "%", label: "Clients satisfaits" },
-  { value: 30, suffix: "min", label: "Délai de rappel" },
-];
-
 export const citiesAroundSaintDenis = [
   "Saint-Denis-de-Pile",
   "Libourne",

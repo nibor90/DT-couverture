@@ -5,7 +5,6 @@ import { cities, services, siteConfig, testimonials } from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
 import ContactForm from "@/components/ContactForm";
-import StatsSection from "@/components/StatsSection";
 import { BreadcrumbJsonLd, FAQJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import ServiceIcon from "@/components/ServiceIcon";
 
@@ -445,7 +444,6 @@ export default async function CityPage({ params }: PageProps) {
         </div>
       </section>
 
-      <StatsSection />
       <CtaBanner variant="dark" />
     </>
   );
