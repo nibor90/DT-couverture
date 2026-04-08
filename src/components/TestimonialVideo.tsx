@@ -30,19 +30,25 @@ function captureFrame(video: HTMLVideoElement): string | null {
 export default function TestimonialVideo({
   src,
   label,
+  /** Toujours affiché en attendant la capture (mobile / économiseur de données). */
+  fallbackPoster = "/images/camion-dt-couverture.jpg",
 }: {
   src: string;
   label: string;
+  fallbackPoster?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
-  const [poster, setPoster] = useState<string | null>(null);
+  /** Data URL capturée ; jusqu’ici on utilise l’attribut natif `poster` + fallback. */
+  const [capturedPoster, setCapturedPoster] = useState<string | null>(null);
   const done = useRef(false);
 
   useEffect(() => {
     done.current = false;
-    setPoster(null);
+    setCapturedPoster(null);
     const el = ref.current;
     if (!el) return;
+
+    let cancelled = false;
 
     const finish = () => {
       try {
@@ -52,18 +58,25 @@ export default function TestimonialVideo({
       }
     };
 
-    const onSeeked = () => {
-      if (done.current) return;
+    const tryCapture = (): boolean => {
+      if (cancelled || done.current) return true;
       const url = captureFrame(el);
       if (url) {
         done.current = true;
-        setPoster(url);
+        setCapturedPoster(url);
+        finish();
+        return true;
       }
-      finish();
+      return false;
+    };
+
+    const onSeeked = () => {
+      if (cancelled || done.current) return;
+      if (!tryCapture()) finish();
     };
 
     const runSeek = () => {
-      if (done.current) return;
+      if (cancelled || done.current) return;
       try {
         const dur = el.duration;
         const t =
@@ -77,31 +90,49 @@ export default function TestimonialVideo({
       }
     };
 
-    const onLoadedData = () => {
-      runSeek();
-      el.removeEventListener("loadeddata", onLoadedData);
+    const attemptCapture = () => {
+      if (cancelled || done.current) return;
+      if (el.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (cancelled || done.current) return;
+          if (tryCapture()) return;
+          runSeek();
+        });
+      });
     };
 
+    const onLoadedData = () => attemptCapture();
+    const onCanPlay = () => attemptCapture();
+
+    el.addEventListener("loadeddata", onLoadedData);
+    el.addEventListener("canplay", onCanPlay);
+
+    const delayed = window.setTimeout(() => attemptCapture(), 300);
+
     if (el.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-      runSeek();
-    } else {
-      el.addEventListener("loadeddata", onLoadedData);
+      attemptCapture();
     }
 
     return () => {
+      cancelled = true;
       el.removeEventListener("loadeddata", onLoadedData);
+      el.removeEventListener("canplay", onCanPlay);
+      window.clearTimeout(delayed);
     };
   }, [src]);
+
+  const posterAttr = capturedPoster ?? fallbackPoster;
 
   return (
     <video
       ref={ref}
       src={src}
-      poster={poster ?? undefined}
+      poster={posterAttr}
       controls
       playsInline
       preload="auto"
-      muted={!poster}
+      muted={!capturedPoster}
       className="w-full aspect-[9/16] object-cover bg-dark"
       aria-label={label}
     />
