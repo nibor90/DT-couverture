@@ -16,27 +16,11 @@ export default function Footer() {
               height={60}
               className="h-[60px] w-auto mb-4 brightness-125"
             />
-            <p className="text-sm leading-7 mb-5">
+            <p className="text-sm leading-7">
               Artisan couvreur professionnel basé à {siteConfig.address.city}.
               Spécialiste toiture, zinguerie et charpente en Gironde depuis{" "}
               {siteConfig.foundedYear}.
             </p>
-            <div className="flex gap-3">
-              {[
-                { href: siteConfig.social.facebook, icon: "fab fa-facebook-f", label: "Facebook" },
-                { href: siteConfig.social.instagram, icon: "fab fa-instagram", label: "Instagram" },
-                { href: siteConfig.social.google, icon: "fab fa-google", label: "Google" },
-              ].map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="w-10 h-10 rounded-md bg-white/8 flex items-center justify-center text-light-gray hover:bg-secondary hover:text-white transition-all duration-300"
-                >
-                  <i className={s.icon} />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Services */}
