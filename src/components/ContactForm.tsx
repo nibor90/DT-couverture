@@ -5,10 +5,57 @@ import { services } from "@/lib/data";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+
+    const prenom = String(fd.get("prenom") ?? "").trim();
+    const nom = String(fd.get("nom") ?? "").trim();
+    const email = String(fd.get("email") ?? "").trim();
+    const tel = String(fd.get("tel") ?? "").trim();
+    const service = String(fd.get("service") ?? "").trim();
+    const ville = String(fd.get("ville") ?? "").trim();
+    const message = String(fd.get("message") ?? "").trim();
+    const rgpd = fd.get("rgpd") === "on";
+
+    if (!rgpd) {
+      setError("Veuillez accepter la politique de confidentialité.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prenom,
+          nom,
+          email,
+          tel,
+          service,
+          ville,
+          message,
+          rgpd: true,
+        }),
+      });
+      const data = (await res.json().catch(() => ({}))) as { error?: string };
+      if (!res.ok) {
+        setError(data.error ?? "Une erreur est survenue. Réessayez plus tard.");
+        return;
+      }
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError("Impossible d’envoyer le message. Vérifiez votre connexion.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -37,6 +84,14 @@ export default function ContactForm() {
       <h3 className="text-xl md:text-2xl font-bold mb-6 text-dark">
         Demande de devis gratuit
       </h3>
+      {error ? (
+        <div
+          className="mb-5 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"
+          role="alert"
+        >
+          {error}
+        </div>
+      ) : null}
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -178,8 +233,13 @@ export default function ContactForm() {
             .
           </label>
         </div>
-        <button type="submit" className="btn btn-primary btn-lg w-full justify-center">
-          <i className="fas fa-paper-plane" /> Envoyer ma demande
+        <button
+          type="submit"
+          disabled={loading}
+          className="btn btn-primary btn-lg w-full justify-center disabled:opacity-60 disabled:pointer-events-none"
+        >
+          <i className="fas fa-paper-plane" />{" "}
+          {loading ? "Envoi en cours…" : "Envoyer ma demande"}
         </button>
       </form>
     </div>
