@@ -976,6 +976,17 @@ img {
     box-shadow: var(--shadow-md);
 }
 
+.zone-map .map-attribution {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+}
+
+.zone-map .map-attribution a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .zone-cities h3 {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;

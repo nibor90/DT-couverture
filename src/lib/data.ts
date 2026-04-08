@@ -25,6 +25,14 @@ export const siteConfig = {
     /** Fiche / partage Google (avis, établissement). */
     google: "https://share.google/oIhxbdDb7rw3tTpFv",
   },
+  /**
+   * Carte Google Maps intégrée : lieu « Gironde, France » (département), cadrage proche du partage officiel.
+   */
+  mapsEmbedGirondeUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230656!2d-1.1336173!3d44.8882919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552e4eb6f605f3%3A0x306651748112790!2sGironde%2C%20France!5e0!3m2!1sfr!2sfr!4v1700000000000",
+  /** Lien vers la fiche Google Maps (Gironde). */
+  mapsGirondeExternalUrl:
+    "https://www.google.com/maps/place/Gironde,+France/",
 };
 
 export interface ServiceData {

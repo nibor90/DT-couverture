@@ -4,6 +4,7 @@ import { siteConfig, cities } from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
 import CityAccordion from "@/components/CityAccordion";
+import GirondeMapEmbed from "@/components/GirondeMapEmbed";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -56,14 +57,7 @@ export default function ZoneInterventionPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
             <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45216.98!2d-0.0985!3d44.9947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5546b1e69a7b4d%3A0x406651748429c30!2s33910%20Saint-Denis-de-Pile!5e0!3m2!1sfr!2sfr!4v1700000000000"
-                className="w-full h-[500px] border-0 rounded-2xl shadow-lg"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Zone d'intervention DT Couverture"
-              />
+              <GirondeMapEmbed heightClass="h-[500px]" />
             </div>
             <div>
               <h2 className="text-2xl font-bold mb-6 text-dark">

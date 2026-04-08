@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
+import GirondeMapEmbed from "@/components/GirondeMapEmbed";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -126,17 +127,11 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              {/* Map */}
-              <div className="rounded-2xl overflow-hidden shadow-sm">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45216.98!2d-0.0985!3d44.9947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5546b1e69a7b4d%3A0x406651748429c30!2s33910%20Saint-Denis-de-Pile!5e0!3m2!1sfr!2sfr!4v1700000000000"
-                  className="w-full h-[300px] border-0"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation DT Couverture"
-                />
-              </div>
+              {/* Carte : département de la Gironde (zone d&apos;intervention) */}
+              <GirondeMapEmbed
+                heightClass="h-[300px]"
+                className="w-full border-0 rounded-2xl shadow-sm"
+              />
             </div>
 
             {/* Form */}
