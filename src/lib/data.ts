@@ -17,7 +17,7 @@ export const siteConfig = {
     zip: "33910",
     full: "27 T Route des Artigues, 33910 Saint-Denis-de-Pile",
   },
-  hours: "Lun - Sam : 7h00 - 19h00",
+  hours: "Tous les jours 24/24",
   url: "https://dt-couverture.fr",
   social: {
     facebook: "#",

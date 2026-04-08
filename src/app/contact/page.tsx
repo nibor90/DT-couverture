@@ -92,11 +92,7 @@ export default function ContactPage() {
                     icon: "fa-clock",
                     title: "Horaires",
                     content: (
-                      <p className="text-gray text-sm">
-                        Lundi - Samedi
-                        <br />
-                        7h00 - 19h00
-                      </p>
+                      <p className="text-gray text-sm">{siteConfig.hours}</p>
                     ),
                   },
                 ].map((item) => (

@@ -40,32 +40,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top bar */}
-      <div className="bg-dark text-light-gray text-sm py-2 hidden md:block">
-        <div className="container-custom">
-          <div className="flex justify-between items-center">
-            <div className="flex gap-6">
-              <span>
-                <i className="fas fa-map-marker-alt text-secondary mr-1.5" />
-                {siteConfig.address.full}
-              </span>
-              <span>
-                <i className="fas fa-clock text-secondary mr-1.5" />
-                {siteConfig.hours}
-              </span>
-            </div>
-            <a
-              href={siteConfig.phoneHref}
-              className="text-white font-semibold hover:text-secondary transition-colors"
-            >
-              <i className="fas fa-phone text-secondary mr-1.5" />
-              {siteConfig.phone}
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Header */}
       <header
         className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${
           scrolled ? "shadow-lg" : "shadow-sm"
