@@ -36,8 +36,30 @@ function createTransport() {
     port,
     secure,
     auth: { user: user.trim(), pass },
-    ...(port !== 465 ? { requireTLS: true } : {}),
+    connectionTimeout: 20_000,
+    greetingTimeout: 20_000,
+    socketTimeout: 25_000,
+    ...(port !== 465
+      ? {
+          requireTLS: true,
+          tls: { minVersion: "TLSv1.2" as const },
+        }
+      : {}),
   });
+}
+
+/** Destinataire(s) : CONTACT_EMAIL_TO, sinon la boîte SMTP (souvent la même), sinon e-mail du site. */
+function resolveTo(): string {
+  const raw = (
+    process.env.CONTACT_EMAIL_TO ||
+    process.env.SMTP_USER ||
+    siteConfig.email
+  ).trim();
+  return raw
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .join(", ");
 }
 
 export async function POST(req: Request) {
@@ -87,7 +109,7 @@ export async function POST(req: Request) {
   }
 
   const from = (process.env.SMTP_FROM || process.env.SMTP_USER || "").trim();
-  const to = (process.env.CONTACT_EMAIL_TO || siteConfig.email).trim();
+  const to = resolveTo();
 
   if (!from) {
     console.error("contact: SMTP_FROM et SMTP_USER vides");
@@ -135,7 +157,8 @@ ${message}
       html,
     });
   } catch (err) {
-    console.error("contact: sendMail", err);
+    const detail = err instanceof Error ? err.message : String(err);
+    console.error("contact: sendMail", detail, err);
     return NextResponse.json({ error: "L’envoi a échoué. Réessayez plus tard." }, { status: 502 });
   }
 
