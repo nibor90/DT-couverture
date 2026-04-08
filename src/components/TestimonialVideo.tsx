@@ -1,8 +1,28 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 const POSTER_MAX_WIDTH = 720;
+const MOBILE_MQ = "(max-width: 767px)";
+
+function subscribeMobile(cb: () => void) {
+  const mq = window.matchMedia(MOBILE_MQ);
+  mq.addEventListener("change", cb);
+  return () => mq.removeEventListener("change", cb);
+}
+
+function getMobileSnapshot() {
+  return window.matchMedia(MOBILE_MQ).matches;
+}
+
+/** SSR / premier rendu : on considère « non mobile » pour éviter flash ; le montage corrige tout de suite. */
+function getServerMobileSnapshot() {
+  return false;
+}
+
+function useIsMobile() {
+  return useSyncExternalStore(subscribeMobile, getMobileSnapshot, getServerMobileSnapshot);
+}
 
 function captureFrame(video: HTMLVideoElement): string | null {
   try {
@@ -30,7 +50,7 @@ function captureFrame(video: HTMLVideoElement): string | null {
 export default function TestimonialVideo({
   src,
   label,
-  /** Toujours affiché en attendant la capture (mobile / économiseur de données). */
+  /** Utilisé uniquement sur desktop en attendant la capture. Sur mobile : jamais (poster = frame vidéo). */
   fallbackPoster = "/images/camion-dt-couverture.jpg",
 }: {
   src: string;
@@ -38,9 +58,14 @@ export default function TestimonialVideo({
   fallbackPoster?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
-  /** Data URL capturée ; jusqu’ici on utilise l’attribut natif `poster` + fallback. */
   const [capturedPoster, setCapturedPoster] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
   const done = useRef(false);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     done.current = false;
@@ -104,25 +129,47 @@ export default function TestimonialVideo({
 
     const onLoadedData = () => attemptCapture();
     const onCanPlay = () => attemptCapture();
+    const onLoadedMeta = () => attemptCapture();
 
     el.addEventListener("loadeddata", onLoadedData);
     el.addEventListener("canplay", onCanPlay);
+    el.addEventListener("loadedmetadata", onLoadedMeta);
 
-    const delayed = window.setTimeout(() => attemptCapture(), 300);
+    const delays = isMobile ? [0, 300, 800, 2000] : [0, 300];
+    const timers = delays.map((ms) =>
+      window.setTimeout(() => attemptCapture(), ms),
+    );
 
     if (el.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
       attemptCapture();
     }
 
+    // Mobile : charger quand la carte entre dans l’écran (économiseur de données).
+    const io =
+      typeof IntersectionObserver !== "undefined"
+        ? new IntersectionObserver(
+            (entries) => {
+              if (!entries[0]?.isIntersecting || cancelled || done.current) return;
+              attemptCapture();
+            },
+            { rootMargin: "120px", threshold: 0.01 },
+          )
+        : null;
+    if (io) io.observe(el);
+
     return () => {
       cancelled = true;
       el.removeEventListener("loadeddata", onLoadedData);
       el.removeEventListener("canplay", onCanPlay);
-      window.clearTimeout(delayed);
+      el.removeEventListener("loadedmetadata", onLoadedMeta);
+      timers.forEach((id) => window.clearTimeout(id));
+      io?.disconnect();
     };
-  }, [src]);
+  }, [src, isMobile]);
 
-  const posterAttr = capturedPoster ?? fallbackPoster;
+  const posterAttr =
+    capturedPoster ??
+    (mounted && !isMobile ? fallbackPoster : undefined);
 
   return (
     <video
@@ -131,7 +178,7 @@ export default function TestimonialVideo({
       poster={posterAttr}
       controls
       playsInline
-      preload="auto"
+      preload={mounted ? (isMobile ? "auto" : "metadata") : "metadata"}
       muted={!capturedPoster}
       className="w-full aspect-[9/16] object-cover bg-dark"
       aria-label={label}

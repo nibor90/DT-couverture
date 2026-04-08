@@ -23,38 +23,41 @@ function escapeHtml(s: string) {
 }
 
 function createTransport() {
-  const host = process.env.SMTP_HOST;
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASSWORD;
-  if (!host?.trim() || !user?.trim() || !pass) return null;
+  const host = process.env.SMTP_HOST?.trim();
+  const user = process.env.SMTP_USER?.trim();
+  const pass = process.env.SMTP_PASSWORD?.trim();
+  if (!host || !user || !pass) return null;
 
-  const port = Number(process.env.SMTP_PORT) || 587;
+  const port =
+    parseInt(String(process.env.SMTP_PORT ?? "587").trim(), 10) || 587;
   const secure = port === 465;
 
+  const debug = process.env.SMTP_DEBUG === "1";
+
+  // Infomaniak : 587 = STARTTLS (sans requireTLS : évite des échecs TLS sur Vercel).
+  // Si l’envoi échoue encore, mettre SMTP_PORT=465 sur Vercel.
   return nodemailer.createTransport({
-    host: host.trim(),
+    host,
     port,
     secure,
-    auth: { user: user.trim(), pass },
-    connectionTimeout: 20_000,
-    greetingTimeout: 20_000,
-    socketTimeout: 25_000,
-    ...(port !== 465
-      ? {
-          requireTLS: true,
-          tls: { minVersion: "TLSv1.2" as const },
-        }
-      : {}),
+    auth: { user, pass },
+    connectionTimeout: 25_000,
+    greetingTimeout: 25_000,
+    socketTimeout: 30_000,
+    ...(debug ? { debug: true, logger: true } : {}),
   });
 }
 
-/** Destinataire(s) : CONTACT_EMAIL_TO, sinon la boîte SMTP (souvent la même), sinon e-mail du site. */
+/**
+ * Destinataires : CONTACT_EMAIL_TO (si défini et non vide), sinon SMTP_USER, sinon contact du site.
+ * Sur Vercel : si CONTACT_EMAIL_TO pointe vers une autre adresse, c’est elle qui reçoit — pas SMTP_USER.
+ */
 function resolveTo(): string {
-  const raw = (
-    process.env.CONTACT_EMAIL_TO ||
-    process.env.SMTP_USER ||
-    siteConfig.email
-  ).trim();
+  const explicit = process.env.CONTACT_EMAIL_TO?.trim();
+  const raw =
+    explicit && explicit.length > 0
+      ? explicit
+      : (process.env.SMTP_USER?.trim() || siteConfig.email);
   return raw
     .split(",")
     .map((s) => s.trim())
@@ -108,10 +111,10 @@ export async function POST(req: Request) {
     );
   }
 
-  const from = (process.env.SMTP_FROM || process.env.SMTP_USER || "").trim();
+  const fromAddr = (process.env.SMTP_FROM || process.env.SMTP_USER || "").trim();
   const to = resolveTo();
 
-  if (!from) {
+  if (!fromAddr) {
     console.error("contact: SMTP_FROM et SMTP_USER vides");
     return NextResponse.json(
       { error: "L’envoi des messages est temporairement indisponible." },
@@ -147,6 +150,8 @@ ${message}
 <p>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>
 `;
 
+  const from = `"${siteConfig.name.replace(/"/g, "")}" <${fromAddr}>`;
+
   try {
     await transporter.sendMail({
       from,
@@ -162,5 +167,6 @@ ${message}
     return NextResponse.json({ error: "L’envoi a échoué. Réessayez plus tard." }, { status: 502 });
   }
 
+  console.info("contact: mail envoyé (vérifier boîte + indésirables)");
   return NextResponse.json({ ok: true });
 }
