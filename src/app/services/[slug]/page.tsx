@@ -10,6 +10,7 @@ import {
   FAQJsonLd,
   ServiceJsonLd,
 } from "@/components/JsonLd";
+import ServiceIcon from "@/components/ServiceIcon";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -81,8 +82,8 @@ export default async function ServicePage({ params }: PageProps) {
               <i className="fas fa-chevron-right text-white/30 text-xs" />
               <span className="text-white">{service.title}</span>
             </div>
-            <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm">
-              <i className={`fas ${service.icon} text-3xl text-secondary`} />
+            <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm text-3xl text-secondary">
+              <ServiceIcon service={service} />
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-5 leading-tight">
               {service.h1}
@@ -278,8 +279,8 @@ export default async function ServicePage({ params }: PageProps) {
                         href={`/services/${s.slug}`}
                         className="flex items-center gap-3 p-3 rounded-xl hover:bg-white hover:shadow-sm transition-all duration-300 group"
                       >
-                        <div className="w-10 h-10 bg-primary-lighter rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors">
-                          <i className={`fas ${s.icon} text-primary group-hover:text-white transition-colors`} />
+                        <div className="w-10 h-10 bg-primary-lighter rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors text-lg text-primary group-hover:text-white">
+                          <ServiceIcon service={s} />
                         </div>
                         <span className="font-semibold text-sm text-dark group-hover:text-primary transition-colors leading-snug">
                           {s.title}

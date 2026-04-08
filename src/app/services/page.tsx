@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceIcon from "@/components/ServiceIcon";
 import { services, siteConfig } from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
@@ -63,10 +64,8 @@ export default function ServicesPage() {
               >
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-primary-lighter rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <i
-                      className={`fas ${service.icon} text-2xl text-primary group-hover:text-white transition-colors duration-300`}
-                    />
+                  <div className="w-16 h-16 bg-primary-lighter rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300 text-2xl text-primary group-hover:text-white">
+                    <ServiceIcon service={service} className="transition-colors duration-300" />
                   </div>
                   <div className="flex-1">
                     <h2 className="text-xl font-bold mb-3 text-dark group-hover:text-primary transition-colors">

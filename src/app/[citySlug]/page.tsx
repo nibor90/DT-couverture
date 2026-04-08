@@ -7,6 +7,7 @@ import CtaBanner from "@/components/CtaBanner";
 import ContactForm from "@/components/ContactForm";
 import StatsSection from "@/components/StatsSection";
 import { BreadcrumbJsonLd, FAQJsonLd, ServiceJsonLd } from "@/components/JsonLd";
+import ServiceIcon from "@/components/ServiceIcon";
 
 interface PageProps {
   params: Promise<{ citySlug: string }>;
@@ -171,10 +172,8 @@ export default async function CityPage({ params }: PageProps) {
                       href={`/services/${service.slug}`}
                       className="group flex items-start gap-4 p-5 bg-off-white rounded-xl hover:bg-primary-lighter hover:shadow-md transition-all duration-300 border border-lighter-gray"
                     >
-                      <div className="w-12 h-12 bg-primary-lighter rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors">
-                        <i
-                          className={`fas ${service.icon} text-primary group-hover:text-white transition-colors`}
-                        />
+                      <div className="w-12 h-12 bg-primary-lighter rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors text-lg text-primary group-hover:text-white">
+                        <ServiceIcon service={service} />
                       </div>
                       <div>
                         <h3 className="font-bold text-sm group-hover:text-primary transition-colors mb-1">
@@ -378,7 +377,9 @@ export default async function CityPage({ params }: PageProps) {
                         href={`/services/${s.slug}`}
                         className="flex items-center gap-3 p-3 rounded-xl hover:bg-white hover:shadow-sm transition-all duration-300 group"
                       >
-                        <i className={`fas ${s.icon} text-primary group-hover:text-primary-dark text-sm`} />
+                        <span className="text-primary group-hover:text-primary-dark text-sm w-5 flex justify-center">
+                          <ServiceIcon service={s} />
+                        </span>
                         <span className="text-sm font-medium text-dark group-hover:text-primary transition-colors">
                           {s.shortTitle}
                         </span>

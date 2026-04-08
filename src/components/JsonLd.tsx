@@ -104,6 +104,30 @@ export function FAQJsonLd({
   return <JsonLd data={data} />;
 }
 
+export function RealisationsItemListJsonLd({
+  items,
+}: {
+  items: { name: string; description: string; image: string }[];
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "CreativeWork",
+        name: item.name,
+        description: item.description,
+        image: item.image,
+      },
+    })),
+  };
+
+  return <JsonLd data={data} />;
+}
+
 export function ServiceJsonLd({
   name,
   description,

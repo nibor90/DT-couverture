@@ -51,19 +51,19 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="bg-primary-lighter rounded-2xl aspect-[4/3] flex items-center justify-center p-8 overflow-hidden">
+            <div className="relative overflow-visible max-w-lg mx-auto lg:max-w-none lg:mx-0">
+              <div className="bg-primary-lighter rounded-2xl aspect-[3/4] sm:aspect-[3/4] overflow-hidden shadow-lg ring-1 ring-black/5">
                 <img
-                  src="/images/logo_dt_titre.png"
-                  alt="DT Couverture - L'équipe"
-                  className="max-h-full object-contain opacity-70"
+                  src="/images/teddy-compagnons-du-devoir.jpg"
+                  alt={`${siteConfig.founder}, artisan couvreur — Compagnons du Devoir`}
+                  className="w-full h-full object-cover object-[30%_25%]"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-secondary text-white p-6 rounded-2xl text-center shadow-lg">
-                <span className="block font-heading font-extrabold text-4xl leading-none">
-                  {new Date().getFullYear() - siteConfig.foundedYear}+
+              <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-secondary text-white shadow-lg flex flex-col items-center justify-center text-center px-2 py-2 ring-4 ring-white/90 z-10">
+                <span className="font-heading font-extrabold text-xl sm:text-2xl leading-none">
+                  10+
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wide">
+                <span className="text-[8px] sm:text-[9px] font-semibold uppercase tracking-wide leading-tight mt-1">
                   années d&apos;expérience
                 </span>
               </div>

@@ -1,23 +1,31 @@
 import Link from "next/link";
-import { siteConfig, services, testimonials } from "@/lib/data";
+import { siteConfig, services } from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
 import StatsSection from "@/components/StatsSection";
 import CityAccordion from "@/components/CityAccordion";
+import ServiceIcon from "@/components/ServiceIcon";
+import GoogleReviewsBadge from "@/components/GoogleReviewsBadge";
 
 export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-dark to-primary-dark overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark/92 to-primary-dark/85 z-[1]" />
+      <section className="relative min-h-screen min-h-[100dvh] flex items-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-[center_30%] bg-no-repeat"
+          style={{ backgroundImage: "url(/images/hero-home.jpg)" }}
+          aria-hidden
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-dark/90 via-dark/78 to-primary-dark/88 z-[1]" />
         <div className="container-custom relative z-[2]">
           <div className="max-w-[700px] py-16">
             <span className="inline-block bg-secondary/15 text-secondary-light px-5 py-2 rounded-full text-sm font-semibold font-heading mb-6 border border-secondary/30">
               Artisan couvreur depuis {siteConfig.foundedYear}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-5 leading-tight">
-              Votre spécialiste <span className="text-accent">toiture</span> en
+              <span className="text-accent">DT Couverture</span>, votre
+              spécialiste <span className="text-accent">toiture</span> en
               Gironde
             </h1>
             <p className="text-lg text-white/80 mb-8 leading-relaxed">
@@ -47,6 +55,10 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+
+            <div className="mt-4 w-fit max-w-[min(16.5rem,92vw)]">
+              <GoogleReviewsBadge variant="hero" />
+            </div>
           </div>
         </div>
       </section>
@@ -57,6 +69,17 @@ export default function HomePage() {
       <section className="py-20 bg-off-white" id="services">
         <div className="container-custom">
           <div className="text-center max-w-[650px] mx-auto mb-14">
+            <div className="flex justify-center mb-7">
+              <img
+                src="/images/partenaire-compagnons-du-devoir.png"
+                alt="Entreprise partenaire des Compagnons du Devoir"
+                width={267}
+                height={170}
+                className="h-auto w-full max-w-[min(267px,85vw)] object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <span className="section-tag">Nos expertises</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Nos <span className="text-accent">services</span> de couverture
@@ -74,10 +97,8 @@ export default function HomePage() {
                 className="group bg-white rounded-2xl p-8 border border-lighter-gray hover:-translate-y-1.5 hover:shadow-xl hover:border-transparent transition-all duration-300 relative overflow-hidden"
               >
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                <div className="w-[60px] h-[60px] bg-primary-lighter rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary transition-colors duration-300">
-                  <i
-                    className={`fas ${service.icon} text-2xl text-primary group-hover:text-white transition-colors duration-300`}
-                  />
+                <div className="w-[60px] h-[60px] bg-primary-lighter rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary transition-colors duration-300 text-2xl text-primary group-hover:text-white">
+                  <ServiceIcon service={service} className="transition-colors duration-300" />
                 </div>
                 <h3 className="text-lg font-bold mb-3 text-dark">
                   {service.title}
@@ -100,19 +121,19 @@ export default function HomePage() {
       <section className="py-20" id="a-propos">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="bg-primary-lighter rounded-2xl aspect-[4/3] flex items-center justify-center p-8 overflow-hidden">
+            <div className="relative overflow-visible">
+              <div className="bg-primary-lighter rounded-2xl aspect-[4/3] overflow-hidden shadow-lg ring-1 ring-black/5">
                 <img
-                  src="/images/logo_dt_titre.png"
-                  alt="DT Couverture - Artisan couvreur en Gironde"
-                  className="max-h-full object-contain opacity-70"
+                  src="/images/camion-dt-couverture.jpg"
+                  alt="Camion d&apos;intervention DT Couverture — spécialiste toiture neuf et rénovation en Gironde"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 md:bottom-auto md:-right-4 md:top-auto bg-secondary text-white p-6 rounded-2xl text-center shadow-lg">
-                <span className="block font-heading font-extrabold text-4xl leading-none">
+              <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-secondary text-white shadow-lg flex flex-col items-center justify-center text-center px-2 py-2 ring-4 ring-white/90 z-10">
+                <span className="font-heading font-extrabold text-xl sm:text-2xl leading-none">
                   10+
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wide">
+                <span className="text-[8px] sm:text-[9px] font-semibold uppercase tracking-wide leading-tight mt-1">
                   années d&apos;expérience
                 </span>
               </div>
@@ -175,32 +196,32 @@ export default function HomePage() {
               zinguerie et charpente.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
-              { title: "Rénovation toiture complète", cat: "Couverture", loc: "Saint-Denis-de-Pile (33)" },
-              { title: "Installation gouttières zinc", cat: "Zinguerie", loc: "Libourne (33)" },
-              { title: "Réparation charpente", cat: "Charpente", loc: "Coutras (33)" },
-              { title: "Pose de Velux", cat: "Velux", loc: "Montpon-Ménestérol (24)" },
+              { title: "Toiture neuve", cat: "Couverture", src: "/images/realisations/real-1.jpeg" },
+              { title: "Pose de fenêtre de toit", cat: "Velux", src: "/images/realisations/real-2.jpg" },
+              { title: "Noue zinc & tuiles romanes", cat: "Couverture", src: "/images/realisations/real-3.jpeg" },
+              { title: "Avant-toit bois", cat: "Charpente", src: "/images/realisations/real-4.jpeg" },
+              { title: "Rénovation lourde", cat: "Rénovation", src: "/images/realisations/real-5.jpeg" },
             ].map((r) => (
               <div
-                key={r.title}
+                key={r.src}
                 className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] bg-primary-lighter flex items-center justify-center overflow-hidden">
+                <div className="relative aspect-[3/4] bg-primary-lighter overflow-hidden">
                   <img
-                    src="/images/logo_dt_titre.png"
+                    src={r.src}
                     alt={r.title}
-                    className="w-3/5 object-contain opacity-50 group-hover:scale-105 group-hover:opacity-70 transition-all duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold font-heading">
+                    <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold font-heading shadow-sm">
                       {r.cat}
                     </span>
                   </div>
                 </div>
                 <div className="p-5">
-                  <h4 className="font-bold mb-1">{r.title}</h4>
-                  <p className="text-gray text-sm">{r.loc}</p>
+                  <h4 className="font-bold text-sm leading-snug">{r.title}</h4>
                 </div>
               </div>
             ))}
@@ -225,29 +246,25 @@ export default function HomePage() {
               La satisfaction de nos clients est notre meilleure récompense.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(0, 3).map((t, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { src: "/videos/temoignage-1.mp4", label: "Témoignage client 1" },
+              { src: "/videos/temoignage-2.mp4", label: "Témoignage client 2" },
+              { src: "/videos/temoignage-3.mp4", label: "Témoignage client 3" },
+              { src: "/videos/temoignage-4.mp4", label: "Témoignage client 4" },
+            ].map((v, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-lighter-gray hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="bg-white rounded-2xl overflow-hidden shadow-sm border border-lighter-gray hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="mb-4 text-yellow-400">
-                  {Array.from({ length: t.rating }).map((_, j) => (
-                    <i key={j} className="fas fa-star" />
-                  ))}
-                </div>
-                <p className="text-dark-gray italic mb-6 leading-relaxed text-sm">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-sm">
-                    {t.initials}
-                  </div>
-                  <div>
-                    <strong className="block text-sm">{t.author}</strong>
-                    <span className="text-gray text-xs">{t.location}</span>
-                  </div>
-                </div>
+                <video
+                  src={v.src}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="w-full aspect-[9/16] object-cover bg-dark"
+                  aria-label={v.label}
+                />
               </div>
             ))}
           </div>

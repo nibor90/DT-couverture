@@ -63,7 +63,13 @@ export default function MentionsLegalesPage() {
                   <strong>Siège social :</strong> {siteConfig.address.full}
                 </li>
                 <li>
-                  <strong>Téléphone :</strong> {siteConfig.phone}
+                  <strong>Téléphone :</strong>{" "}
+                  <a
+                    href={siteConfig.phoneHref}
+                    className="text-primary font-semibold hover:underline"
+                  >
+                    {siteConfig.phone}
+                  </a>
                 </li>
                 <li>
                   <strong>Email :</strong> {siteConfig.email}

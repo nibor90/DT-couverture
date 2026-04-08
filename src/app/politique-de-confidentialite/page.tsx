@@ -88,7 +88,13 @@ export default function PolitiqueConfidentialitePage() {
                 <br />
                 Email : {siteConfig.email}
                 <br />
-                Téléphone : {siteConfig.phone}
+                Téléphone :{" "}
+                <a
+                  href={siteConfig.phoneHref}
+                  className="text-primary font-semibold hover:underline"
+                >
+                  {siteConfig.phone}
+                </a>
               </p>
             </div>
 

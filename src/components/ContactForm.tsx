@@ -101,7 +101,7 @@ export default function ContactForm() {
               id="tel"
               name="tel"
               required
-              placeholder="06 00 00 00 00"
+              placeholder="07 77 30 47 20"
               className="w-full px-4 py-3 border-2 border-lighter-gray rounded-md text-dark focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all"
             />
           </div>

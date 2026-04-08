@@ -29,7 +29,7 @@ export default function CtaBanner({
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <a href={siteConfig.phoneHref} className="btn btn-white btn-lg">
-            <i className="fas fa-phone-alt" /> Appeler maintenant
+            <i className="fas fa-phone-alt" /> {siteConfig.phone}
           </a>
           <Link href="/contact" className="btn btn-outline-white btn-lg">
             <i className="fas fa-file-alt" /> Devis en ligne

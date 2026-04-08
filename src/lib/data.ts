@@ -8,8 +8,8 @@ export const siteConfig = {
   activity: "Travaux de couverture par éléments",
   founder: "Teddy Dominique",
   foundedYear: 2015,
-  phone: "06 00 00 00 00",
-  phoneHref: "tel:+33600000000",
+  phone: "07 77 30 47 20",
+  phoneHref: "tel:+33777304720",
   email: "contact@dt-couverture.fr",
   address: {
     street: "27 T Route des Artigues",
@@ -22,7 +22,8 @@ export const siteConfig = {
   social: {
     facebook: "#",
     instagram: "#",
-    google: "#",
+    /** Fiche / partage Google (avis, établissement). */
+    google: "https://share.google/oIhxbdDb7rw3tTpFv",
   },
 };
 
@@ -206,7 +207,7 @@ export const services: ServiceData[] = [
     slug: "charpente",
     title: "Charpente",
     shortTitle: "Charpente",
-    icon: "fa-tools",
+    icon: "fa-hammer",
     description: "Réparation, renforcement et traitement de charpente bois. Remplacement de pièces endommagées et mise aux normes.",
     metaTitle: "Charpente Gironde | Réparation, Traitement, Renforcement | Devis Gratuit",
     metaDescription: "Charpentier couvreur en Gironde (33). Réparation, renforcement, traitement anti-insectes charpente bois. Capricornes, termites, mérule. Devis gratuit.",
@@ -580,7 +581,7 @@ export const services: ServiceData[] = [
     slug: "nettoyage-demoussage",
     title: "Nettoyage & Démoussage Toiture",
     shortTitle: "Démoussage",
-    icon: "fa-brush",
+    icon: "fa-spray-can",
     description: "Nettoyage, traitement anti-mousse et hydrofuge de toiture. Prolongez la durée de vie de votre couverture.",
     metaTitle: "Démoussage Toiture Gironde | Nettoyage, Anti-Mousse, Hydrofuge | Prix",
     metaDescription: "Démoussage et nettoyage toiture en Gironde (33). Traitement anti-mousse professionnel, hydrofuge longue durée. Prix clairs, devis gratuit. Prolongez la vie de votre toit.",
