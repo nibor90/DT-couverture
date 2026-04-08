@@ -4,6 +4,16 @@ import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 const POSTER_MAX_WIDTH = 720;
 const MOBILE_MQ = "(max-width: 767px)";
+/** Début de lecture et cible pour la vignette (éviter l’intro à t=0). */
+const PLAYBACK_START_SEC = 1;
+
+function posterSeekTime(duration: number): number {
+  if (!Number.isFinite(duration) || duration <= 0) return 0.1;
+  if (duration > PLAYBACK_START_SEC) {
+    return Math.min(PLAYBACK_START_SEC, duration - 0.05);
+  }
+  return Math.min(0.1, duration / 2);
+}
 
 function subscribeMobile(cb: () => void) {
   const mq = window.matchMedia(MOBILE_MQ);
@@ -103,11 +113,7 @@ export default function TestimonialVideo({
     const runSeek = () => {
       if (cancelled || done.current) return;
       try {
-        const dur = el.duration;
-        const t =
-          dur && !Number.isNaN(dur) && dur > 0
-            ? Math.min(0.2, dur * 0.03)
-            : 0.1;
+        const t = posterSeekTime(el.duration);
         el.addEventListener("seeked", onSeeked, { once: true });
         el.currentTime = t;
       } catch {
@@ -121,7 +127,6 @@ export default function TestimonialVideo({
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           if (cancelled || done.current) return;
-          if (tryCapture()) return;
           runSeek();
         });
       });
@@ -171,6 +176,19 @@ export default function TestimonialVideo({
     capturedPoster ??
     (mounted && !isMobile ? fallbackPoster : undefined);
 
+  function handlePlay() {
+    const el = ref.current;
+    if (!el) return;
+    const d = el.duration;
+    if (
+      Number.isFinite(d) &&
+      d > PLAYBACK_START_SEC &&
+      el.currentTime < PLAYBACK_START_SEC
+    ) {
+      el.currentTime = PLAYBACK_START_SEC;
+    }
+  }
+
   return (
     <video
       ref={ref}
@@ -182,6 +200,7 @@ export default function TestimonialVideo({
       muted={!capturedPoster}
       className="w-full aspect-[9/16] object-cover bg-dark"
       aria-label={label}
+      onPlay={handlePlay}
     />
   );
 }

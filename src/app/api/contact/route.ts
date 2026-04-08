@@ -22,20 +22,25 @@ function escapeHtml(s: string) {
     .replace(/"/g, "&quot;");
 }
 
+function smtpPassword(): string | undefined {
+  return (
+    process.env.SMTP_PASS?.trim() || process.env.SMTP_PASSWORD?.trim() || undefined
+  );
+}
+
 function createTransport() {
   const host = process.env.SMTP_HOST?.trim();
   const user = process.env.SMTP_USER?.trim();
-  const pass = process.env.SMTP_PASSWORD?.trim();
+  const pass = smtpPassword();
   if (!host || !user || !pass) return null;
 
   const port =
-    parseInt(String(process.env.SMTP_PORT ?? "587").trim(), 10) || 587;
+    parseInt(String(process.env.SMTP_PORT ?? "465").trim(), 10) || 465;
   const secure = port === 465;
 
   const debug = process.env.SMTP_DEBUG === "1";
 
-  // Infomaniak : 587 = STARTTLS (sans requireTLS : évite des échecs TLS sur Vercel).
-  // Si l’envoi échoue encore, mettre SMTP_PORT=465 sur Vercel.
+  // Infomaniak / Vercel : 465 (SSL) par défaut ; surcharger avec SMTP_PORT=587 si besoin.
   return nodemailer.createTransport({
     host,
     port,
@@ -49,13 +54,16 @@ function createTransport() {
 }
 
 /**
- * Destinataires : CONTACT_EMAIL_TO (si défini et non vide), sinon SMTP_USER, sinon contact du site.
- * Sur Vercel : si CONTACT_EMAIL_TO pointe vers une autre adresse, c’est elle qui reçoit — pas SMTP_USER.
+ * Destinataires : RECEIVER_EMAIL (Vercel) ou CONTACT_EMAIL_TO (ancien nom), sinon SMTP_USER, sinon contact du site.
  */
 function resolveTo(): string {
-  const explicit = process.env.CONTACT_EMAIL_TO?.trim();
+  const explicit = (
+    process.env.RECEIVER_EMAIL?.trim() ||
+    process.env.CONTACT_EMAIL_TO?.trim() ||
+    ""
+  );
   const raw =
-    explicit && explicit.length > 0
+    explicit.length > 0
       ? explicit
       : (process.env.SMTP_USER?.trim() || siteConfig.email);
   return raw
@@ -104,7 +112,7 @@ export async function POST(req: Request) {
 
   const transporter = createTransport();
   if (!transporter) {
-    console.error("contact: SMTP_HOST / SMTP_USER / SMTP_PASSWORD manquants");
+    console.error("contact: SMTP_HOST / SMTP_USER / SMTP_PASS (ou SMTP_PASSWORD) manquants");
     return NextResponse.json(
       { error: "L’envoi des messages est temporairement indisponible." },
       { status: 503 },
