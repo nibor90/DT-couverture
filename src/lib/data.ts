@@ -1079,6 +1079,208 @@ export const cities: CityData[] = [
       { question: "Intervenez-vous en urgence à Montpon-Ménestérol ?", answer: "Oui, pour les urgences (fuite soudaine, dégâts de grêle ou de tempête), nous intervenons sous 24 à 48h à Montpon-Ménestérol. Le trajet de 35 km depuis Saint-Denis-de-Pile ne représente que 30 à 35 minutes. Nous bâchons votre toiture en urgence puis planifions la réparation définitive." },
     ],
   },
+
+  // ── LOT 2 ─────────────────────────────────────────────────────────────────
+  {
+    slug: "couvreur-lalande-de-pomerol",
+    name: "Lalande-de-Pomerol",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33500",
+    population: "1 500",
+    distance: "13 km",
+    metaTitle: "Couvreur Lalande-de-Pomerol (33500) | Toiture Vignoble, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Lalande-de-Pomerol (33500) : rénovation toiture, tuiles, zinguerie, charpente, démoussage pour propriétés viticoles et maisons. Artisan Libournais. Devis gratuit.",
+    h1: "Couvreur à Lalande-de-Pomerol : toiture pour propriétés viticoles et maisons",
+    heroText: "Vous cherchez un couvreur à Lalande-de-Pomerol ? DT Couverture intervient sur les propriétés viticoles, maisons de maître et pavillons de cette appellation du Libournais. Artisan à 13 km, devis gratuit.",
+    sections: [
+      {
+        title: "Le bâti de Lalande-de-Pomerol : entre vignoble et habitat résidentiel",
+        content: "Lalande-de-Pomerol regroupe les communes de Lalande-de-Pomerol et de Néac, sur le plateau argileux qui jouxte l'appellation Pomerol au nord. Le paysage bâti mêle des propriétés viticoles — châteaux, domaines, maisons de maître — éparpillées entre les parcelles de vignes, et des maisons individuelles plus récentes le long des routes de desserte. Le bâti ancien se caractérise par des murs en pierre calcaire et des toitures en tuiles canal à pente modérée (28 à 36 %), typiques du vignoble libournais. Les châteaux viticoles de l'appellation — Château Annereaux, Château Belles-Graves, Château de Musset — disposent de bâtiments techniques (chais, cuviers) et d'habitats de maître dont la toiture doit être à la hauteur de leur rang. DT Couverture intervient sur tous ces bâtiments avec la rigueur et le souci du détail qu'ils méritent : diagnostic préalable en toiture, choix de matériaux cohérents avec l'existant, réalisation soignée et nettoyage complet de chantier.",
+      },
+      {
+        title: "Démoussage et entretien préventif sur le plateau argileux",
+        content: "Le plateau argileux de Lalande-de-Pomerol partage avec son voisin pomerolais un microclimat particulier : l'argile retient l'humidité en surface longtemps après les pluies, et les brouillards matinaux stagnent dans les zones basses entre les coteaux. Ces conditions favorisent une colonisation active des toitures par les mousses, lichens et algues — parfois dès 5 à 7 ans sur les tuiles les plus poreuses. Un entretien préventif régulier est le meilleur moyen d'éviter une dégradation prématurée de la couverture. DT Couverture propose un démoussage complet en deux étapes : nettoyage basse pression pour décoller les dépôts organiques (sans endommager les tuiles), suivi d'un traitement fongicide et algicide laissé agir 3 à 6 mois, et application optionnelle d'un hydrofuge pénétrant qui imperméabilise les tuiles pendant 8 à 12 ans. Pour les propriétés viticoles qui souhaitent présenter leurs bâtiments en parfait état pour les photos de catalogues et les visites d'acheteurs, un démoussage bien conduit redonne immédiatement une apparence impeccable.",
+      },
+      {
+        title: "Charpente et isolation des propriétés de Lalande-de-Pomerol",
+        content: "Les bâtiments anciens du vignoble de Lalande-de-Pomerol présentent souvent des charpentes traditionnelles en chêne massif qui ont traversé le siècle sans entretien sérieux. Un diagnostic complet de charpente permet d'identifier les zones fragilisées par les insectes xylophages (vrillettes, capricornes, anobies) ou les champignons lignivores (mérule, coniophore) avant qu'elles ne compromettent la stabilité de la toiture. DT Couverture réalise ce diagnostic accompagné de photos et d'un rapport écrit, puis le traitement correspondant : injection sous pression pour les insectes, traitement curatif et assèchement pour les champignons. L'isolation de ces combles est un investissement rentable : les propriétés viticoles résidentielles de Lalande-de-Pomerol, souvent classées D ou E au DPE, bénéficient des aides MaPrimeRénov' pour l'isolation des combles perdus ou aménagés.",
+      },
+      {
+        title: "Urgences, zinguerie et petites réparations à Lalande-de-Pomerol et Néac",
+        content: "Les appels d'urgence pour tuile cassée, fuite en toiture ou gouttière arrachée sont fréquents après les orages d'été et les coups de vent d'automne dans le secteur libournais. DT Couverture, basé à 13 km à Saint-Denis-de-Pile, assure une réponse rapide sur Lalande-de-Pomerol et Néac : intervention sous 24h pour sécuriser, bâchage professionnel si nécessaire, réparation définitive planifiée dans les meilleurs délais. Pour la zinguerie, nous assurons la pose et le remplacement de gouttières en zinc ou aluminium, les chéneaux sur-mesure pour les bâtiments de grand gabarit, et les solins d'étanchéité autour des cheminées et des lucarnes.",
+      },
+    ],
+    localSpecificities: "Lalande-de-Pomerol et Néac constituent un plateau argileux humide au nord de Pomerol. Le bâti viticole (châteaux, chais) côtoie des maisons résidentielles. L'humidité du sol argileux accélère la croissance des mousses. Les propriétés viticoles ont des exigences esthétiques élevées pour leurs couvertures.",
+    nearbyCommunes: ["Néac", "Pomerol", "Saint-Émilion", "Montagne", "Lussac", "Libourne", "Saint-Denis-de-Pile"],
+    faq: [
+      { question: "Combien coûte un démoussage à Lalande-de-Pomerol ?", answer: "Pour une maison ou une propriété viticole d'environ 80 à 120 m² de toiture, le nettoyage + traitement anti-mousse coûte souvent entre 700 et 1 500 €. Avec l'hydrofuge protecteur, comptez 1 800 à 3 000 € selon la surface et l'accès. Devis gratuit sur place." },
+      { question: "Intervenez-vous sur Néac en plus de Lalande-de-Pomerol ?", answer: "Oui, Néac fait partie de notre zone d'intervention habituelle. Les deux communes sont voisines et nous y intervenons avec les mêmes délais. Devis gratuit, déplacement compris depuis Saint-Denis-de-Pile (13 km)." },
+      { question: "Traitez-vous les charpentes contre la mérule ?", answer: "Oui. La mérule (champignon lignivore) nécessite un traitement curatif spécifique et une réduction de l'humidité. Nous identifions la cause de l'humidité (défaut d'étanchéité, manque de ventilation), réalisons le traitement curatif, et renforçons ou remplaçons les pièces de charpente dégradées." },
+      { question: "Quelle tuile recommandez-vous pour une propriété viticole à Lalande-de-Pomerol ?", answer: "La tuile canal en terre cuite aux teintes rouge vieilli ou ocre nuancé est le matériau de référence pour les bâtiments anciens du vignoble. Pour les constructions récentes, les tuiles mécaniques à profil vieilli offrent un bon compromis entre esthétique et prix." },
+      { question: "Réalisez-vous des devis pour des copropriétés ou des syndicats viticoles ?", answer: "Oui, nous établissons des devis pour tous types de maîtres d'ouvrage : particuliers, SCI, syndicats viticoles, coopératives. Nos devis sont détaillés et signés, avec garantie décennale sur tous les travaux de couverture." },
+    ],
+  },
+  {
+    slug: "couvreur-lussac",
+    name: "Lussac",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33570",
+    population: "1 400",
+    distance: "22 km",
+    metaTitle: "Couvreur Lussac (33570) | Toiture, Rénovation, Démoussage | Devis Gratuit",
+    metaDescription: "Couvreur à Lussac (33570) : rénovation toiture tuiles canal, zinguerie, charpente, démoussage, isolation. Secteur Saint-Émilion Nord. Artisan Gironde, devis gratuit.",
+    h1: "Couvreur à Lussac : toiture en pays de Saint-Émilion Nord",
+    heroText: "Besoin d'un couvreur à Lussac-Saint-Émilion ? DT Couverture intervient sur toutes les toitures du secteur : maisons de bourg, propriétés viticoles, pavillons. Artisan à 22 km, devis gratuit sous 48h.",
+    sections: [
+      {
+        title: "Architecture et toitures de Lussac : le pays des appellations satellites",
+        content: "Lussac est le chef-lieu des appellations « satellites » de Saint-Émilion — Lussac-Saint-Émilion —, un secteur de coteaux calcaires et de fonds d'argile qui dessine un paysage agricole ponctué de châteaux viticoles, de maisons de bourg et de fermes. L'architecture locale est ancrée dans la tradition girondine : murs en pierre calcaire blanche ou grise, toitures en tuiles canal à faible ou moyenne pente (28 à 40 %), chainages en brique rouge sur les bâtiments du début du XXe siècle. Le centre-bourg de Lussac conserve un tissu ancien compact dont de nombreuses toitures n'ont pas été rénovées depuis les années 1970-80 et montrent les signes caractéristiques de l'usure : tuiles noircies et poreuses, gouttières déformées, solins décollés aux jointures des cheminées. DT Couverture intervient sur ce bâti avec une connaissance précise des tuiles locales : nous stockons les références courantes en tuiles canal et en tuiles mécaniques adaptées au secteur nord-saint-émilionnais.",
+      },
+      {
+        title: "Rénovation complète et réfection partielle à Lussac",
+        content: "La rénovation de toiture à Lussac peut aller de la simple réparation ponctuelle — remplacement de quelques tuiles cassées après une tempête ou une grêle — à la réfection totale de l'enveloppe : dépose de la couverture existante, vérification et traitement de la charpente, pose d'un écran sous-toiture HPV (Haute Perméabilité à la Vapeur d'eau), nouveau lattage et nouvelle couverture. Entre ces deux extrêmes, nous proposons la réfection partielle d'un versant particulièrement dégradé, avec raccord chromé soigné aux versants adjacents. Avant toute décision, nous réalisons un diagnostic complet en toiture — inspection depuis le sol à la jumelle et montée en toiture avec relevé photographique — qui vous permet de prioriser les travaux selon leur urgence et votre budget. Ce diagnostic est gratuit et sans engagement.",
+      },
+      {
+        title: "Zinguerie, gouttières et gestion des eaux de coteaux à Lussac",
+        content: "Les propriétés de Lussac sont souvent implantées sur des coteaux calcaires avec des dénivelés prononcés qui concentrent les eaux de ruissellement sur certaines façades. Une zinguerie bien dimensionnée et en bon état est essentielle pour collecter et évacuer ces eaux sans débordement. DT Couverture réalise le diagnostic de votre réseau d'évacuation des eaux pluviales et propose les améliorations nécessaires : gouttières de section adaptée (demi-ronde 125 ou 150 mm), descentes en zinc ou aluminium laqué de couleur coordonnée à votre façade, gardes-gravier pour éviter les obstructions par les débris de végétation. Sur les bâtiments agricoles et les chais de l'appellation Lussac-Saint-Émilion, nous installons des chéneaux en zinc de grande portée pour collecter les eaux de grandes surfaces de toiture.",
+      },
+      {
+        title: "Isolation et Velux à Lussac : confort thermique et aménagement des combles",
+        content: "Lussac et ses hameaux environnants — Saint-Christophe, Petit-Figeac, Puyblanquet — regroupent de nombreuses maisons de caractère dont les combles non aménagés représentent un potentiel de surface habitable sous-exploité. DT Couverture accompagne les propriétaires dans ces projets : diagnostic de la charpente, isolation sous rampants en laine minérale ou en fibre de bois, pose de Velux pour apporter lumière et ventilation naturelle, et coordination avec les artisans plombiers et électriciens pour les raccordements. L'isolation par sarking (sur-toiture) est une solution pertinente pour les toitures en tuiles canal que l'on souhaite rénover simultanément : elle permet d'isoler efficacement sans toucher à l'intérieur et d'atteindre les niveaux de performance requis par le RE2020.",
+      },
+    ],
+    localSpecificities: "Lussac est au cœur des appellations satellites de Saint-Émilion (Lussac-Saint-Émilion). Coteaux calcaires avec ruissellements importants : zinguerie et dimensionnement des gouttières essentiels. Bâti ancien en pierre calcaire avec tuiles canal. Nombreux combles non aménagés à valoriser.",
+    nearbyCommunes: ["Puisseguin", "Montagne", "Saint-Georges-Saint-Émilion", "Saint-Émilion", "Pomerol", "Castillon-la-Bataille"],
+    faq: [
+      { question: "Intervenez-vous dans tous les hameaux autour de Lussac ?", answer: "Oui, nous couvrons tout le secteur de Lussac : Saint-Christophe, Petit-Figeac, Puyblanquet, et les propriétés viticoles isolées. Pas de surcoût de déplacement dans un rayon de 5 km autour de Lussac." },
+      { question: "Ma toiture en tuiles canal a 40 ans — dois-je tout refaire ?", answer: "Pas forcément. Tout dépend de l'état de la charpente, de l'écran sous-toiture et des tuiles elles-mêmes. Beaucoup de toitures de 40 ans ne nécessitent qu'une réfection partielle du versant le plus dégradé, un démoussage et la reprise des solins. Diagnostic gratuit sur place pour évaluer précisément." },
+      { question: "Le sarking est-il adapté aux toitures en tuiles canal de Lussac ?", answer: "Oui, le sarking est une solution idéale pour les toitures en tuiles canal que l'on rénove : on pose les panneaux isolants rigides sur la charpente existante, puis on repose les tuiles dessus. L'intérieur des combles reste intact, ce qui est précieux pour les bâtiments anciens aux charpentes décoratives." },
+      { question: "Quel est le prix d'une réparation de gouttières à Lussac ?", answer: "Le remplacement d'une descente d'eau pluviale en zinc coûte généralement 80 à 180 € (matériau + pose). Le remplacement complet des gouttières d'une façade (10 à 15 ml) se situe souvent entre 350 et 750 €. Devis gratuit sur place." },
+      { question: "Travaillez-vous avec les assurances pour les dégâts de tempête à Lussac ?", answer: "Oui, nous établissons un constat détaillé avec photos après les intempéries, que vous pouvez transmettre à votre assurance. Nous intervenons en urgence pour le bâchage et sécuriser la toiture, ce qui est remboursable par la plupart des contrats multirisques habitation." },
+    ],
+  },
+  {
+    slug: "couvreur-castillon-la-bataille",
+    name: "Castillon-la-Bataille",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33350",
+    population: "3 200",
+    distance: "28 km",
+    metaTitle: "Couvreur Castillon-la-Bataille (33350) | Toiture, Rénovation, Urgence | Devis Gratuit",
+    metaDescription: "Couvreur à Castillon-la-Bataille (33350) : rénovation toiture, zinguerie, charpente, démoussage, isolation, urgence. Artisan Gironde-Dordogne. Devis gratuit.",
+    h1: "Couvreur à Castillon-la-Bataille : toiture et rénovation en vallée de la Dordogne",
+    heroText: "Vous cherchez un couvreur à Castillon-la-Bataille ? DT Couverture intervient sur toutes les toitures du Castillonnais : maisons de bourg en pierre, pavillons, propriétés viticoles. Artisan sérieux à 28 km, devis gratuit.",
+    sections: [
+      {
+        title: "Le bâti de Castillon-la-Bataille : ville de caractère en vallée de la Dordogne",
+        content: "Castillon-la-Bataille occupe une position stratégique à la limite de la Gironde et de la Dordogne, en bordure de la rivière Dordogne qui marque ici la frontière départementale. La ville est connue pour la bataille de 1453 qui a mis fin à la guerre de Cent Ans et pour son vignoble Castillon-Côtes de Bordeaux. Le tissu urbain de Castillon mêle un centre-bourg ancien en pierre calcaire, des quartiers pavillonnaires résidentiels des années 1960-1990 et des zones d'activités plus récentes. Les toitures du centre-ville en tuiles canal ou en tuiles plates à vieilli, les façades en pierre blonde et les menuiseries peintes constituent un ensemble cohérent qu'il convient de rénover en respectant les matériaux d'origine. En bordure de la Dordogne, le microclimat est plus humide et plus brumeux que sur les coteaux : les toitures des maisons riveraines sont soumises à une colonisation plus rapide par les mousses et les lichens.",
+      },
+      {
+        title: "Réfection de toiture et couverture neuve à Castillon-la-Bataille",
+        content: "Le parc immobilier du Castillonnais présente une forte proportion de maisons construites entre 1950 et 1985 dont les toitures arrivent en fin de vie. Les signes à surveiller : tuiles luisantes ou noircies (absorption d'eau excessive), écrans sous-toiture perforés (visibles par les auréoles sur le plafond des combles), gouttières déformées ou décollées, solins fissurés. DT Couverture réalise la réfection complète de votre toiture en une intervention soignée : dépose des tuiles et de l'écran ancien, vérification et traitement de la charpente, pose d'un écran sous-toiture HPV, lattage, couverture neuve en tuiles mécaniques ou canal selon votre choix, et reprise complète de la zinguerie. Pour les constructions neuves sur les lotissements récents de Castillon, nous posons des couvertures en tuiles plates ou mécaniques avec tous les accessoires d'étanchéité.",
+      },
+      {
+        title: "Spécificités du secteur frontalier Gironde-Dordogne : matériaux et réglementation",
+        content: "La limite entre la Gironde et la Dordogne crée une intéressante transition architecturale : les tuiles rondes (canal) et les tuiles de pays du Périgord côtoient les tuiles mécaniques à profil méditerranéen du vignoble girondin. Castillon se situe précisément à ce carrefour, et l'on peut observer les deux traditions sur les versants d'une même rue. DT Couverture connaît ces deux traditions et peut s'approvisionner dans les deux filières selon vos besoins et les exigences de votre commune. Sur le plan réglementaire, les permis de construire et déclarations préalables de travaux sont instruits par la mairie de Castillon ; en cas de monument historique dans le voisinage (l'église Saint-Symphorien est classée), la consultation de l'ABF est obligatoire pour les modifications visibles.",
+      },
+      {
+        title: "Urgences, tempêtes et service après-tempête dans le Castillonnais",
+        content: "Le secteur de Castillon-la-Bataille est exposé aux orages violents de l'automne et aux coups de vent du couloir Dordogne, qui emportent régulièrement des tuiles, arrachent des gouttières et causent des infiltrations. DT Couverture assure le service d'urgence 24h sur le Castillonnais : intervention rapide pour bâchage de protection, rapport d'expertise pour votre assurance habitation, et réparation définitive planifiée dans les meilleurs délais. Nous connaissons les procédures des principaux assureurs et vous aidons à constituer votre dossier d'indemnisation pour obtenir le remboursement le plus complet possible. Après une intempérie importante, nous pouvons également réaliser un diagnostic préventif de votre toiture pour détecter les fragilités créées par l'épisode météorologique.",
+      },
+    ],
+    localSpecificities: "Castillon-la-Bataille est à la frontière Gironde-Dordogne, en bord de Dordogne. Architecture mixte (pierre calcaire girondine et tuiles de pays périgourdines). Climat de vallée avec humidité et brouillards. Zone exposée aux orages et coups de vent du couloir fluvial. Vignoble Castillon-Côtes de Bordeaux.",
+    nearbyCommunes: ["Sainte-Colombe", "Les Salles-de-Castillon", "Saint-Magne-de-Castillon", "Gardegan-et-Tourtirac", "Branne", "Saint-Jean-de-Blaignac", "Lussac"],
+    faq: [
+      { question: "Combien coûte une rénovation de toiture à Castillon-la-Bataille ?", answer: "Pour un pavillon standard de 100 m² de toiture en tuiles mécaniques, beaucoup de rénovations complètes se situent entre 8 000 et 15 000 €. Pour une maison de bourg en tuiles canal avec réfection de zinguerie, comptez souvent 70 à 130 €/m². Devis gratuit et détaillé sur place." },
+      { question: "Mon assurance couvre-t-elle les dégâts de tempête à Castillon ?", answer: "Les dégâts de tempête sont couverts par la garantie « tempête, grêle, neige » de votre multirisques habitation, obligatoire en France. Nous établissons un constat détaillé avec photos pour faciliter votre déclaration de sinistre et estimer le montant des réparations." },
+      { question: "Peut-on utiliser des tuiles du Périgord à Castillon ?", answer: "Oui, les tuiles de pays périgourdines (canal, couleur ocre-rouge) sont bien adaptées à l'architecture castillonnaise. Nous pouvons approvisionner ces matériaux depuis les tuileries du sud-ouest et les poser conformément aux règles locales d'urbanisme." },
+      { question: "Intervenez-vous dans les communes voisines comme Branne et Saint-Jean-de-Blaignac ?", answer: "Oui, nous couvrons tout le Castillonnais et le secteur de l'Entre-Deux-Mers oriental : Branne, Saint-Jean-de-Blaignac, Sainte-Colombe, Gardegan-et-Tourtirac et les communes environnantes." },
+      { question: "Réalisez-vous des diagnostics de toiture après tempête à Castillon ?", answer: "Oui, nous réalisons des inspections de toiture après chaque épisode de tempête ou de grêle significatif. L'inspection comprend une montée en toiture, un relevé photographique de l'ensemble des désordres, et un rapport écrit avec estimation des coûts de réparation. Diagnostic gratuit sur place." },
+    ],
+  },
+  {
+    slug: "couvreur-saint-savin",
+    name: "Saint-Savin",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33920",
+    population: "3 500",
+    distance: "20 km",
+    metaTitle: "Couvreur Saint-Savin (33920) | Toiture, Isolation, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Saint-Savin (33920) : rénovation toiture, isolation combles, zinguerie, charpente, démoussage, Velux. Entre Libourne et Blaye. Artisan Gironde. Devis gratuit.",
+    h1: "Couvreur à Saint-Savin : toiture, isolation et rénovation en Haute-Gironde",
+    heroText: "Vous recherchez un couvreur à Saint-Savin ? DT Couverture intervient dans tout le secteur de la Haute-Gironde : rénovation de toiture, isolation, zinguerie, charpente. Artisan à 20 km de Saint-Savin, devis gratuit.",
+    sections: [
+      {
+        title: "Saint-Savin et la Haute-Gironde : un bâti diversifié entre estuaire et vignoble",
+        content: "Saint-Savin occupe une position intermédiaire entre le Libournais et la Haute-Gironde, dans un secteur de collines et de vallées douces qui descend vers l'estuaire de la Gironde. La commune présente un tissu bâti typique des bourgs semi-ruraux girondins : maisons de bourg en pierre calcaire avec toitures en tuiles canal, lotissements pavillonnaires des années 1975-2000 en tuiles mécaniques, et quelques corps de ferme réhabilités en résidences. La particularité de Saint-Savin est sa forte croissance démographique depuis les années 2010 — de nombreux ménages bordelais et libournais s'y installent en première ou deuxième couronne — ce qui génère une demande importante en couverture neuve et en rénovation de maisons récemment acquises. DT Couverture répond à ces besoins depuis son siège de Saint-Denis-de-Pile, à 20 km.",
+      },
+      {
+        title: "Isolation thermique et rénovation énergétique à Saint-Savin",
+        content: "La forte proportion de pavillons des années 1970-1990 à Saint-Savin représente un gisement de rénovation énergétique considérable. Ces maisons individuelles, souvent peu ou pas isolées dans les combles, présentent des passoires thermiques qui peuvent être corrigées efficacement par l'isolation des combles perdus — le geste énergétique le plus rentable et le plus rapide à mettre en œuvre. DT Couverture réalise l'isolation des combles par soufflage de ouate de cellulose (matériau biosourcé performant) ou de laine de verre, en s'appuyant sur un diagnostic préalable de la toiture et de la ventilation des combles. Un bon niveau de ventilation est indispensable pour éviter la condensation sous la couverture — problème fréquent dans le secteur côtier. Les aides disponibles (MaPrimeRénov', CEE, éco-prêt à taux zéro) permettent de financer la quasi-totalité de cette isolation pour les ménages aux revenus modestes et intermédiaires.",
+      },
+      {
+        title: "Influence du vent d'estuaire sur les toitures de Saint-Savin",
+        content: "Saint-Savin, sur les hauteurs dominant la plaine de l'estuaire, est exposée aux vents de sud-ouest qui remontent l'estuaire de la Gironde et s'accélèrent sur les coteaux exposés. Ces vents réguliers et parfois forts (vitesses moyennes plus élevées que dans le Libournais abrité) exercent une contrainte mécanique permanente sur les toitures : ils fragilisent les faîtières, décalent les tuiles de rive et mettent à l'épreuve les assemblages de zinguerie. DT Couverture tient compte de cette exposition dans ses réalisations : mortier de chaux sur les faîtières et les ébouts de rive pour les toitures en tuiles canal, clips de fixation systématiques sur les tuiles mécaniques en versant exposé, gouttières avec fixations renforcées. Nous réalisons également des inspections préventives après les épisodes de vent fort pour détecter et corriger les déplacements avant qu'ils ne causent des infiltrations.",
+      },
+      {
+        title: "Velux, toitures neuves et petites réparations à Saint-Savin et alentours",
+        content: "La pose de fenêtres de toit est l'une des demandes les plus fréquentes à Saint-Savin : les maisons récentes avec de grands combles souhaitent aménager ces espaces en chambres, bureaux ou salles de jeux. DT Couverture maîtrise l'ensemble de ce type de chantier : création de l'ouverture en toiture (sciage des chevrons selon les règles de l'art), pose de la fenêtre de toit avec son cadre et son tablier d'étanchéité, habillage intérieur. Nous travaillons avec les marques Velux et Fakro et pouvons installer des modèles électriques avec volets roulants solaires ou à commande manuelle. Pour les petites réparations — remplacement d'une tuile, reprise d'un solin, débouchage de gouttière — nous intervenons avec les mêmes soins que sur les grands chantiers.",
+      },
+    ],
+    localSpecificities: "Saint-Savin est en Haute-Gironde, en pleine croissance démographique (périurbain bordelais-libournais). Exposition aux vents d'estuaire : fixations renforcées sur les versants exposés. Forte demande en isolation et en couverture neuve. À 20 km de Saint-Denis-de-Pile.",
+    nearbyCommunes: ["Saint-Martin-du-Bois", "Gours", "Saint-Christophe-de-Double", "Abzac", "Coutras", "Libourne", "Blaye"],
+    faq: [
+      { question: "Combien coûte la pose d'un Velux à Saint-Savin ?", answer: "La pose d'une fenêtre de toit standard (type Velux GGL 78×98 cm) se situe généralement entre 800 et 1 600 € fourni et posé, selon l'accès, le type de toiture et le modèle. La création d'une nouvelle ouverture (sciage de chevrons) coûte 200 à 400 € de plus. Devis gratuit sur place." },
+      { question: "Comment renforcer une toiture exposée aux vents d'estuaire à Saint-Savin ?", answer: "Pour les toitures exposées, nous utilisons des crochets de fixation supplémentaires, du mortier de chaux sur les faîtières et les rives, et des gouttières avec supports renforcés. Pour une toiture existante, une visite préventive permet d'identifier les points faibles et de les consolider avant la saison des vents." },
+      { question: "Quelles aides pour l'isolation des combles à Saint-Savin ?", answer: "MaPrimeRénov' et les CEE financent l'isolation des combles perdus. Pour une maison classée E ou F, le reste à charge peut être très faible voire nul pour les ménages modestes. Nous préparons votre dossier de demande d'aide et vous accompagnons jusqu'au versement." },
+      { question: "Intervenez-vous sur les nouvelles constructions à Saint-Savin ?", answer: "Oui, nous intervenons sur les couvertures neuves dans les lotissements récents de Saint-Savin. Nous travaillons en coordination avec les maçons et les charpentiers pour assurer la bonne chronologie des interventions." },
+      { question: "Quel est le délai pour un devis à Saint-Savin ?", answer: "Nous nous déplaçons généralement sous 48h pour un devis à Saint-Savin. L'intervention suit dans un délai de 1 à 3 semaines selon la nature et l'urgence des travaux, sauf urgence où nous intervenons sous 24h." },
+    ],
+  },
+  {
+    slug: "couvreur-branne",
+    name: "Branne",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33420",
+    population: "1 200",
+    distance: "18 km",
+    metaTitle: "Couvreur Branne (33420) | Toiture Entre-Deux-Mers, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Branne (33420) : rénovation toiture tuiles, zinguerie, charpente, démoussage, isolation. Secteur Entre-Deux-Mers. Artisan Gironde, devis gratuit.",
+    h1: "Couvreur à Branne : toiture et rénovation en Entre-Deux-Mers",
+    heroText: "Besoin d'un couvreur à Branne et dans le secteur de l'Entre-Deux-Mers Est ? DT Couverture intervient sur toutes les toitures du territoire : maisons de vignerons, pavillons, bâtiments agricoles. Artisan à 18 km, devis gratuit.",
+    sections: [
+      {
+        title: "Branne et l'Entre-Deux-Mers : un terroir architectural entre collines et vignobles",
+        content: "Branne est un bourg typique de l'Entre-Deux-Mers, cette région entre Garonne et Dordogne qui doit son nom aux deux rivières qui l'encadrent. Perché sur une colline dominant la plaine de la Dordogne, Branne offre un panorama sur le vignoble et les coteaux calcaires caractéristiques du sud-est de la Gironde. Le bâti du bourg et de ses hameaux — Daignac, Moulon, Espiet, Tizac-de-Curton — présente les caractères architecturaux de l'Entre-Deux-Mers : maisons de vignerons en pierre calcaire blanche avec toitures en tuiles canal ou tuiles plates, granges à voûte en berceau, châteaux de taille modeste avec leurs bâtiments agricoles attenants. Ce patrimoine bâti est soumis aux mêmes contraintes climatiques que le reste du Libournais : humidité de la vallée, vents de nord-ouest, variations thermiques saisonnières qui fragilisent les mortiers et les enduits.",
+      },
+      {
+        title: "Rénovation de toiture dans le secteur de Branne : diagnostic et intervention",
+        content: "Beaucoup de maisons de vigneron et de bâtiments anciens de Branne et de l'Entre-Deux-Mers Est n'ont pas bénéficié de rénovation sérieuse de leur toiture depuis plusieurs décennies. Ces toitures présentent souvent une accumulation de problèmes interconnectés : tuiles canal anciennes dont le mortier de pose s'est désagrégé avec les cycles gel-dégel, laissant les tuiles libres de bouger au vent ; solins de cheminée fissurés laissant entrer l'eau ; charpente tachée par des infiltrations ponctuelles mais encore globalement saine. Avant de préconiser une réfection totale, DT Couverture réalise un diagnostic complet qui distingue ce qui peut être conservé (charpente saine, tuiles en bon état) de ce qui doit être remplacé. Cette approche raisonnée vous évite des dépenses inutiles et vous permet d'investir là où c'est réellement nécessaire.",
+      },
+      {
+        title: "Démoussage et entretien des toitures de l'Entre-Deux-Mers",
+        content: "L'Entre-Deux-Mers est une région particulièrement humide : coincée entre deux rivières, elle accumule les brouillards de vallée en automne et en hiver, et reçoit des précipitations supérieures à la moyenne girondine. Les toitures en tuiles canal, avec leur surface poreuse et leurs joints de mortier, sont particulièrement sensibles à la colonisation par les mousses et les lichens dans ce contexte. DT Couverture réalise des démoussages réguliers dans tout le secteur : nettoyage basse pression, traitement biocide homologué, application d'hydrofuge pour protéger durablement vos tuiles. Sur les propriétés viticoles où l'esthétique des bâtiments est un enjeu commercial (oenotourisme, dégustations), un démoussage bien réalisé valorise immédiatement l'image de la propriété.",
+      },
+      {
+        title: "Charpente, isolation et bâtiments agricoles autour de Branne",
+        content: "Le secteur de Branne concentre de nombreux corps de ferme viticoles dont les dépendances — pressoirs, hangars à matériel, caves coopératives — ont des toitures en mauvais état. DT Couverture intervient sur ces bâtiments avec les techniques adaptées à leurs spécificités : diagnostic de structure pour les charpentes de grande portée, dépose sélective sur les bacs acier ou les plaques fibrociment à remplacer, pose de bac acier nervuré avec isolation intégrée (complexe bi-couche) pour les hangars utilisés comme lieu de stockage ou de dégust. Pour les granges réhabilitées en gîtes ruraux — nombreux dans le secteur touristique de l'Entre-Deux-Mers — nous réalisons l'isolation complète des combles avec matériaux biosourcés, la pose de fenêtres de toit et la réfection de couverture en tuiles de pays.",
+      },
+    ],
+    localSpecificities: "Branne est un bourg de l'Entre-Deux-Mers Est, sur les coteaux dominant la Dordogne. Architecture de vignerons en pierre calcaire blanche. Humidité de vallée favorisant les mousses. Nombreux corps de ferme viticoles réhabilités. Secteur touristique (oenotourisme) : esthétique des bâtiments importante.",
+    nearbyCommunes: ["Daignac", "Moulon", "Espiet", "Tizac-de-Curton", "Génissac", "Izon", "Castillon-la-Bataille"],
+    faq: [
+      { question: "Combien coûte un démoussage à Branne ?", answer: "Pour une maison de vigneron avec environ 80 à 130 m² de toiture, le démoussage + traitement biocide se situe souvent entre 750 et 1 600 €. Avec hydrofuge protecteur, comptez 2 000 à 3 500 €. Prix proportionnel à la surface et à la complexité d'accès." },
+      { question: "Intervenez-vous aussi à Daignac, Moulon et Génissac ?", answer: "Oui, nous couvrons tout le secteur de l'Entre-Deux-Mers Est : Branne, Daignac, Moulon, Espiet, Tizac-de-Curton, Génissac, Izon et les communes voisines. Déplacement inclus dans le devis." },
+      { question: "Peut-on isoler une grange réhabilitée en gîte à Branne ?", answer: "Oui, c'est même indispensable pour le confort et la performance énergétique d'un gîte rural. Nous réalisons l'isolation sous rampants (laine de bois ou chanvre pour le confort acoustique et hygrothermique), la pose de Velux et la réfection de couverture en tuiles de pays. Devis sur mesure." },
+      { question: "Comment savoir si ma charpente à Branne est encore saine ?", answer: "Un diagnostic visuel en combles permet d'identifier les signes d'attaque biologique (galeries d'insectes, taches de mérule, poutres ramollies) ou de désordre structurel (flèche du faîtage, écartement des murs). Nous réalisons ce diagnostic gratuitement lors de notre visite pour le devis." },
+      { question: "Traitez-vous aussi les infiltrations par les cheminées à Branne ?", answer: "Oui. Les solins autour des cheminées sont souvent la première source de fuite dans les maisons anciennes de l'Entre-Deux-Mers. Nous réalisons la reprise complète des solins au mortier de chaux hydraulique, avec pose d'une membrane d'étanchéité sous le solin pour une protection maximale." },
+    ],
+  },
 ];
 
 /** URL pour un tag ville : page locale couvreur si elle existe, sinon zone d'intervention. */
