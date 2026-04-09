@@ -1483,6 +1483,208 @@ export const cities: CityData[] = [
       { question: "Faites-vous des contrats d'entretien annuel à Camps-sur-l'Isle ?", answer: "Oui. Notre contrat de visite annuelle comprend : inspection complète en toiture, nettoyage des gouttières, petites réparations préventives, rapport photo écrit. C'est la formule idéale pour les propriétaires éloignés ou en résidence secondaire. Contactez-nous pour un devis." },
     ],
   },
+
+  // ── LOT 4 ─────────────────────────────────────────────────────────────────
+  {
+    slug: "couvreur-saint-seurin-sur-l-isle",
+    name: "Saint-Seurin-sur-l'Isle",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33660",
+    population: "2 100",
+    distance: "10 km",
+    metaTitle: "Couvreur Saint-Seurin-sur-l'Isle (33660) | Toiture, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Saint-Seurin-sur-l'Isle (33660) : rénovation toiture, tuiles canal, zinguerie, charpente, isolation, démoussage. Vallée de l'Isle. Devis gratuit.",
+    h1: "Couvreur à Saint-Seurin-sur-l'Isle : toiture en vallée de l'Isle",
+    heroText: "Vous cherchez un couvreur à Saint-Seurin-sur-l'Isle ? DT Couverture intervient à 10 km depuis Saint-Denis-de-Pile sur toutes vos toitures : rénovation, réparation, zinguerie, démoussage. Devis gratuit.",
+    sections: [
+      {
+        title: "Saint-Seurin-sur-l'Isle : bourg industriel de la vallée reconverti en commune résidentielle",
+        content: "Saint-Seurin-sur-l'Isle est une commune de la vallée de l'Isle dont l'identité a été forgée par l'industrie du papier et du carton qui y prospéra au XIXe et XXe siècle. Cette histoire industrielle a laissé un tissu bâti particulier : en plus des maisons de bourg en pierre calcaire caractéristiques du Libournais, la commune compte d'anciens logements ouvriers en briques rouges, des maisons de contremaître plus cossues, et des pavillons des années 1960-1980 construits pour les employés des usines locales. Aujourd'hui, Saint-Seurin est devenue essentiellement résidentielle et agricole, et ses toitures reflètent toutes ces générations de construction. DT Couverture connaît ces typologies variées et adapte son intervention à chaque cas : tuiles canal sur les maisons anciennes en pierre, tuiles mécaniques sur les pavillons ouvriers, ardoises sur quelques maisons de maître du bourg.",
+      },
+      {
+        title: "Les toitures en briques et en pierre de Saint-Seurin : spécificités et entretien",
+        content: "Les maisons en briques rouges de Saint-Seurin — héritage de l'architecture industrielle locale — présentent des couvertures souvent en tuiles plates ou mécaniques à profil bas, avec des pentes parfois assez douces (25 à 30°). Ces faibles pentes imposent des exigences d'étanchéité renforcées : l'écran sous-toiture doit être en excellent état, les recouvrements de tuiles respectés et les solins refaits régulièrement. DT Couverture porte une attention particulière à ces points lors de ses interventions sur ce type de bâtiment. Pour les maisons en pierre calcaire du bourg, les toitures en tuiles canal nécessitent un entretien régulier du mortier de pose (chaux NHL) et un démoussage tous les 5 à 8 ans pour éviter la dégradation prématurée de la surface poreuse des tuiles. La vallée de l'Isle, avec ses brouillards persistants et son humidité de rivière, accélère ces processus.",
+      },
+      {
+        title: "Isolation et performance thermique des maisons de Saint-Seurin",
+        content: "Le parc de maisons ouvrières et de pavillons des années 1950-1985 de Saint-Seurin présente généralement de faibles performances thermiques : combles non isolés ou avec une isolation insuffisante, toitures sans écran sous-toiture, ponts thermiques fréquents. L'isolation des combles par soufflage est la première priorité pour ces logements : un geste simple, rapide (une journée de travail), peu coûteux après aides et dont les économies sur la facture de chauffage sont immédiatement perceptibles. DT Couverture réalise cette prestation en vérifiant systématiquement l'état de la couverture et la ventilation des combles avant d'intervenir — une ventilation insuffisante entraînerait de la condensation sous la couverture qui annulerait les bénéfices de l'isolation. Nous montons les dossiers MaPrimeRénov' et CEE pour maximiser votre remboursement.",
+      },
+      {
+        title: "Gouttières, zinguerie et urgences à Saint-Seurin-sur-l'Isle",
+        content: "La rivière Isle, dont Saint-Seurin longe la rive pendant plusieurs kilomètres, crée un microclimat de basse vallée particulièrement humide avec des crues saisonnières qui peuvent affecter les sous-sols mais aussi les gouttières et descentes d'eaux pluviales chargées de débris végétaux charriés par les débordements. DT Couverture assure la pose et le remplacement des gouttières en aluminium prélaqué ou en zinc naturel, le débouchage des descentes obstruées et l'entretien complet des réseaux d'évacuation des eaux pluviales. Pour les urgences — fuite après tempête, tuile arrachée par le vent — nous intervenons sous 24h depuis notre siège de Saint-Denis-de-Pile, à seulement 10 km.",
+      },
+    ],
+    localSpecificities: "Saint-Seurin-sur-l'Isle mêle bâti en pierre calcaire et architecture de briques rouges (héritage industriel). Microclimat de basse vallée de l'Isle : humidité élevée, crues saisonnières, brouillards. Parc de logements ouvriers des années 1950-1980 nécessitant isolation et entretien. À 10 km de DT Couverture.",
+    nearbyCommunes: ["Abzac", "Camps-sur-l'Isle", "Savignac-de-l'Isle", "Guitres", "Coutras", "Saint-Médard-de-Guizières"],
+    faq: [
+      { question: "Quelle est la particularité des maisons en briques rouges de Saint-Seurin ?", answer: "Les maisons en briques rouges ont souvent des toitures à faible pente nécessitant une étanchéité renforcée (écran sous-toiture de qualité, tuiles à grand recouvrement). Leurs solins et leurs gouttières méritent une vérification régulière car les joints entre brique et zinguerie sont des points de faiblesse courants." },
+      { question: "Combien coûte l'isolation des combles à Saint-Seurin-sur-l'Isle ?", answer: "L'isolation par soufflage de combles perdus coûte généralement 15 à 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être nul pour les ménages modestes. Nous vous aidons à monter le dossier." },
+      { question: "Les crues de l'Isle peuvent-elles endommager une toiture à Saint-Seurin ?", answer: "Les crues n'atteignent pas les toitures directement, mais l'humidité prolongée après une crue accélère la croissance des mousses et les cycles gel-dégel sur les tuiles déjà fragilisées. Un démoussage après une période de crue intense peut prévenir des dégâts prématurés." },
+      { question: "Intervenez-vous en urgence le soir ou le week-end à Saint-Seurin ?", answer: "Oui, 7j/7 pour les urgences toiture. Appelez le 07 77 30 47 20 — nous intervenons sous 24h depuis Saint-Denis-de-Pile (10 km)." },
+      { question: "Quel prix pour un démoussage à Saint-Seurin-sur-l'Isle ?", answer: "Pour une maison standard de 80 à 120 m² de toiture, comptez généralement 700 à 1 500 € (nettoyage + traitement). Avec hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place." },
+    ],
+  },
+  {
+    slug: "couvreur-savignac-de-l-isle",
+    name: "Savignac-de-l'Isle",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33910",
+    population: "1 600",
+    distance: "7 km",
+    metaTitle: "Couvreur Savignac-de-l'Isle (33910) | Toiture, Réparation, Démoussage | Devis Gratuit",
+    metaDescription: "Couvreur à Savignac-de-l'Isle (33910) : rénovation toiture, tuiles, zinguerie, charpente, isolation, démoussage. Commune voisine de Saint-Denis-de-Pile. Devis gratuit.",
+    h1: "Couvreur à Savignac-de-l'Isle : toiture à 7 km du siège DT Couverture",
+    heroText: "Savignac-de-l'Isle est une commune voisine de Saint-Denis-de-Pile, à seulement 7 km. DT Couverture intervient ici avec la même réactivité que sur sa commune de siège : devis sous 24h, urgences en moins d'une heure.",
+    sections: [
+      {
+        title: "Savignac-de-l'Isle : commune voisine, terrain familier",
+        content: "Savignac-de-l'Isle est séparée de Saint-Denis-de-Pile, siège de DT Couverture, par quelques kilomètres de route de l'Isle. Les deux communes partagent le même contexte géographique — la plaine alluviale de l'Isle entre les coteaux du Fronsadais et les terrasses de la rive droite — et le même profil bâti : maisons en pierre calcaire avec toitures en tuiles canal dans les centres-bourgs, pavillons en tuiles mécaniques dans les lotissements récents, et quelques corps de ferme dispersés sur les terres agricoles. DT Couverture connaît intimement ce territoire et peut intervenir à Savignac avec des délais encore meilleurs qu'à Libourne ou Coutras. Nos artisans passent régulièrement sur la commune pour des chantiers en cours, ce qui facilite les visites de diagnostic et les petites interventions de proximité.",
+      },
+      {
+        title: "Rénovation et réparation de toiture à Savignac-de-l'Isle",
+        content: "Le bâti de Savignac-de-l'Isle présente les mêmes besoins en couverture que les communes voisines de la vallée de l'Isle. Les toitures en tuiles canal des maisons de bourg nécessitent un entretien régulier : remplacement des tuiles cassées par le gel ou la grêle, reprise des mortiers de faîtières, nettoyage et redressement des tuiles de rive déplacées par le vent. Les pavillons des années 1980-2000 approchent leur renouvellement de toiture : l'état de l'écran sous-toiture est souvent le facteur décisif — un écran perforé ne peut plus remplir son rôle de sécurité en cas de tuile manquante. DT Couverture évalue l'état de l'écran lors de chaque diagnostic, depuis l'intérieur des combles (perforations visibles en lumière du jour) et depuis l'extérieur (déformation de l'écran par le vent sous les liteaux). Cette évaluation guide la décision entre réparation partielle et réfection complète.",
+      },
+      {
+        title: "Démoussage et protection des tuiles : le microclimat de la vallée de l'Isle",
+        content: "La vallée de l'Isle, en fond de cuvette entre les coteaux, concentre l'humidité atmosphérique plus longtemps que les plateaux environnants. À Savignac-de-l'Isle comme à Saint-Denis-de-Pile, les toitures non traitées se couvrent de mousses vertes et de lichens gris en quelques années seulement — en particulier sur les versants à l'ombre (orientation nord ou nord-est) et sous les arbres. DT Couverture propose un programme d'entretien complet : démoussage basse pression (pas de haute pression qui éclate les tuiles poreuses), biocide-algicide homologué laissé agir 3 à 6 mois pour une action en profondeur, et application d'un hydrofuge pénétrant en finition. Pour les propriétaires qui souhaitent limiter la fréquence des démoussages, l'hydrofuge est l'investissement le plus rentable : il divise par deux la vitesse de colonisation des tuiles.",
+      },
+      {
+        title: "Velux, zinguerie et petites urgences à Savignac-de-l'Isle",
+        content: "La proximité de notre siège fait de Savignac-de-l'Isle une commune où nous intervenons souvent pour des travaux courants : pose de fenêtres de toit pour des combles à aménager, remplacement d'une gouttière décrochée, débouchage d'une descente d'eau pluviale obstruée, pose d'un solin refait autour d'une cheminée. Ces interventions courtes (demi-journée à une journée) sont réalisées avec la même rigueur que les grands chantiers de rénovation. Nous assurons également le service d'urgence 7j/7 sur la commune : tuile manquante, fuite active, dégât de tempête — nous répondons sous 24h.",
+      },
+    ],
+    localSpecificities: "Savignac-de-l'Isle est à 7 km du siège de DT Couverture — parmi les communes les plus proches. Même contexte géographique et bâti que Saint-Denis-de-Pile. Réactivité maximale : devis sous 24h, urgences en moins d'une heure.",
+    nearbyCommunes: ["Saint-Denis-de-Pile", "Galgon", "Les Billaux", "Saint-Seurin-sur-l'Isle", "Abzac", "Fronsac"],
+    faq: [
+      { question: "Savignac-de-l'Isle est-elle dans votre zone d'intervention principale ?", answer: "Oui, c'est l'une de nos communes les plus proches (7 km). Nous intervenons à Savignac avec les mêmes conditions et tarifs que sur notre commune de Saint-Denis-de-Pile. Pas de surcoût de déplacement." },
+      { question: "Comment évaluez-vous l'état de l'écran sous-toiture à Savignac ?", answer: "Nous inspectons l'écran depuis l'intérieur des combles (des perforations laissent passer la lumière) et depuis l'extérieur lors du diagnostic en toiture. Un écran perforé ou décollé doit être remplacé lors de la prochaine réfection de couverture." },
+      { question: "Quel est le délai pour une urgence toiture à Savignac-de-l'Isle ?", answer: "Moins d'une heure dans la plupart des cas — nous sommes à 7 km. Pour les fuites actives ou les dégâts de tempête, nous intervenons en priorité pour le bâchage d'urgence." },
+      { question: "Combien coûte un démoussage à Savignac-de-l'Isle ?", answer: "Pour une maison standard (80-120 m²), comptez 700 à 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit et déplacement offert depuis Saint-Denis-de-Pile." },
+      { question: "Proposez-vous des abonnements entretien à Savignac-de-l'Isle ?", answer: "Oui. Une visite annuelle avec inspection complète, nettoyage des gouttières, petites réparations préventives et rapport photo vous permet d'anticiper les dépenses et d'éviter les urgences coûteuses. Tarif sur devis selon la surface de votre toiture." },
+    ],
+  },
+  {
+    slug: "couvreur-galgon",
+    name: "Galgon",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33133",
+    population: "2 000",
+    distance: "9 km",
+    metaTitle: "Couvreur Galgon (33133) | Toiture, Rénovation, Zinguerie | Devis Gratuit",
+    metaDescription: "Couvreur à Galgon (33133) : rénovation toiture, zinguerie, charpente, isolation, démoussage. Entre Libourne et Saint-Denis-de-Pile. Artisan de proximité. Devis gratuit.",
+    h1: "Couvreur à Galgon : toiture entre Libourne et le Fronsadais",
+    heroText: "Vous cherchez un couvreur à Galgon ? À 9 km de notre siège, DT Couverture est votre artisan de proximité pour tous travaux de toiture. Rénovation, démoussage, zinguerie, charpente. Devis gratuit.",
+    sections: [
+      {
+        title: "Galgon, commune résidentielle entre Libourne et le Fronsadais",
+        content: "Galgon est une commune résidentielle située au cœur du triangle formé par Libourne, Saint-Denis-de-Pile et Fronsac. Sa position intermédiaire, ses liaisons routières commodes avec Libourne et son cadre de vie agréable en font une commune attractive pour les familles qui cherchent à s'installer hors des zones urbaines denses. Le bâti est à dominante résidentielle récente — lotissements des années 1985-2010 en tuiles mécaniques — avec un centre-bourg plus ancien en pierre calcaire. Les vignes occupent encore une partie du territoire communal, et quelques propriétés viticoles modestes conservent leur caractère agricole. La commune est exposée aux mêmes conditions climatiques que les communes voisines du Fronsadais : vents de nord-ouest, humidité de la vallée de l'Isle, brouillards d'automne.",
+      },
+      {
+        title: "Rénovation des toitures résidentielles de Galgon : le point sur les besoins courants",
+        content: "Le parc pavillonnaire de Galgon, construit majoritairement entre 1985 et 2010, présente des toitures dont les premières générations atteignent ou dépassent leur durée de vie optimale. Sur ces maisons de 20 à 40 ans, les problèmes récurrents sont : l'encrassement et la porosité des tuiles mécaniques (absorption d'eau accélérée par l'absence d'hydrofuge), les solins de cheminée fissurés, les rivets de gouttières corrodés qui laissent les éléments se décrocher, et les chatières de ventilation obstruées par des débris ou par les feuilles mortes. DT Couverture réalise un bilan complet de ces points lors de chaque visite de diagnostic, et vous remet une liste priorisée des travaux à effectuer dans l'immédiat, ceux à surveiller à 3-5 ans, et ceux en bon état. Cette transparence vous permet de budgéter sereinement l'entretien de votre toiture.",
+      },
+      {
+        title: "Galgon et le vignoble du Fronsadais : toitures des propriétés viticoles",
+        content: "Galgon appartient à l'aire géographique du Fronsadais, et quelques propriétés viticoles de la commune relèvent des appellations Fronsac ou Canon-Fronsac. Ces bâtiments — souvent plus modestes que les grands châteaux des appellations voisines — nécessitent les mêmes soins sur leur toiture : tuiles canal en terre cuite bien entretenues, zinguerie propre, cheminées étanches. Pour les propriétés qui pratiquent l'accueil oenotouristique, une toiture en bon état participe à l'image professionnelle de la propriété. DT Couverture propose des plans d'entretien pluriannuels pour ces domaines, combinant démoussage régulier, vérification annuelle et réparations ponctuelles.",
+      },
+      {
+        title: "Isolation, Velux et petites urgences à Galgon",
+        content: "Les demandes les plus fréquentes à Galgon concernent l'isolation des combles (de nombreuses maisons des années 1990 ont des combles perdus non isolés), la pose de fenêtres de toit pour des projets d'aménagement, et les petites réparations courantes (gouttière arrachée, tuile cassée, solin décollé). DT Couverture répond à ces demandes avec la même réactivité qu'à Saint-Denis-de-Pile : le déplacement de 9 km n'impose aucune contrainte particulière. Chaque intervention fait l'objet d'un rapport avec photos transmis par mail, utile pour votre dossier de revente ou pour le suivi de l'état de votre toiture.",
+      },
+    ],
+    localSpecificities: "Galgon est au cœur du triangle Saint-Denis-de-Pile / Libourne / Fronsac, à 9 km de DT Couverture. Bâti résidentiel récent (1985-2010) avec besoins en entretien croissants. Quelques propriétés du vignoble Fronsadais. Exposition aux vents et humidité de la vallée de l'Isle.",
+    nearbyCommunes: ["Saint-Denis-de-Pile", "Les Billaux", "Savignac-de-l'Isle", "Fronsac", "Vérac", "La Rivière"],
+    faq: [
+      { question: "Ma maison à Galgon date des années 1990 — ai-je besoin d'un démoussage ?", answer: "Si votre toiture présente des traces vertes ou grises sur les tuiles, un démoussage est nécessaire. Pour les tuiles mécaniques de 25-35 ans, un traitement suivi d'un hydrofuge peut prolonger leur durée de vie de 10 ans. Diagnostic gratuit pour évaluer l'état réel." },
+      { question: "Combien coûte la pose d'un Velux à Galgon ?", answer: "Entre 800 et 1 600 € fourni-posé pour un modèle standard. La création d'une nouvelle ouverture (modification de charpente) ajoute 200 à 400 €. Devis gratuit sur place." },
+      { question: "Faites-vous des plans d'entretien pour les propriétés viticoles à Galgon ?", answer: "Oui. Nous proposons des contrats d'entretien pluriannuels combinant visite annuelle, démoussage tous les 5-7 ans et réparations ponctuelles incluses. Formule adaptée aux besoins oenotouristiques (bâtiments en parfait état pour les visites)." },
+      { question: "Quel délai pour une urgence toiture à Galgon ?", answer: "À 9 km, nous pouvons être à Galgon en 15 minutes. Urgences traitées 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
+      { question: "Intervenez-vous aussi à La Rivière et aux Billaux depuis Galgon ?", answer: "Oui, La Rivière et Les Billaux font partie de notre zone d'intervention courante. Mêmes tarifs et mêmes délais que pour Galgon. Devis gratuit, déplacement inclus." },
+    ],
+  },
+  {
+    slug: "couvreur-verac",
+    name: "Vérac",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33240",
+    population: "2 800",
+    distance: "18 km",
+    metaTitle: "Couvreur Vérac (33240) | Toiture, Rénovation, Isolation | Devis Gratuit",
+    metaDescription: "Couvreur à Vérac (33240) : rénovation toiture, zinguerie, charpente, isolation, démoussage. Entre Libourne et Saint-André-de-Cubzac. Artisan Gironde. Devis gratuit.",
+    h1: "Couvreur à Vérac : toiture et rénovation entre Libournais et Cubzaguais",
+    heroText: "Vous cherchez un couvreur à Vérac ? DT Couverture intervient à 18 km sur toutes vos toitures. Rénovation, isolation, zinguerie, charpente, démoussage et urgences. Devis gratuit.",
+    sections: [
+      {
+        title: "Vérac entre Libournais et Cubzaguais : un territoire en transition",
+        content: "Vérac est une commune de taille moyenne implantée entre le Libournais et le Cubzaguais, dans un secteur de collines et de vallées sèches qui s'étend vers le nord de la Dordogne. Sa situation entre deux pôles d'attraction — Libourne à l'est et Saint-André-de-Cubzac au sud — lui confère un profil résidentiel marqué : de nombreux ménages y vivent et travaillent dans les communes voisines ou dans la métropole bordelaise. Le bâti associe des maisons de bourg anciennes en pierre calcaire, des pavillons résidentiels des décennies 1970-2000 et quelques propriétés agricoles. Les toitures du secteur sont soumises aux vents d'ouest qui balayent le plateau depuis l'estuaire de la Gironde, avec des rafales parfois importantes lors des épisodes de tempêtes atlantiques (Xynthia, Klaus, épisodes de janvier et février).",
+      },
+      {
+        title: "Impact des tempêtes atlantiques sur les toitures de Vérac",
+        content: "Le secteur de Vérac, exposé aux vents d'ouest venant de l'Atlantique et de l'estuaire, est l'un des plus sollicités mécaniquement de notre zone d'intervention. Les tempêtes hivernales — souvent accompagnées de pluies intenses et de rafales à 100-120 km/h lors des épisodes les plus violents — déplacent des tuiles, arrachent des faîtières et décrochent des gouttières sur les toitures les plus vulnérables. DT Couverture renforce les couvertures exposées de Vérac en priorité sur trois points : fixation des faîtières et des rives au mortier de chaux NHL (plus souple et plus tenace que le ciment), pose de clips de fixation supplémentaires sur les rangées de tuiles mécaniques des versants ouest, et fixation renforcée des supports de gouttières. Ces mesures préventives, réalisées lors d'une visite de diagnostic, évitent les dépenses d'urgence après tempête.",
+      },
+      {
+        title: "Rénovation et isolation à Vérac : profiter des aides à la rénovation",
+        content: "Les maisons anciennes et les pavillons des années 1970-1990 de Vérac présentent souvent des DPE énergivores (D, E, F) que les propriétaires souhaitent améliorer pour réduire leurs factures de chauffage et valoriser leur bien à la revente. L'isolation des combles est le premier geste de rénovation énergétique à réaliser, avant le changement de fenêtres ou le remplacement du système de chauffage. DT Couverture réalise l'isolation par soufflage ou par panneaux selon la configuration des combles, avec production de tous les documents requis pour les dossiers d'aide. Le bonus « sortie de passoire thermique » de MaPrimeRénov' peut majorer significativement l'aide lorsque les travaux font passer un logement de F ou G à D ou C — une cible atteignable pour de nombreuses maisons de Vérac avec isolation + autres gestes.",
+      },
+      {
+        title: "Zinguerie et eaux pluviales à Vérac : adapter les réseaux aux pluies intenses",
+        content: "Les précipitations peuvent être intenses dans le secteur de Vérac lors des épisodes orageux de printemps-été et des tempêtes automnales. Un réseau d'évacuation des eaux pluviales sous-dimensionné déborde et crée des ruissellements le long des murs qui favorisent les infiltrations en fondation et dégradent les enduits. DT Couverture évalue le dimensionnement de vos gouttières et descentes lors de chaque diagnostic, et propose les améliorations nécessaires : gouttières de section augmentée, descentes supplémentaires sur les grandes surfaces, gardes-gravier pour éviter les obstructions. Sur les maisons dont les descentes d'eaux pluviales se déversent contre les murs ou en pied de façade, nous réalisons le raccordement à des puisards perdants ou à des drains de fondation.",
+      },
+    ],
+    localSpecificities: "Vérac est exposée aux vents d'ouest et aux tempêtes atlantiques qui sollicitent fortement les couvertures. Territoire entre Libournais et Cubzaguais, bâti mixte (pierre + pavillons). Fortes précipitations orageuses : dimensionnement des gouttières crucial. À 18 km de DT Couverture.",
+    nearbyCommunes: ["Saint-Denis-de-Pile", "Galgon", "Lagorce", "Saint-André-de-Cubzac", "Lugon-et-l'Île-du-Carnay", "Les Billaux"],
+    faq: [
+      { question: "Comment protéger ma toiture à Vérac contre les tempêtes ?", answer: "Les points à renforcer : faîtières et rives au mortier de chaux NHL, clips de fixation supplémentaires sur les versants ouest, gouttières avec supports renforcés. Une visite préventive permet d'identifier et de consolider les points faibles avant la saison des tempêtes (novembre-mars)." },
+      { question: "Intervenez-vous en urgence après une tempête à Vérac ?", answer: "Oui, 7j/7 sous 24h pour les urgences post-tempête. Nous sécurisons votre toiture par un bâchage professionnel, établissons un constat pour votre assurance et réalisons la réparation définitive dans les meilleurs délais." },
+      { question: "Quelles aides pour améliorer le DPE de ma maison à Vérac ?", answer: "MaPrimeRénov' et les CEE financent l'isolation des combles (et d'autres gestes). Le bonus 'sortie de passoire' majore l'aide si votre logement passe de F/G à D ou mieux. Nous réalisons l'isolation et préparons tous les dossiers pour vous." },
+      { question: "Combien coûte un démoussage à Vérac ?", answer: "Pour une maison de 80 à 120 m² de toiture, le démoussage + traitement coûte généralement entre 700 et 1 500 €. Avec hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place." },
+      { question: "Quand faut-il remplacer les gouttières à Vérac ?", answer: "Les gouttières en aluminium durent 20 à 30 ans, en zinc 40 à 60 ans. Les signes de remplacement nécessaire : déformation, fissures, supports rouillés, joints décollés, débordements récurrents. Inspection gratuite lors du devis." },
+    ],
+  },
+  {
+    slug: "couvreur-lagorce",
+    name: "Lagorce",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33230",
+    population: "1 800",
+    distance: "12 km",
+    metaTitle: "Couvreur Lagorce (33230) | Toiture Rurale, Rénovation, Démoussage | Devis Gratuit",
+    metaDescription: "Couvreur à Lagorce (33230) : rénovation toiture, zinguerie, charpente, isolation, démoussage. Commune rurale Nord-Gironde. Artisan de proximité. Devis gratuit.",
+    h1: "Couvreur à Lagorce : toiture rurale en Nord-Gironde",
+    heroText: "Vous avez besoin d'un couvreur à Lagorce ? DT Couverture intervient à 12 km sur toutes vos toitures. Rénovation, démoussage, zinguerie, charpente, urgences. Devis gratuit.",
+    sections: [
+      {
+        title: "Lagorce et le Nord-Gironde rural : un territoire agricole aux besoins spécifiques",
+        content: "Lagorce est une commune rurale du nord de la Gironde, entre l'Isle et les coteaux boisés qui marquent la transition avec le Périgord. Le territoire communal, largement agricole (polyculture, élevage, quelques vignes), est parsemé de hameaux et d'exploitations isolées dont les bâtiments nécessitent un entretien régulier de leur couverture. Le bâti se partage entre les maisons de bourg en pierre calcaire à toitures en tuiles canal, les fermes en moellons de silex ou de calcaire avec des granges aux couvertures souvent anciennes, et quelques constructions récentes en tuiles mécaniques sur les lotissements périphériques. La particularité de Lagorce est son caractère dispersé : les hameaux et les exploitations isolées sont éloignés du bourg, ce qui peut rendre l'accès à un artisan couvreur difficile. DT Couverture couvre l'ensemble de ce territoire sans surcoût de déplacement.",
+      },
+      {
+        title: "Charpentes traditionnelles à Lagorce : diagnostic et traitement",
+        content: "Les bâtiments anciens de Lagorce — fermes du XVIIIe et XIXe siècles, maisons de bourg rénovées — possèdent des charpentes traditionnelles en chêne ou en châtaignier façonnées par les charpentiers locaux d'autrefois. Ces charpentes, lorsqu'elles sont bien conservées, peuvent tenir plusieurs siècles. Mais les conditions d'humidité du Nord-Gironde — brouillards de l'Isle, végétation dense autour des fermes isolées — favorisent le développement des champignons lignivores (coniophore, mérule) qui fragilisent le bois en quelques années si l'humidité n'est pas contrôlée. DT Couverture réalise le diagnostic complet des charpentes anciennes : inspection visuelle et tactile de chaque pièce de bois, prélèvements si nécessaire pour identifier les champignons, relevé photographique intégral. Le traitement curatif combine l'injection de produits fongicides et insecticides sous pression, l'assèchement de la source d'humidité (réfection de la couverture ou des solins), et le remplacement des pièces trop dégradées.",
+      },
+      {
+        title: "Couverture des granges et des bâtiments agricoles de Lagorce",
+        content: "Les exploitations agricoles de Lagorce possèdent des bâtiments de stockage, des granges à foin et des hangars à matériel dont la couverture joue un rôle fonctionnel essentiel. Une grange dont la toiture fuit compromet le stockage du fourrage et peut causer des pertes économiques importantes pour un éleveur. DT Couverture intervient sur ces bâtiments avec les techniques adaptées : remplacement des bacs acier percés ou rouillés, reprise des faîtages et des rives, nettoyage et démoussage des couvertures en fibrociment non amiantées. Pour les bâtiments en fibrociment datant d'avant 1997 (amiante potentiel), nous réalisons une analyse préalable et orientons vers un désamianteur agréé si nécessaire. Sur les granges à restaurer pour un usage de gîte rural, nous réalisons la réfection complète de la couverture et l'isolation thermique des combles.",
+      },
+      {
+        title: "Démoussage saisonnier et entretien régulier à Lagorce",
+        content: "La végétation dense qui entoure de nombreuses propriétés rurales de Lagorce — arbres fruitiers, haies de charme ou de chênes, bosquets de bois — crée des conditions idéales pour la prolifération des mousses sur les toitures : ombre prolongée, humidité retenue, feuilles mortes accumulées dans les gouttières. Dans ces conditions, un démoussage tous les 4 à 6 ans est nécessaire pour maintenir une toiture en bon état. DT Couverture propose un suivi personnalisé pour les propriétés rurales isolées : visite annuelle légère (inspection + nettoyage des gouttières + rapport), démoussage planifié tous les 5 ans, et petites réparations préventives réalisées pendant la visite annuelle. Ce suivi régulier évite les déconvenues lors d'une reprise de toiture à grande échelle.",
+      },
+    ],
+    localSpecificities: "Lagorce est une commune rurale dispersée du Nord-Gironde avec des hameaux isolés. Charpentes anciennes (chêne, châtaignier) exposées aux champignons lignivores dans un environnement humide. Nombreux bâtiments agricoles nécessitant un entretien de couverture régulier. À 12 km de DT Couverture.",
+    nearbyCommunes: ["Abzac", "Coutras", "Guitres", "Bonzac", "Les Peintures", "Saint-Médard-de-Guizières", "Saint-Seurin-sur-l'Isle"],
+    faq: [
+      { question: "Intervenez-vous dans les hameaux isolés de Lagorce ?", answer: "Oui, sans surcoût. Nous couvrons l'ensemble des hameaux et des exploitations isolées de la commune. La connaissance du terrain local nous permet de trouver facilement les propriétés les plus éloignées du bourg." },
+      { question: "Comment savoir si ma charpente ancienne à Lagorce est attaquée par des champignons ?", answer: "Les champignons lignivores se manifestent par des filaments blancs ou bruns sur le bois, une odeur de cave humide, et un bois qui sonne creux ou s'effrite sous la pression des doigts. La mérule peut aussi produire des formations cotonneuses orangées. Diagnostic gratuit sur place." },
+      { question: "Faites-vous le désamiantage avant de couvrir un bâtiment agricole à Lagorce ?", answer: "Nous n'effectuons pas nous-mêmes le désamiantage, mais nous réalisons le constat préalable et vous orientons vers un opérateur certifié. Nous coordonnons ensuite le chantier de re-couverture après désamiantage." },
+      { question: "Combien coûte la réfection de la toiture d'une grange à Lagorce ?", answer: "La réfection d'une grange varie beaucoup selon la surface (souvent 100 à 300 m²), le matériau (bac acier, tuile, fibrociment) et l'état de la charpente. Pour un devis précis, nous visitons systématiquement les lieux avant de chiffrer. Diagnostic et devis gratuits." },
+      { question: "Proposez-vous un suivi annuel pour les propriétés rurales isolées à Lagorce ?", answer: "Oui. Nos contrats de suivi annuel sont spécialement adaptés aux propriétés rurales : inspection complète, nettoyage des gouttières et des descentes, petites réparations préventives, rapport photo. Formule idéale pour les propriétaires éloignés ou peu disponibles." },
+    ],
+  },
 ];
 
 /** URL pour un tag ville : page locale couvreur si elle existe, sinon zone d'intervention. */
