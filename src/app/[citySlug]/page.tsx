@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { cities, services, siteConfig, testimonials } from "@/lib/data";
+import {
+  cities,
+  getCityInterventionHref,
+  services,
+  siteConfig,
+  testimonials,
+} from "@/lib/data";
 import CallbackBanner from "@/components/CallbackBanner";
 import CtaBanner from "@/components/CtaBanner";
 import ContactForm from "@/components/ContactForm";
@@ -210,15 +216,19 @@ export default async function CityPage({ params }: PageProps) {
                   communes environnantes :
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {city.nearbyCommunes.map((commune) => (
-                    <span
-                      key={commune}
-                      className="bg-off-white text-dark-gray text-sm font-medium px-4 py-2 rounded-full border border-lighter-gray"
-                    >
-                      <i className="fas fa-map-pin text-primary mr-1 text-xs" />
-                      {commune}
-                    </span>
-                  ))}
+                  {city.nearbyCommunes.map((commune) => {
+                    const href = getCityInterventionHref(commune);
+                    return (
+                      <Link
+                        key={commune}
+                        href={href}
+                        className="bg-off-white text-dark-gray text-sm font-medium px-4 py-2 rounded-full border border-lighter-gray inline-flex items-center transition-colors hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                      >
+                        <i className="fas fa-map-pin text-primary mr-1 text-xs shrink-0" aria-hidden />
+                        {commune}
+                      </Link>
+                    );
+                  })}
                 </div>
                 <p className="text-gray text-sm">
                   Vous ne trouvez pas votre commune ?{" "}
