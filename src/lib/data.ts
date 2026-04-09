@@ -1281,6 +1281,208 @@ export const cities: CityData[] = [
       { question: "Traitez-vous aussi les infiltrations par les cheminées à Branne ?", answer: "Oui. Les solins autour des cheminées sont souvent la première source de fuite dans les maisons anciennes de l'Entre-Deux-Mers. Nous réalisons la reprise complète des solins au mortier de chaux hydraulique, avec pose d'une membrane d'étanchéité sous le solin pour une protection maximale." },
     ],
   },
+
+  // ── LOT 3 ─────────────────────────────────────────────────────────────────
+  {
+    slug: "couvreur-arveyres",
+    name: "Arveyres",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33500",
+    population: "2 200",
+    distance: "8 km",
+    metaTitle: "Couvreur Arveyres (33500) | Toiture, Zinguerie, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Arveyres (33500) : rénovation toiture, zinguerie, charpente, isolation, démoussage. Commune périurbaine de Libourne, à 8 km de DT Couverture. Devis gratuit.",
+    h1: "Couvreur à Arveyres : toiture et rénovation en périphérie de Libourne",
+    heroText: "Vous cherchez un couvreur à Arveyres ? DT Couverture est à seulement 8 km de votre commune. Rénovation de toiture, zinguerie, charpente, isolation, démoussage : nous intervenons rapidement sur Arveyres et ses environs. Devis gratuit.",
+    sections: [
+      {
+        title: "Arveyres, commune périurbaine de Libourne : un bâti en pleine évolution",
+        content: "Arveyres est une commune résidentielle de la première couronne libournaise, riveraine de la Dordogne, dont la croissance démographique s'est accélérée depuis les années 1990 avec l'implantation de lotissements en accession à la propriété. Le bâti y est donc bimodal : un noyau de centre-bourg ancien en pierre calcaire avec toitures en tuiles canal et quelques maisons de maître, entouré d'un anneau de lotissements en tuiles mécaniques (les plus récents) et de maisons individuelles des années 1970-1990. Cette dualité se retrouve dans les besoins en couverture : entretien et rénovation du bâti ancien d'un côté, remplacement des premières générations de tuiles mécaniques et amélioration thermique du pavillonnaire de l'autre. La proximité de la Dordogne et les brouillards de vallée créent un microclimat particulièrement humide qui accélère la croissance des mousses sur les tuiles — toutes générations confondues.",
+      },
+      {
+        title: "Rénovation et entretien des toitures d'Arveyres : diagnostic et solution adaptée",
+        content: "À Arveyres, les toitures en tuiles mécaniques des années 1975-1995 approchent ou atteignent leur durée de vie optimale. Les signes qui doivent vous alerter : tuiles dont la couleur vire au gris anthracite (absorption d'eau excessive), traces d'auréoles humides sur le plafond des combles, gouttières qui débordent même sous des pluies modérées, solins de cheminée fissurants. DT Couverture réalise un diagnostic complet : inspection à la jumelle depuis le sol, puis montée en toiture pour évaluer l'état de chaque élément. Ce diagnostic, gratuit et sans engagement, vous permet de savoir précisément ce qui doit être remplacé maintenant, ce qui peut attendre 3 à 5 ans, et ce qui est encore en bon état. Nous dimensionnons ainsi vos travaux pour optimiser votre budget et éviter des dépenses prématurées.",
+      },
+      {
+        title: "Isolation et performance énergétique à Arveyres : priorité aux combles",
+        content: "Les pavillons d'Arveyres construits entre 1970 et 1995 présentent souvent des combles perdus sans isolation ou avec une isolation résiduelle insuffisante (quelques centimètres de laine de verre tassée). L'isolation par soufflage de ouate de cellulose ou de laine de verre est le moyen le plus efficace et le moins coûteux d'améliorer rapidement les performances thermiques de ces maisons. DT Couverture réalise cette intervention depuis l'extérieur (trappe en toiture) ou depuis l'intérieur, en une journée pour une maison standard. Nous nous assurons au préalable que la ventilation des combles est suffisante pour éviter la condensation sous la couverture — problème fréquent dans les environnements humides comme la vallée de la Dordogne. Les aides MaPrimeRénov' et CEE permettent de financer la quasi-totalité de cette isolation pour de nombreux foyers.",
+      },
+      {
+        title: "Urgences, zinguerie et petites réparations rapides à Arveyres",
+        content: "À 8 km du siège de DT Couverture à Saint-Denis-de-Pile, Arveyres bénéficie d'une réactivité d'intervention parmi les meilleures de notre zone. Pour une urgence — fuite soudaine, tuile cassée après un orage, gouttière arrachée —, nous pouvons être sur place en 15 à 20 minutes. Ce délai court est précieux pour limiter les dégâts des eaux en attendant la réparation définitive. Nos interventions courantes à Arveyres incluent : remplacement de tuiles cassées, débouchage et nettoyage de gouttières, reprise de solins, remplacement de descentes d'eaux pluviales en zinc ou aluminium, et bâchage d'urgence. Chaque intervention, même mineure, fait l'objet d'un rapport avec photos disponible sur demande.",
+      },
+    ],
+    localSpecificities: "Arveyres est une commune périurbaine de Libourne à 8 km de DT Couverture. Microclimat humide (bord de Dordogne, brouillards). Forte proportion de pavillons 1970-1995 en cours de vieillissement. Réactivité d'intervention maximale grâce à la proximité du siège.",
+    nearbyCommunes: ["Izon", "Génissac", "Libourne", "Les Billaux", "Cadarsac", "Vayres", "Moulon"],
+    faq: [
+      { question: "Quel est votre délai d'intervention à Arveyres ?", answer: "À 8 km de notre siège, nous pouvons être à Arveyres en 15 à 20 minutes pour une urgence. Pour un devis, nous nous déplaçons généralement sous 48h. Pour les travaux planifiés, le délai est de 1 à 3 semaines selon notre planning." },
+      { question: "Mon pavillon de 1985 à Arveyres a-t-il besoin d'une rénovation toiture ?", answer: "Une toiture de 40 ans mérite un diagnostic. Selon l'entretien et le matériau, elle peut être en bon état ou nécessiter une réfection partielle ou totale. Notre diagnostic gratuit sur place vous donnera une évaluation précise et honnête de l'état réel." },
+      { question: "Combien coûte l'isolation des combles à Arveyres ?", answer: "L'isolation par soufflage de combles perdus coûte généralement 15 à 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être très faible (voire nul pour les ménages modestes). Nous vous aidons à monter le dossier d'aide." },
+      { question: "Intervenez-vous aussi à Izon et Génissac depuis Arveyres ?", answer: "Oui, Izon et Génissac sont dans notre zone d'intervention habituelle, au même titre qu'Arveyres. Même réactivité, mêmes tarifs, même qualité d'intervention." },
+      { question: "Faites-vous le nettoyage des gouttières à Arveyres ?", answer: "Oui, le nettoyage et le débouchage de gouttières est une prestation courante que nous réalisons à Arveyres. Pour une maison standard, comptez 80 à 200 € selon la longueur et l'accès. Idéalement deux fois par an (printemps et automne) pour les maisons en milieu arboré." },
+    ],
+  },
+  {
+    slug: "couvreur-genissac",
+    name: "Génissac",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33420",
+    population: "3 000",
+    distance: "14 km",
+    metaTitle: "Couvreur Génissac (33420) | Toiture Entre-Deux-Mers, Isolation | Devis Gratuit",
+    metaDescription: "Couvreur à Génissac (33420) : rénovation toiture, isolation combles, zinguerie, charpente, démoussage. Entre-Deux-Mers, secteur Libournais. Artisan Gironde. Devis gratuit.",
+    h1: "Couvreur à Génissac : toiture et isolation en Entre-Deux-Mers libournais",
+    heroText: "Besoin d'un couvreur à Génissac ? DT Couverture intervient sur toutes les toitures de la commune et des environs. Artisan à 14 km, connaissance du bâti local, devis gratuit sur place.",
+    sections: [
+      {
+        title: "Génissac, commune résidentielle de l'Entre-Deux-Mers : profil du bâti",
+        content: "Génissac occupe une position charnière entre le Libournais et l'Entre-Deux-Mers, sur les coteaux calcaires qui dominent la plaine de la Dordogne. La commune est l'une des plus dynamiques démographiquement du secteur : ses lotissements récents et son environnement verdoyant attirent de nombreux ménages en recherche de résidence principale à mi-chemin entre Libourne et Bordeaux. Le bâti se caractérise donc par une majorité de constructions récentes (après 1990) en tuiles mécaniques, mêlées à quelques maisons de bourg plus anciennes en pierre avec tuiles canal. Les charpentes récentes sont en fermettes industrielles (triangulées métalliques ou bois lamellé-collé), différentes des charpentes artisanales en chêne des bâtiments anciens — les deux types requièrent des interventions distinctes. DT Couverture maîtrise ces deux univers et peut intervenir quelle que soit la génération de votre charpente.",
+      },
+      {
+        title: "Rénovation des toitures récentes à Génissac : les problèmes des fermettes industrielles",
+        content: "Les maisons construites entre 1985 et 2010 à Génissac sont couvertes sur des charpentes en fermettes industrielles — des triangles en bois assemblés par goussets métalliques. Ces charpentes sont économiques à la construction mais présentent des spécificités importantes pour la rénovation : elles ne tolèrent aucune modification sans recalcul de la résistance mécanique (contrairement aux charpentes artisanales), et certaines sont affectées par un défaut historique de qualité des goussets (délaminage ou corrosion précoce des plaques d'assemblage). DT Couverture vérifie systématiquement l'état des goussets lors de ses diagnostics sur les fermettes de cette génération, et réalise le renforcement si nécessaire avant toute réfection de couverture. La réfection en elle-même suit le processus habituel : dépose, vérification, écran HPV, lattage, couverture neuve.",
+      },
+      {
+        title: "Démoussage et entretien préventif à Génissac et dans les coteaux de l'Entre-Deux-Mers",
+        content: "Les coteaux calcaires de Génissac sont exposés aux vents d'ouest qui apportent l'humidité depuis l'estuaire de la Gironde, et les jardins arborés nombreux dans les lotissements de la commune créent des zones d'ombre qui maintiennent l'humidité sur les tuiles bien après les épisodes pluvieux. Dans ces conditions, la colonisation des toitures par les mousses et les algues se développe en 5 à 8 ans sur les tuiles non traitées. DT Couverture réalise des démoussages complets à Génissac : nettoyage basse pression sans endommager les tuiles (pression maîtrisée, buse large), traitement biocide-algicide en deux passes, et application optionnelle d'hydrofuge pénétrant. Pour les maisons neuves (moins de 15 ans) dont la toiture commence à montrer des traces vertes, un traitement préventif seul (sans nettoyage) est souvent suffisant et moins coûteux.",
+      },
+      {
+        title: "Isolation, Velux et aménagement des combles à Génissac",
+        content: "La forte proportion de maisons récentes à Génissac se traduit par de nombreux combles en fermettes industrielles dont la configuration — triangulaire, sans espace sous-faîtière utilisable — ne permet pas un aménagement en espace habitable sans travaux importants. En revanche, l'isolation de ces combles perdus (sol des combles) est simple et très efficace : soufflage de ouate de cellulose ou de laine minérale, accessible depuis l'intérieur par la trappe de visite. Pour les rares maisons à charpente artisanale avec des combles aménageables, DT Couverture accompagne les projets plus ambitieux : isolation sous rampants, pose de Velux, coordination avec les corps d'état seconds. Les aides MaPrimeRénov' s'appliquent dans les deux cas selon les revenus du foyer.",
+      },
+    ],
+    localSpecificities: "Génissac est une commune résidentielle dynamique de l'Entre-Deux-Mers libournais. Majorité de constructions récentes sur fermettes industrielles. Coteaux exposés aux vents d'ouest, jardins arborés : mousses fréquentes. Forte demande en isolation et entretien préventif.",
+    nearbyCommunes: ["Arveyres", "Izon", "Moulon", "Branne", "Cadarsac", "Vayres", "Libourne"],
+    faq: [
+      { question: "Qu'est-ce qu'une charpente en fermettes et est-ce solide ?", answer: "Une fermette industrielle est un triangle en bois assemblé par goussets métalliques, fabriqué en usine. C'est parfaitement solide si les goussets sont en bon état. Nous vérifions systématiquement ces assemblages lors de notre diagnostic gratuit — surtout sur les maisons construites entre 1985 et 2005." },
+      { question: "À quelle fréquence démoussager sa toiture à Génissac ?", answer: "Dans l'environnement humide et arboré de Génissac, un démoussage tous les 5 à 8 ans est recommandé pour les toitures non hydrofugées. Avec hydrofuge, on peut espacer à 10-12 ans. Un traitement préventif annuel (biocide en pulvérisation) peut prolonger l'intervalle entre deux démoussages." },
+      { question: "Combien coûte un démoussage à Génissac ?", answer: "Pour une maison standard de 80 à 120 m² de toiture, comptez généralement 700 à 1 500 € (nettoyage + traitement). Avec l'hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place selon la surface et l'accessibilité." },
+      { question: "Intervenez-vous en urgence à Génissac le week-end ?", answer: "Oui, nous assurons un service d'urgence 7j/7 pour les fuites et dégâts de tempête à Génissac. Appelez directement le 07 77 30 47 20 pour toute urgence toiture." },
+      { question: "Puis-je aménager les combles de ma maison à fermettes à Génissac ?", answer: "L'aménagement des combles sur fermettes est possible mais nécessite une étude de structure préalable car les fermettes ne peuvent pas être modifiées sans recalcul. C'est faisable avec l'aide d'un bureau d'études, mais plus coûteux qu'un aménagement sur charpente artisanale." },
+    ],
+  },
+  {
+    slug: "couvreur-izon",
+    name: "Izon",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33450",
+    population: "3 800",
+    distance: "10 km",
+    metaTitle: "Couvreur Izon (33450) | Toiture, Isolation, Urgence | Devis Gratuit",
+    metaDescription: "Couvreur à Izon (33450) : rénovation toiture, isolation combles, zinguerie, charpente, démoussage, urgence. Commune Libournais-Bordeaux. Artisan Gironde. Devis gratuit.",
+    h1: "Couvreur à Izon : toiture, isolation et urgences en première couronne libournaise",
+    heroText: "DT Couverture intervient à Izon, à 10 km de notre siège. Rénovation de toiture, isolation des combles, démoussage, zinguerie et urgences : nous couvrons toute la commune avec réactivité et savoir-faire. Devis gratuit.",
+    sections: [
+      {
+        title: "Izon, commune résidentielle entre Libourne et la métropole bordelaise",
+        content: "Izon est une commune de la première couronne libournaise en pleine expansion, idéalement positionnée sur l'axe Libourne-Bordeaux via la RD1089. Sa croissance démographique constante depuis les années 2000 en fait l'une des communes les plus dynamiques du secteur, avec de nombreux lotissements pavillonnaires récents côtoyant un centre-bourg en pierre calcaire et les mas de vignerons de la plaine de la Dordogne. Cette diversité bâtie génère une demande variée en couverture : réfection de toitures sur maisons de 30-40 ans, pose de couvertures neuves sur constructions récentes, démoussage des versants nord-est exposés aux vents humides d'ouest, et isolation des combles dans le parc pavillonnaire vieillissant. La commune est également dans la zone de risque termites de la Gironde — un facteur à prendre en compte lors de tout diagnostic de charpente.",
+      },
+      {
+        title: "Priorité à l'étanchéité : les points faibles courants à Izon",
+        content: "Sur le bâti pavillonnaire des années 1980-2000 d'Izon, les défauts d'étanchéité se concentrent sur quelques points récurrents que DT Couverture maîtrise parfaitement. Les solins de cheminée et de châssis de toit représentent la première cause de fuite sur les toitures vieillissantes : le joint de mastic ou le lit de mortier se fissure, s'écaille et laisse infiltrer l'eau dans les murs intérieurs. Les noues (jonction entre deux versants) sont le deuxième point sensible : sur les toitures à pentes croisées ou avec des retraits (fréquents sur les maisons de style « néo-provençal »), les noues accumulent les débris et se colmatent, créant des retenues d'eau. Les pénétrations de câbles antenne, de sorties de ventilation et de sorties de VMC constituent un troisième point de vulnérabilité. DT Couverture inspecte et reprend systématiquement tous ces points lors des diagnostics.",
+      },
+      {
+        title: "Gestion du risque termites à Izon : protection de la charpente",
+        content: "Izon fait partie des communes girondines classées en zone à risque termites (arrêté préfectoral). Les termites souterrains (Reticulitermes santonensis) sont présents dans le sol de la commune et peuvent attaquer les charpentes en bois non protégées depuis les fondations. Le traitement préventif par injection de produit insecticide sous pression dans les bois de charpente — certifié CTB-P+ et garanti 10 ans — est la meilleure protection. DT Couverture réalise ce traitement préventif en coordination avec votre démoussage ou votre réfection de toiture, sans surcoût de déplacement. Si votre charpente présente déjà des galeries ou des signes d'attaque active, nous réalisons un traitement curatif renforcé et le remplacement des pièces de bois irrémédiablement dégradées.",
+      },
+      {
+        title: "Gouttières, zinguerie et réseaux d'eaux pluviales à Izon",
+        content: "Le réseau d'eaux pluviales des maisons d'Izon doit gérer des précipitations importantes sur des surfaces de toiture souvent grandes (pavillons avec garage intégré, extensions, vérandas). DT Couverture dimensionne et installe les réseaux d'évacuation adaptés : gouttières demi-rondes 125 ou 150 mm selon la surface de collecte, descentes en zinc naturel ou aluminium laqué, gardes-gravier contre les obstructions, raccordement aux puisards ou au réseau public. Pour les maisons avec vérandas ou extensions récentes dont les gouttières se déversent directement contre les fondations, nous réalisons la mise en conformité du réseau et son raccordement à des puisards perdants ou au réseau d'eaux pluviales de la commune.",
+      },
+    ],
+    localSpecificities: "Izon est en zone à risque termites (Gironde). Commune à forte croissance entre Libourne et Bordeaux. Bâti pavillonnaire 1980-2000 vieillissant avec points faibles récurrents (solins, noues, pénétrations). À 10 km de DT Couverture : réactivité d'intervention élevée.",
+    nearbyCommunes: ["Arveyres", "Génissac", "Vayres", "Cadarsac", "Libourne", "Ambarès-et-Lagrave", "Carbon-Blanc"],
+    faq: [
+      { question: "Izon est-elle en zone termites ?", answer: "Oui, Izon est classée en zone à risque termites par arrêté préfectoral. Nous réalisons le traitement préventif CTB-P+ des charpentes et le traitement curatif en cas d'attaque active. Le traitement est garanti 10 ans." },
+      { question: "Combien coûte la réfection des solins à Izon ?", answer: "La reprise des solins d'une cheminée (4 faces) coûte généralement 200 à 500 € selon l'accessibilité et les matériaux. La reprise de solins d'un châssis de Velux se situe entre 120 et 280 €. Devis gratuit après inspection." },
+      { question: "Quelle gouttière choisir pour ma maison à Izon ?", answer: "Pour une maison standard avec garage (surface de toiture 120-160 m²), une gouttière demi-ronde 150 mm en aluminium prélaqué offre le meilleur rapport durabilité-prix. Le zinc naturel est plus esthétique et durable (50-70 ans), mais 2 à 3 fois plus cher. Nous vous conseillons selon votre budget et l'architecture de votre maison." },
+      { question: "DT Couverture intervient-il le week-end pour les urgences à Izon ?", answer: "Oui, 7j/7 pour les urgences toiture. À 10 km, nous pouvons être chez vous en 15-20 minutes. Appelez le 07 77 30 47 20." },
+      { question: "Combien coûte un démoussage à Izon ?", answer: "Pour une maison standard (80-120 m² de toiture), le démoussage + traitement se situe généralement entre 700 et 1 500 €. Avec hydrofuge protecteur, entre 1 800 et 3 200 €. Devis gratuit sur place." },
+    ],
+  },
+  {
+    slug: "couvreur-abzac",
+    name: "Abzac",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33230",
+    population: "2 600",
+    distance: "14 km",
+    metaTitle: "Couvreur Abzac (33230) | Toiture, Réparation, Corps de Ferme | Devis Gratuit",
+    metaDescription: "Couvreur à Abzac (33230) : rénovation toiture, réparation, zinguerie, charpente, isolation, démoussage. Commune rurale Nord-Gironde. Artisan local, devis gratuit.",
+    h1: "Couvreur à Abzac : toiture et rénovation en Nord-Gironde",
+    heroText: "Vous cherchez un couvreur à Abzac et dans le Nord-Gironde ? DT Couverture intervient sur les maisons de bourg, les pavillons et les bâtiments agricoles d'Abzac et de ses hameaux. Artisan à 14 km, devis gratuit.",
+    sections: [
+      {
+        title: "Abzac et ses hameaux : diversité du bâti dans le Nord-Gironde",
+        content: "Abzac s'étend sur un territoire rural vallonné au nord de Libourne, entre la vallée de l'Isle et les coteaux boisés du Périgord girondin. La commune regroupe plusieurs hameaux — Lavinade, Le Rivaud, La Chapelle — dont l'architecture reflète les traditions constructives du nord de la Gironde : maisons de bourg et de vigneron en pierre calcaire blanche avec toitures en tuiles canal, fermes et granges en moellons de silex avec des toitures parfois très anciennes, et pavillons résidentiels des années 1980-2000 en tuiles mécaniques. Le secteur est traversé par l'Isle, dont les brouillards de vallée maintiennent une humidité prolongée sur les versants exposés au nord — condition favorable à une colonisation rapide des tuiles par les mousses. DT Couverture connaît ces hameaux et intervient dans l'ensemble des écarts de la commune sans surcoût de déplacement.",
+      },
+      {
+        title: "Réparation et entretien des toitures anciennes à Abzac",
+        content: "Les maisons en pierre de taille d'Abzac présentent des toitures en tuiles canal dont certaines n'ont pas été rénovées depuis 40 à 60 ans. Ces toitures sont souvent dans un état intermédiaire qui ne justifie pas une réfection totale immédiate mais nécessite un entretien ciblé : remplacement des tuiles cassées ou décalées, reprise des lits de mortier effrités aux faîtières et aux rives, nettoyage et recalibrage des gouttières, reprise des solins de cheminée. DT Couverture pratique cette approche pragmatique : intervenir sur ce qui est nécessaire sans vendre de travaux inutiles. Nous documentons l'état de votre toiture avant et après intervention avec des photos, ce qui vous permet de suivre son évolution dans le temps et d'anticiper les futurs travaux.",
+      },
+      {
+        title: "Charpente et traitement xylophage à Abzac : insectes et champignons",
+        content: "Le nord de la Gironde est une zone où les insectes xylophages — capricornes des maisons (Hylotrupes bajulus), vrillettes, anobies — sont particulièrement actifs dans les charpentes non traitées. Les maisons anciennes d'Abzac, avec leurs belles charpentes en chêne ou en châtaignier, sont les plus exposées. Le signe le plus visible d'une attaque de capricornes : des galeries ovales de 6 à 10 mm dans le bois, souvent accompagnées d'un fin copeau de sciure fraîche. DT Couverture réalise le diagnostic visuel et tactile des charpentes, le traitement par injection sous pression (insecticide-fongicide certifié CTB-P+) et le remplacement des pièces irrémédiablement dégradées. Sur les charpentes en châtaignier anciennes — fréquentes dans ce secteur nord-girondin —, nous apportons une attention particulière car cette essence résiste naturellement bien aux champignons mais peut être attaquée par les capricornes.",
+      },
+      {
+        title: "Rénovation énergétique et isolation à Abzac : les aides disponibles",
+        content: "Le parc de logements anciens d'Abzac, souvent classé D, E ou F au DPE, représente un potentiel de rénovation énergétique important. L'isolation des combles est le premier geste à réaliser pour réduire les consommations de chauffage : pour une maison de bourg de 100 m² au sol sans isolation de combles, l'économie annuelle sur la facture de chauffage peut dépasser 400 € selon l'énergie utilisée. DT Couverture réalise l'isolation par soufflage (ouate de cellulose ou laine de verre) ou par panneaux sous rampants, avec montage complet des dossiers MaPrimeRénov' et CEE. Pour les propriétaires qui souhaitent aller plus loin, nous coordonnons avec des partenaires plombiers-chauffagistes pour les dossiers de rénovation globale (toiture + isolation + chauffage) permettant d'atteindre les aides maximales.",
+      },
+    ],
+    localSpecificities: "Abzac est une commune rurale du Nord-Gironde avec plusieurs hameaux épars. Charpentes anciennes (chêne, châtaignier) exposées aux insectes xylophages actifs dans le secteur. Humidité de l'Isle accélérant les mousses. DT Couverture à 14 km, connaissance des hameaux, pas de surcoût de déplacement.",
+    nearbyCommunes: ["Coutras", "Saint-Seurin-sur-l'Isle", "Guitres", "Les Peintures", "Camps-sur-l'Isle", "Saint-Médard-de-Guizières"],
+    faq: [
+      { question: "Comment reconnaître une attaque de capricornes dans ma charpente à Abzac ?", answer: "Les capricornes creusent des galeries ovales de 6 à 10 mm dans le bois. On trouve parfois de la sciure fraîche (rongures) sous les poutres attaquées. En cas de doute, passez la lame d'un couteau dans le bois : si elle s'enfonce facilement, l'intérieur est creux et l'attaque est avancée. Diagnostic gratuit sur place." },
+      { question: "Mon charpente en châtaignier à Abzac est-elle menacée par les insectes ?", answer: "Le châtaignier résiste naturellement aux champignons grâce à ses tanins, mais il peut être attaqué par les capricornes des maisons. Un traitement préventif est recommandé sur les charpentes non traitées de plus de 20 ans dans le secteur nord-girondin." },
+      { question: "Intervenez-vous dans les hameaux isolés autour d'Abzac ?", answer: "Oui, nous intervenons dans tous les hameaux de la commune — Lavinade, Le Rivaud, La Chapelle — et dans les écarts isolés. Le déplacement est inclus dans notre devis sans surcoût pour les communes de notre zone d'intervention." },
+      { question: "Quelles aides pour rénover une vieille maison à Abzac ?", answer: "Pour les logements anciens classés D, E, F ou G, MaPrimeRénov' finance l'isolation (combles, murs, plancher). L'ANAH peut financer jusqu'à 50 % des travaux pour les ménages modestes en situation de précarité énergétique. Nous vous aidons à identifier et mobiliser toutes les aides disponibles." },
+      { question: "Combien coûte une réfection de toiture en tuiles canal à Abzac ?", answer: "Pour une maison de bourg de 80 à 120 m², une réfection complète en tuiles canal se situe souvent entre 70 et 130 €/m² selon l'état de la charpente et la pente du toit. Une réparation partielle (un versant ou quelques rangées) coûte bien moins. Devis précis après diagnostic gratuit." },
+    ],
+  },
+  {
+    slug: "couvreur-camps-sur-l-isle",
+    name: "Camps-sur-l'Isle",
+    department: "Gironde",
+    departmentCode: "33",
+    postalCode: "33660",
+    population: "1 200",
+    distance: "16 km",
+    metaTitle: "Couvreur Camps-sur-l'Isle (33660) | Toiture Rurale, Rénovation | Devis Gratuit",
+    metaDescription: "Couvreur à Camps-sur-l'Isle (33660) : rénovation toiture, zinguerie, charpente, isolation, démoussage. Commune rurale vallée de l'Isle. Artisan Nord-Gironde. Devis gratuit.",
+    h1: "Couvreur à Camps-sur-l'Isle : toiture rurale en vallée de l'Isle",
+    heroText: "Vous avez besoin d'un couvreur à Camps-sur-l'Isle ? DT Couverture intervient dans cette commune rurale de la vallée de l'Isle et dans tous ses hameaux. Rénovation, réparation, démoussage et urgences. Devis gratuit.",
+    sections: [
+      {
+        title: "Camps-sur-l'Isle : un village rural de la vallée de l'Isle entre Libournais et Périgord",
+        content: "Camps-sur-l'Isle est une petite commune rurale du nord-est du Libournais, traversée par l'Isle qui marque ici la limite entre la Gironde et la Dordogne. Le village-centre et ses hameaux dispersés dans les collines présentent un bâti typique de la campagne girondin-périgordine : maisons en pierre calcaire ou en moellons, toitures en tuiles canal (voire en ardoises pour quelques bâtiments du début du XXe siècle), et dépendances agricoles en matériaux divers (bois, brique creuse, béton). La commune fait partie de ces territoires ruraux où l'accès à un artisan couvreur réactif est précieux : les délais d'intervention des entreprises des grandes villes voisines peuvent être décourageants. DT Couverture, basé à 16 km à Saint-Denis-de-Pile, assure cette proximité artisanale sur Camps-sur-l'Isle et les communes rurales environnantes.",
+      },
+      {
+        title: "Toitures en tuiles canal à Camps-sur-l'Isle : entretien, réparation et réfection",
+        content: "Les toitures en tuiles canal du bâti ancien de Camps-sur-l'Isle présentent des problématiques spécifiques liées à leur ancienneté et à la dureté des hivers du secteur. Le gel, plus fréquent et plus intense que dans les communes proches de l'estuaire, accélère l'éclatement des tuiles poreuses saturées d'eau. Les mortiers de pose des faîtières et des rives, à base de sable-ciment courant, se fissurent sous les cycles thermiques et laissent les tuiles libres de bouger. DT Couverture utilise exclusivement de la chaux hydraulique naturelle (NHL 2 ou NHL 3,5) pour les reprises de mortier sur les toitures anciennes : plus souple que le ciment, elle absorbe mieux les dilatations thermiques et ne se fissure pas sur les longues durées. Sur les toitures qui nécessitent une réfection complète, nous proposons systématiquement un écran sous-toiture HPV pour améliorer l'étanchéité de second rang — essentiel dans les zones de gel.",
+      },
+      {
+        title: "Dépendances agricoles et bâtiments ruraux : couvertures spécifiques",
+        content: "Les corps de ferme et les bâtiments agricoles de Camps-sur-l'Isle présentent des couvertures variées qui nécessitent des compétences spécifiques. Les hangars en bois avec couverture en lauzes (pierres plates calcaires) sont rares mais encore présents dans quelques propriétés isolées — ils requièrent un savoir-faire traditionnel pour être restaurés sans rompre la technique de pose originale. Les granges à bac acier ondulé de la seconde moitié du XXe siècle présentent fréquemment des problèmes de corrosion avancée — remplacement des bacs, traitement anti-rouille, reprises de fixations. Les toitures en tuile mécanique des bâtiments d'élevage des années 1990 nécessitent souvent une reprise des points de jonction entre la couverture et les éléments de zinguerie (chéneaux, faîtières). DT Couverture dispose de l'équipement nécessaire pour ces interventions en milieu rural.",
+      },
+      {
+        title: "Urgences et réactivité à Camps-sur-l'Isle : couverture de toutes les situations",
+        content: "Dans une commune rurale comme Camps-sur-l'Isle, une urgence de toiture peut survenir sans solution rapide si l'on n'a pas un artisan de proximité fiable. DT Couverture garantit son service d'urgence sur la commune et ses hameaux : 24h pour les fuites actives, bâchage professionnel si nécessaire pour stopper les dégâts des eaux. Nos véhicules sont équipés en permanence du matériel d'urgence standard (bâches, cordages, tuiles de remplacement courantes, mastic de calfatement). Pour les propriétaires qui s'absentent régulièrement ou louent leur bien, nous proposons un contrat de visite annuelle de toiture avec rapport photo — le meilleur moyen d'anticiper les problèmes avant qu'ils ne deviennent urgences.",
+      },
+    ],
+    localSpecificities: "Camps-sur-l'Isle est un village rural de la vallée de l'Isle à la frontière Gironde-Dordogne. Gel plus fréquent qu'en zone littorale. Bâti en pierre calcaire avec tuiles canal. Présence de bâtiments agricoles variés (lauzes, bac acier, fibrociment). DT Couverture assure la proximité artisanale manquante en zone rurale.",
+    nearbyCommunes: ["Abzac", "Savignac-de-l'Isle", "Saint-Seurin-sur-l'Isle", "Guitres", "Saint-Denis-de-Pile", "Coutras"],
+    faq: [
+      { question: "Intervenez-vous dans les hameaux isolés de Camps-sur-l'Isle ?", answer: "Oui, nous intervenons dans tous les hameaux et les propriétés isolées de la commune, sans surcoût de déplacement dans notre zone standard (rayon 40 km depuis Saint-Denis-de-Pile)." },
+      { question: "Savez-vous poser des lauzes sur une dépendance ancienne ?", answer: "Oui, nous maîtrisons la pose des lauzes (pierres plates calcaires) selon les techniques traditionnelles, en gradins depuis l'égout jusqu'au faîte avec recouvrement progressif. C'est un savoir-faire rare que nous pratiquons sur les bâtiments patrimoniaux." },
+      { question: "Quel mortier utiliser pour les faîtières en tuiles canal à Camps-sur-l'Isle ?", answer: "Nous utilisons exclusivement de la chaux hydraulique naturelle (NHL), plus souple que le ciment courant. Sur les sites exposés au gel (nord-est de la Gironde), la chaux résiste mieux aux cycles thermiques et dure bien plus longtemps que les mortiers ciment." },
+      { question: "Combien coûte un diagnostic de toiture à Camps-sur-l'Isle ?", answer: "Le diagnostic de toiture est gratuit chez DT Couverture. Nous montons sur votre toit, inspectons chaque élément (couverture, zinguerie, charpente, étanchéité) et vous remettons un rapport avec photos et recommandations priorisées. Sans engagement d'achat." },
+      { question: "Faites-vous des contrats d'entretien annuel à Camps-sur-l'Isle ?", answer: "Oui. Notre contrat de visite annuelle comprend : inspection complète en toiture, nettoyage des gouttières, petites réparations préventives, rapport photo écrit. C'est la formule idéale pour les propriétaires éloignés ou en résidence secondaire. Contactez-nous pour un devis." },
+    ],
+  },
 ];
 
 /** URL pour un tag ville : page locale couvreur si elle existe, sinon zone d'intervention. */
