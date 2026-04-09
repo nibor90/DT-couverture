@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/data";
 
 export default function robots(): MetadataRoute.Robots {
+  const base = siteConfig.url.replace(/\/$/, "");
   return {
     rules: [
       {
@@ -9,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://dt-couverture.fr/sitemap.xml",
+    sitemap: `${base}/sitemap.xml`,
   };
 }
