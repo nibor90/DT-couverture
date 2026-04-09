@@ -18,8 +18,11 @@ export default function CtaBanner({
       : "bg-gradient-to-br from-dark to-dark-gray";
 
   return (
-    <section className={`${bg} py-16 relative overflow-hidden`}>
-      <div className="absolute -top-1/2 -right-[20%] w-[400px] h-[400px] bg-white/5 rounded-full" />
+    <section className={`${bg} py-16 relative overflow-x-clip overflow-y-hidden`}>
+      <div
+        className="pointer-events-none absolute -top-1/2 -right-[8%] h-[min(85vw,320px)] w-[min(85vw,320px)] rounded-full bg-white/5 sm:-right-[12%] sm:h-[min(90vw,360px)] sm:w-[min(90vw,360px)] md:-right-[20%] md:h-[400px] md:w-[400px]"
+        aria-hidden
+      />
       <div className="container-custom text-center relative z-10">
         <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           {title}

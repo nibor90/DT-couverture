@@ -48,19 +48,19 @@ export default function HomeRealisationsMobileCarousel({
 
   return (
     <div
-      className="w-full max-w-full"
+      className="w-full max-w-full min-w-0"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      <div className="overflow-hidden rounded-2xl ring-1 ring-black/5 shadow-md">
+      <div className="w-full min-w-0 overflow-hidden rounded-2xl ring-1 ring-black/5 shadow-md">
         <div
-          className="flex transition-transform duration-500 ease-out motion-reduce:transition-none will-change-transform"
+          className="flex w-full transition-transform duration-500 ease-out motion-reduce:transition-none will-change-transform"
           style={{ transform: `translateX(-${active * 100}%)` }}
         >
           {items.map((r) => (
             <div
               key={r.src}
-              className="min-w-full w-full shrink-0 grow-0 box-border px-px"
+              className="min-w-0 w-full shrink-0 grow-0 basis-full box-border px-px"
             >
               <div className="rounded-2xl overflow-hidden bg-white">
                 <div className="relative w-full h-[min(50dvh,17rem)] min-h-[11rem] max-h-[min(52dvh,19rem)] flex items-center justify-center bg-primary-lighter px-2 py-2">

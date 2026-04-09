@@ -81,9 +81,9 @@ export default function RootLayout({
         />
         <LocalBusinessJsonLd />
       </head>
-      <body className="antialiased">
+      <body className="antialiased overflow-x-clip max-w-full">
         <Header />
-        <main>{children}</main>
+        <main className="min-w-0 w-full overflow-x-clip">{children}</main>
         <Footer />
         <FloatingPhone />
       </body>

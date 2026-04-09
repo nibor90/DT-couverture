@@ -10,10 +10,10 @@ export default function GirondeMapEmbed({
   heightClass = "h-[400px]",
 }: GirondeMapEmbedProps) {
   return (
-    <div>
+    <div className="w-full max-w-full min-w-0 overflow-hidden rounded-2xl">
       <iframe
         src={siteConfig.mapsEmbedGirondeUrl}
-        className={`${className} ${heightClass}`}
+        className={`${className} ${heightClass} max-w-full`}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
