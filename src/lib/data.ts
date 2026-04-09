@@ -53,10 +53,6 @@ export interface ServiceData {
     step: string;
     description: string;
   }[];
-  priceRange: {
-    note: string;
-    items: { label: string; range: string }[];
-  };
   signs: string[];
   benefits: string[];
   faq: { question: string; answer: string }[];
@@ -99,16 +95,6 @@ export const services: ServiceData[] = [
       { step: "Finitions et nettoyage", description: "Pose des faîtières, rives, solins. Nettoyage complet du chantier. Visite de réception avec vous." },
       { step: "Garantie décennale", description: "Attestation de garantie décennale remise. Nous restons disponibles pour le suivi de votre toiture." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC, variable selon la complexité du chantier, l'accessibilité et les matériaux choisis. Devis gratuit sur place.",
-      items: [
-        { label: "Remplacement de tuiles (ponctuel)", range: "120 € - 380 €" },
-        { label: "Réfection toiture tuiles (au m²)", range: "55 € - 110 €/m²" },
-        { label: "Réfection toiture ardoises (au m²)", range: "85 € - 175 €/m²" },
-        { label: "Couverture zinc joint debout (au m²)", range: "72 € - 135 €/m²" },
-        { label: "Toiture neuve complète (100 m²)", range: "7 500 € - 18 000 €" },
-      ],
-    },
     signs: [
       "Tuiles cassées, déplacées ou manquantes visibles depuis le sol",
       "Taches d'humidité au plafond ou dans les combles",
@@ -130,7 +116,6 @@ export const services: ServiceData[] = [
       "Chantier propre : protection et nettoyage systématiques",
     ],
     faq: [
-      { question: "Combien coûte une rénovation de toiture au m² en Gironde ?", answer: "Le prix d'une rénovation de toiture en Gironde varie en pratique entre environ 55 € et 175 €/m² selon le matériau (tuiles, ardoises, zinc), l'état de la charpente et la complexité du toit (pente, accessibilité, pénétrations). Pour une maison d'environ 100 m² de toiture en tuiles mécaniques, beaucoup de chantiers se situent entre 7 000 € et 13 000 € tout compris selon l'état réel. Nous réalisons un devis gratuit sur place pour un chiffrage précis." },
       { question: "Quelle est la durée de vie d'une toiture en tuiles ?", answer: "Une toiture en tuiles terre cuite bien entretenue dure entre 50 et 100 ans. Les tuiles mécaniques modernes ont une durée de vie de 50 à 70 ans. Les ardoises naturelles durent 75 à 100 ans. Le zinc a une durée de vie de 30 à 80 ans selon la qualité. L'entretien régulier (démoussage, vérification de la zinguerie) est la clé pour atteindre ces durées." },
       { question: "Faut-il un permis de construire pour refaire sa toiture ?", answer: "Pour une réfection à l'identique (même matériau, même couleur), une simple déclaration préalable de travaux suffit. Si vous changez de matériau (par exemple tuiles vers ardoises), modifiez la couleur ou la pente, un permis de construire peut être exigé. En zone protégée (ABF, patrimoine), l'accord de l'Architecte des Bâtiments de France est nécessaire. Nous vous accompagnons dans toutes les démarches administratives." },
       { question: "Combien de temps durent les travaux de rénovation de toiture ?", answer: "Pour une maison individuelle classique (80 à 120 m² de toiture), comptez 1 à 2 semaines de travaux pour une réfection complète, selon la météo et la complexité du chantier. Un simple remplacement de tuiles peut être réalisé en une demi-journée. Nous vous communiquons un planning précis avant le démarrage des travaux." },
@@ -173,17 +158,6 @@ export const services: ServiceData[] = [
       { step: "Pose et raccordement", description: "Dépose de l'ancienne zinguerie, pose des nouveaux éléments, soudure, raccordement aux descentes." },
       { step: "Test d'écoulement et nettoyage", description: "Vérification du bon écoulement des eaux. Nettoyage complet du chantier." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC pose comprise. Tarifs variables selon la longueur, la hauteur et le matériau choisi.",
-      items: [
-        { label: "Gouttière zinc (au ml posé)", range: "28 € - 55 €/ml" },
-        { label: "Gouttière cuivre (au ml posé)", range: "55 € - 105 €/ml" },
-        { label: "Gouttière aluminium laqué (au ml posé)", range: "25 € - 50 €/ml" },
-        { label: "Descente d'eau (pièce posée)", range: "110 € - 280 €" },
-        { label: "Abergement de cheminée complet", range: "300 € - 880 €" },
-        { label: "Nettoyage gouttières (maison)", range: "95 € - 240 €" },
-      ],
-    },
     signs: [
       "Gouttières qui débordent lors des pluies, même légères",
       "Traces de ruissellement sur les murs extérieurs",
@@ -205,7 +179,6 @@ export const services: ServiceData[] = [
     ],
     faq: [
       { question: "Quel matériau choisir pour mes gouttières ?", answer: "En Gironde, le zinc naturel est le meilleur choix pour la plupart des maisons : durable (30-50 ans), esthétique et résistant à la corrosion. Le cuivre est idéal pour les belles demeures et bâtiments patrimoniaux (durée de vie 50-100 ans, belle patine verte avec le temps). L'aluminium laqué est un excellent compromis pour les budgets modérés, avec un large choix de coloris assortis à vos menuiseries. Le PVC est le moins cher mais aussi le moins durable (15-25 ans). Nous vous conseillons le matériau le plus adapté à votre maison et à votre budget." },
-      { question: "Combien coûte le remplacement de gouttières ?", answer: "Le remplacement complet des gouttières d'une maison standard (périmètre d'environ 40 à 60 ml) se situe souvent entre 1 400 € et 3 800 € en zinc, et entre 3 000 € et 7 000 € en cuivre, pose comprise, selon la configuration. Un devis précis sera établi après notre visite gratuite." },
       { question: "À quelle fréquence nettoyer les gouttières ?", answer: "Au minimum deux fois par an : à l'automne après la chute des feuilles, et au printemps pour vérifier l'état après l'hiver. Si vous avez des arbres à proximité, un troisième nettoyage en été est recommandé. Nous proposons des contrats d'entretien annuel pour vous simplifier la vie." },
       { question: "Gouttière zinc ou PVC : quel choix ?", answer: "Le zinc est nettement supérieur au PVC en termes de durabilité (30-50 ans contre 15-25 ans pour le PVC), de résistance au gel et aux UV, et d'esthétique. Le PVC est moins cher à l'achat mais se déforme avec le temps, jaunit au soleil et devient cassant avec le gel. Sur le long terme, le zinc est plus économique car il ne nécessite pas de remplacement prématuré." },
       { question: "Ma gouttière fuit à un raccord, faut-il tout changer ?", answer: "Pas nécessairement. Si le reste de la gouttière est en bon état, une réparation ponctuelle par soudure à l'étain ou remplacement d'un tronçon suffit. Nous diagnostiquons l'état global de votre installation et vous conseillons honnêtement : réparation si c'est suffisant, remplacement si le zinc est trop corrodé." },
@@ -246,16 +219,6 @@ export const services: ServiceData[] = [
       { step: "Traitement ou remplacement", description: "Injection insecticide-fongicide et/ou remplacement des pièces de bois défectueuses." },
       { step: "Certificat et garantie", description: "Remise du certificat de traitement. Garantie décennale sur les travaux de charpente." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC. Le coût dépend de la surface de charpente, de l'accessibilité et de l'étendue des dégâts.",
-      items: [
-        { label: "Traitement préventif (au m²)", range: "12 € - 22 €/m²" },
-        { label: "Traitement curatif par injection (au m²)", range: "18 € - 38 €/m²" },
-        { label: "Remplacement d'un chevron", range: "150 € - 450 €" },
-        { label: "Remplacement d'une panne", range: "380 € - 1 100 €" },
-        { label: "Traitement mérule (selon surface)", range: "2 200 € - 11 000 €" },
-      ],
-    },
     signs: [
       "Petits trous ronds (1-2 mm) dans les poutres et chevrons",
       "Sciure ou vermoulure fine au sol sous la charpente",
@@ -279,7 +242,6 @@ export const services: ServiceData[] = [
     faq: [
       { question: "Comment savoir si ma charpente est attaquée par des insectes ?", answer: "Les principaux signes sont : de petits trous ronds (1-4 mm) à la surface du bois, de la sciure fine (vermoulure) au sol sous les poutres, un bruit de grignotement audible la nuit dans les combles, et du bois qui sonne creux quand on le frappe. Les capricornes creusent des galeries ovales de 6-10 mm visibles en surface. En cas de doute, DT Couverture réalise un diagnostic gratuit de votre charpente." },
       { question: "Ma maison est en zone termitée, que faire ?", answer: "Si votre commune est classée en zone termitée (c'est le cas de la plupart des communes de Gironde), un diagnostic termites est obligatoire avant toute vente immobilière. Pour votre charpente, un traitement préventif est fortement recommandé même en l'absence de signes visibles. Nous appliquons des traitements certifiés qui protègent votre bois pendant 10 ans minimum." },
-      { question: "Combien coûte un traitement de charpente ?", answer: "Le prix d'un traitement curatif par injection se situe souvent entre 18 € et 38 €/m² de surface traitée, soit typiquement 1 800 € à 3 800 € pour une maison d'environ 100 m² au sol selon l'emprise réelle. Un traitement préventif coûte en général entre 12 € et 22 €/m². Le remplacement de pièces endommagées s'ajoute. Devis gratuit sur place." },
       { question: "Le traitement de charpente est-il dangereux pour la santé ?", answer: "Les produits que nous utilisons sont certifiés CTB-P+ (conformes aux normes européennes de sécurité). Ils ne présentent aucun danger une fois secs (24-48h après application). Pendant le traitement et les 48h suivantes, nous recommandons de ne pas séjourner dans les combles et de ventiler. Les produits sont sans odeur une fois secs." },
       { question: "Quelle est la différence entre capricornes et vrillettes ?", answer: "Le capricorne des maisons est un gros insecte (1-2 cm) dont les larves creusent des galeries ovales de 6-10 mm dans les résineux (pin, sapin, épicéa). La vrillette (petite ou grosse) est plus petite et s'attaque à tous les bois, créant des trous ronds de 1-4 mm. Les deux sont destructeurs mais le capricorne cause des dégâts structurels plus rapides. Le traitement par injection est efficace contre les deux." },
       { question: "Peut-on aménager des combles sans renforcer la charpente ?", answer: "Cela dépend du type de charpente. Les charpentes traditionnelles (avec pannes et chevrons) sont souvent aménageables sans renforcement majeur. Les charpentes industrielles (fermettes) nécessitent presque toujours un renforcement : remplacement des fermettes par une charpente traditionnelle ou pose de renforts métalliques. Nous réalisons une étude de faisabilité gratuite." },
@@ -320,17 +282,6 @@ export const services: ServiceData[] = [
       { step: "Réparation définitive", description: "Intervention ciblée : remplacement de tuiles, reprise de zinguerie, réfection de solins." },
       { step: "Vérification et garantie", description: "Test d'étanchéité. Garantie décennale sur la réparation. Conseils d'entretien préventif." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC. Le coût dépend de la nature du problème, de l'accessibilité et de l'étendue des réparations.",
-      items: [
-        { label: "Diagnostic de fuite (seul)", range: "Gratuit" },
-        { label: "Remplacement tuiles (ponctuel)", range: "120 € - 380 €" },
-        { label: "Réfection solin cheminée", range: "220 € - 620 €" },
-        { label: "Reprise abergement complet", range: "380 € - 1 100 €" },
-        { label: "Bâchage d'urgence", range: "150 € - 450 €" },
-        { label: "Réfection noue zinc", range: "300 € - 880 €" },
-      ],
-    },
     signs: [
       "Taches jaunes ou brunes au plafond, qui s'agrandissent quand il pleut",
       "Peinture qui cloque ou papier peint qui se décolle",
@@ -355,7 +306,6 @@ export const services: ServiceData[] = [
       { question: "Ma toiture fuit, que faire en urgence ?", answer: "En premier lieu, protégez vos biens : déplacez les meubles, posez des récipients sous la fuite, coupez l'électricité si l'eau coule près d'un appareil électrique. Puis appelez-nous immédiatement au téléphone. Nous pouvons intervenir le jour même pour un bâchage d'urgence si nécessaire, puis planifier la réparation définitive." },
       { question: "L'assurance habitation couvre-t-elle les fuites de toiture ?", answer: "Cela dépend de la cause de la fuite. Les dégâts causés par une tempête (vents > 100 km/h), la grêle ou la neige sont généralement couverts par la garantie tempête de votre assurance. Les fuites dues au vieillissement ou au défaut d'entretien ne sont pas couvertes. Nous vous aidons à constituer votre dossier avec un rapport détaillé et des photos." },
       { question: "Pourquoi la fuite n'est-elle pas juste au-dessus de la tache au plafond ?", answer: "L'eau suit le chemin de moindre résistance : elle peut couler le long d'un chevron, d'une panne ou d'un écran sous-toiture sur plusieurs mètres avant de tomber verticalement. C'est pourquoi une tache au plafond du salon peut être causée par une tuile cassée à l'autre bout du toit. Le diagnostic par un professionnel est la seule façon de trouver l'origine réelle." },
-      { question: "Combien coûte la réparation d'une fuite de toiture ?", answer: "Le coût varie selon la cause. Un remplacement ponctuel de tuiles se situe souvent entre 120 € et 380 €. Une reprise de solin de cheminée entre 220 € et 620 €. Une réfection de noue en zinc entre 300 € et 880 €. Le diagnostic est gratuit : nous identifions le problème et vous chiffrons la réparation avant toute intervention." },
       { question: "Comment prévenir les fuites de toiture ?", answer: "Un entretien régulier est la meilleure prévention : démoussage tous les 3-5 ans, nettoyage des gouttières 2 fois par an, vérification annuelle de la zinguerie et des points singuliers (cheminée, Velux, faîtage). Après chaque tempête, inspectez visuellement votre toit depuis le sol. Et n'attendez pas pour intervenir au moindre signe suspect." },
       { question: "Fuite au niveau de la cheminée : que faire ?", answer: "Les fuites au niveau de la cheminée sont très fréquentes. Elles proviennent le plus souvent d'un solin (jonction zinc/maçonnerie) vieilli, fissuré ou décollé, ou d'un abergement en zinc percé. La réparation consiste à refaire le solin et/ou l'abergement en zinc neuf avec une étanchéité soignée. C'est une intervention courante que nous maîtrisons parfaitement." },
     ],
@@ -389,7 +339,7 @@ export const services: ServiceData[] = [
       },
       {
         title: "Les aides financières pour l'isolation de toiture en 2026",
-        content: "L'isolation de toiture est l'un des travaux les mieux subventionnés en France. En 2026, vous pouvez bénéficier de plusieurs aides cumulables : MaPrimeRénov' (jusqu'à 75 €/m² pour un ménage aux revenus modestes), les Certificats d'Économies d'Énergie (CEE, prime de 10 à 20 €/m²), l'éco-PTZ (prêt à taux zéro jusqu'à 30 000 €), et la TVA réduite à 5,5 % au lieu de 20 %. Pour une maison de 100 m² au sol, ces aides combinées peuvent couvrir 40 à 70 % du coût total de l'isolation. DT Couverture vous aide à monter vos dossiers de demande d'aides et travaille avec les organismes agréés pour simplifier vos démarches.",
+        content: "L'isolation de toiture est l'un des travaux les mieux subventionnés en France. Pour une maison de 100 m² au sol, ces aides combinées peuvent couvrir 40 à 70 % du coût total de l'isolation. DT Couverture vous aide à monter vos dossiers de demande d'aides et travaille avec les organismes agréés pour simplifier vos démarches.",
       },
     ],
     process: [
@@ -399,16 +349,6 @@ export const services: ServiceData[] = [
       { step: "Travaux d'isolation", description: "Intervention rapide (1/2 journée à 1 semaine selon la technique). Chantier propre et respectueux." },
       { step: "Contrôle qualité et attestation", description: "Vérification de l'épaisseur et de la continuité de l'isolant. Remise de l'attestation pour les aides." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC avant aides. Les aides (MaPrimeRénov', CEE) peuvent couvrir 40 à 70 % du coût.",
-      items: [
-        { label: "Soufflage combles perdus (au m²)", range: "15 € - 28 €/m²" },
-        { label: "Isolation sous rampants (au m²)", range: "30 € - 62 €/m²" },
-        { label: "Sarking — isolation par l'extérieur (au m²)", range: "75 € - 155 €/m²" },
-        { label: "Maison 100 m² combles perdus (total)", range: "1 600 € - 2 800 €" },
-        { label: "Maison 100 m² sarking (total)", range: "7 500 € - 15 000 €" },
-      ],
-    },
     signs: [
       "Factures de chauffage élevées malgré un système performant",
       "Sensation de froid près du plafond ou sous les rampants",
@@ -431,7 +371,6 @@ export const services: ServiceData[] = [
       "Garantie décennale sur tous les travaux d'isolation",
     ],
     faq: [
-      { question: "Quelles aides financières pour isoler sa toiture en 2026 ?", answer: "Vous pouvez cumuler MaPrimeRénov' (jusqu'à 75 €/m² selon vos revenus), les primes CEE (10 à 20 €/m²), l'éco-PTZ (prêt à taux zéro jusqu'à 30 000 €), et la TVA réduite à 5,5 %. Pour une isolation de combles perdus de 100 m², les aides peuvent couvrir 60 à 70 % du coût total. Nous vous aidons à monter tous les dossiers." },
       { question: "Quelle épaisseur d'isolant pour ma toiture ?", answer: "Pour les combles perdus, la recommandation actuelle est R=7, soit 30 à 40 cm de laine soufflée. Pour les rampants (combles aménagés), R=6 minimum, soit 20 à 30 cm de panneaux selon le matériau. Pour le sarking, 12 à 18 cm de panneaux rigides de polyuréthane permettent d'atteindre R=6." },
       { question: "Isolation par l'intérieur ou par l'extérieur : que choisir ?", answer: "L'isolation par l'intérieur (sous rampants) est moins chère mais réduit le volume habitable et ne supprime pas tous les ponts thermiques. Le sarking (par l'extérieur) offre les meilleures performances, préserve le volume intérieur et la charpente apparente, mais coûte plus cher. Si vous devez refaire votre couverture, le sarking est le choix idéal : vous mutualisez les coûts. Pour un budget limité, le soufflage en combles perdus est le meilleur rapport performance/prix." },
       { question: "L'isolation par soufflage est-elle efficace ?", answer: "Oui, c'est la technique la plus efficace en rapport qualité-prix pour les combles perdus. L'isolant en vrac remplit parfaitement tous les recoins, ne laisse aucun pont thermique, et atteint facilement l'épaisseur recommandée. En une demi-journée, votre maison gagne 2 à 3 classes de DPE." },
@@ -474,16 +413,6 @@ export const services: ServiceData[] = [
       { step: "Devis de réparation", description: "Chiffrage précis des travaux de remise en état. Devis conforme aux exigences des assureurs." },
       { step: "Réparation définitive", description: "Travaux de réparation dès validation. Remise en état complète de votre toiture." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC. Les sinistres couverts par l'assurance sont pris en charge selon votre contrat.",
-      items: [
-        { label: "Bâchage d'urgence (déplacement inclus)", range: "150 € - 450 €" },
-        { label: "Remplacement tuiles (ponctuel)", range: "120 € - 380 €" },
-        { label: "Réparation faîtage (au ml)", range: "30 € - 60 €/ml" },
-        { label: "Remplacement de rives (au ml)", range: "22 € - 45 €/ml" },
-        { label: "Réfection partielle après tempête", range: "750 € - 3 800 €" },
-      ],
-    },
     signs: [
       "Tuiles visiblement manquantes ou brisées après une tempête",
       "Eau qui coule dans la maison pendant ou après la pluie",
@@ -508,7 +437,6 @@ export const services: ServiceData[] = [
       { question: "Sous quel délai intervenez-vous en urgence ?", answer: "Nous nous engageons à intervenir sous 24h pour toute urgence toiture en Gironde. Pour les sinistres graves (trou dans le toit, eau qui coule abondamment), nous faisons notre maximum pour intervenir le jour même de votre appel. Appelez-nous directement par téléphone pour une prise en charge immédiate." },
       { question: "Comment déclarer un sinistre toiture à mon assurance ?", answer: "Contactez votre assurance par téléphone ou en ligne dans les 5 jours ouvrés suivant le sinistre (2 jours pour catastrophe naturelle). Décrivez les dégâts, prenez des photos avant toute intervention, et conservez les éléments endommagés si possible. Nous vous fournissons un rapport détaillé avec photos et un devis de remise en état pour compléter votre dossier." },
       { question: "L'assurance prend-elle en charge le bâchage d'urgence ?", answer: "Oui, dans la plupart des contrats d'assurance habitation, le bâchage d'urgence (mise hors d'eau) fait partie des frais de sauvegarde pris en charge. Conservez notre facture de bâchage pour la joindre à votre dossier de sinistre." },
-      { question: "Combien coûte une réparation de toiture après tempête ?", answer: "Le coût dépend de l'étendue des dégâts. Un remplacement ponctuel de quelques tuiles se situe souvent entre 120 € et 380 €. Une réfection partielle d'un versant après une grosse tempête peut aller d'environ 750 € à 3 800 €. Une toiture très endommagée peut nécessiter une réfection plus lourde (souvent 7 500 € à 18 000 € selon surface et matériaux). Le bâchage initial coûte en général 150 à 450 €." },
       { question: "Que faire en attendant l'intervention du couvreur ?", answer: "Si de l'eau rentre, placez des récipients, protégez vos meubles avec des bâches plastique, coupez l'électricité dans les zones touchées. Ne montez pas sur le toit vous-même, c'est dangereux surtout par temps de vent ou de pluie. Si possible, accédez aux combles pour constater l'étendue des dégâts et prenez des photos pour votre assurance." },
     ],
   },
@@ -547,17 +475,6 @@ export const services: ServiceData[] = [
       { step: "Pose en 1 à 2 jours", description: "Découpe de la couverture, création du chevêtre, pose du Velux, raccord d'étanchéité, habillage intérieur." },
       { step: "Accessoires et finitions", description: "Pose du volet roulant, du store intérieur. Vérification de l'étanchéité. Nettoyage du chantier." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC fourniture et pose comprises. Varient selon la taille, le modèle et la complexité de la pose.",
-      items: [
-        { label: "Velux standard (78×98) posé", range: "550 € - 950 €" },
-        { label: "Velux grand format (114×118) posé", range: "780 € - 1 350 €" },
-        { label: "Remplacement Velux existant", range: "450 € - 950 €" },
-        { label: "Volet roulant solaire Velux posé", range: "280 € - 520 €" },
-        { label: "Création d'ouverture + chevêtre + Velux", range: "1 150 € - 1 950 €" },
-        { label: "Store intérieur occultant posé", range: "75 € - 195 €" },
-      ],
-    },
     signs: [
       "Combles sombres que vous aimeriez transformer en pièce de vie",
       "Velux ancien qui fuit ou qui condense à l'intérieur",
@@ -578,7 +495,6 @@ export const services: ServiceData[] = [
     ],
     faq: [
       { question: "Faut-il une autorisation pour poser un Velux ?", answer: "Oui, une déclaration préalable de travaux est obligatoire pour créer une fenêtre de toit. Le formulaire Cerfa se dépose en mairie et le délai d'instruction est d'1 mois en général. En zone protégée (secteur sauvegardé, périmètre d'un monument historique), l'avis de l'Architecte des Bâtiments de France est également requis. DT Couverture prépare votre dossier complet." },
-      { question: "Combien coûte la pose d'un Velux ?", answer: "Le coût total (fourniture + pose) d'un Velux standard 78×98 cm se situe souvent entre 550 € et 950 € pour un remplacement, et entre 1 150 € et 1 950 € pour une création d'ouverture (découpe, chevêtre). Un volet roulant solaire ajoute en général 280 à 520 €. Devis gratuit sur place." },
       { question: "Quelle taille de Velux pour ma pièce ?", answer: "La règle d'or est 1/6 de la surface au sol en surface vitrée. Pour une chambre de 12 m², il faut environ 2 m² de vitrage, soit deux Velux de 78×98 cm ou un grand format 114×118 cm. Nous vous conseillons le nombre et la taille optimaux lors de notre visite." },
       { question: "Combien de temps dure la pose d'un Velux ?", answer: "Le remplacement d'un Velux existant prend une demi-journée. La création d'une ouverture (avec découpe, chevêtre et habillage) prend 1 à 2 jours par fenêtre. Pour un chantier de 3 Velux avec création d'ouverture, comptez 3 à 5 jours." },
       { question: "Velux ou puits de lumière : quelle différence ?", answer: "Le Velux (fenêtre de toit ouvrante) apporte lumière ET ventilation, et offre une vue sur l'extérieur. Le puits de lumière (conduit de lumière ou Solatube) est un tube réfléchissant qui amène la lumière dans les pièces sans vue ni ventilation, idéal pour les couloirs ou salles de bains. Pour une pièce de vie, le Velux est nettement préférable." },
@@ -620,17 +536,6 @@ export const services: ServiceData[] = [
       { step: "Hydrofuge (en option)", description: "Application d'un hydrofuge incolore ou coloré pour une protection longue durée et un aspect neuf." },
       { step: "Vérification et nettoyage final", description: "Contrôle de la couverture, signalement d'éventuels points faibles, nettoyage du chantier et des gouttières." },
     ],
-    priceRange: {
-      note: "Prix indicatifs TTC pour une maison individuelle. Tarifs variables selon la surface, la pente et l'accessibilité.",
-      items: [
-        { label: "Démoussage seul (au m²)", range: "6 € - 14 €/m²" },
-        { label: "Démoussage + anti-mousse (au m²)", range: "10 € - 18 €/m²" },
-        { label: "Démoussage + anti-mousse + hydrofuge (au m²)", range: "18 € - 30 €/m²" },
-        { label: "Maison 100 m² — démoussage complet", range: "650 € - 1 500 €" },
-        { label: "Maison 100 m² — démoussage + hydrofuge", range: "1 800 € - 3 200 €" },
-        { label: "Nettoyage gouttières (inclus ou en supplément)", range: "95 € - 240 €" },
-      ],
-    },
     signs: [
       "Mousse épaisse et verdâtre visible sur toute la couverture",
       "Lichens gris ou blancs incrustés sur les tuiles",
@@ -654,7 +559,6 @@ export const services: ServiceData[] = [
     faq: [
       { question: "À quelle fréquence faut-il démousser sa toiture ?", answer: "En Gironde, avec le climat océanique, nous recommandons un démoussage tous les 3 à 5 ans. Les toitures orientées au nord, proches d'arbres ou en zone ombragée peuvent nécessiter un traitement plus fréquent (tous les 2-3 ans). Un bon hydrofuge peut espacer les démoussages à tous les 8-10 ans." },
       { question: "Le nettoyage haute pression (Kärcher) abîme-t-il les tuiles ?", answer: "Oui, le nettoyage haute pression est déconseillé sur les tuiles en terre cuite : il arrache la couche protectrice de la tuile (le « glaçage »), rendant le matériau poreux et vulnérable au gel et à l'humidité. C'est pourquoi DT Couverture privilégie le brossage manuel et le nettoyage basse pression, qui éliminent la mousse sans endommager les tuiles." },
-      { question: "Combien coûte un démoussage de toiture ?", answer: "Pour une maison standard (80 à 120 m² de toiture), comptez 1 000 à 2 000 € pour un démoussage + traitement anti-mousse, et 2 500 à 4 000 € avec l'application d'un hydrofuge en plus. Ces prix incluent le nettoyage des gouttières. L'hydrofuge, bien que plus cher, est un investissement rentable car il protège vos tuiles pendant 8-12 ans." },
       { question: "Quelle est la différence entre anti-mousse et hydrofuge ?", answer: "L'anti-mousse est un produit algicide qui tue les mousses, lichens et algues et retarde leur réapparition (3-5 ans). L'hydrofuge est un traitement imperméabilisant qui empêche l'eau de pénétrer dans la tuile : il protège contre les infiltrations, le gel, et ralentit encore davantage l'apparition de mousse (8-12 ans). Les deux sont complémentaires : l'anti-mousse traite le problème actuel, l'hydrofuge prévient son retour." },
       { question: "Peut-on démousser sa toiture soi-même ?", answer: "C'est techniquement possible mais fortement déconseillé pour des raisons de sécurité (risque de chute, tuiles glissantes) et d'efficacité (produits grand public moins performants, risque d'endommager les tuiles avec un nettoyeur haute pression mal utilisé). Un professionnel équipé de harnais de sécurité et de produits certifiés garantit un résultat durable et sans risque." },
       { question: "Le démoussage peut-il se faire en hiver ?", answer: "Le démoussage peut se réaliser toute l'année, sauf par temps de gel (le produit ne pénètre pas correctement) ou de forte pluie (le produit est lessivé avant d'agir). En Gironde, la période idéale est le printemps (mars-mai) ou l'automne (septembre-novembre). L'hydrofuge nécessite un temps sec pendant 24h après l'application." },
@@ -714,11 +618,9 @@ export const cities: CityData[] = [
     localSpecificities: "Libourne est classée en zone à risque termites. La commune possède un secteur sauvegardé en centre-ville avec des contraintes architecturales ABF. Le climat au confluent de l'Isle et de la Dordogne est plus humide que la moyenne girondine, ce qui accélère le développement des mousses et requiert un entretien plus fréquent des toitures.",
     nearbyCommunes: ["Les Billaux", "Arveyres", "Génissac", "Lalande-de-Pomerol", "Néac", "Cadarsac", "Izon"],
     faq: [
-      { question: "Quel est le prix d'un couvreur à Libourne ?", answer: "Les tarifs varient selon la prestation : en pratique, rénovation de toiture en tuiles souvent 55 à 110 €/m², gouttières zinc posées environ 28 à 55 €/ml, démoussage 10 à 18 €/m² avec traitement, remplacement ponctuel de tuiles 120 à 380 €. DT Couverture réalise un devis gratuit et détaillé sur place à Libourne et ses environs." },
       { question: "DT Couverture intervient-il en urgence à Libourne ?", answer: "Oui, nous intervenons sous 24h à Libourne pour toute urgence toiture : fuite, bâchage après tempête, tuiles cassées. À seulement 10 km de notre siège, nous pouvons souvent être sur place dans l'heure." },
       { question: "Faut-il un permis pour refaire sa toiture à Libourne ?", answer: "Pour une réfection à l'identique, une déclaration préalable suffit. En centre-ville de Libourne (secteur sauvegardé), l'avis de l'ABF est nécessaire et peut imposer des matériaux spécifiques (tuiles canal, coloris). Nous vous accompagnons dans les démarches." },
       { question: "Ma maison à Libourne est-elle en zone termites ?", answer: "Oui, Libourne fait partie des communes de Gironde classées en zone à risque termites. Un diagnostic termites est obligatoire en cas de vente. Nous recommandons un traitement préventif de la charpente pour les maisons non traitées." },
-      { question: "Combien coûte l'isolation de toiture à Libourne ?", answer: "L'isolation de combles perdus par soufflage se situe en général entre 15 et 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être nettement réduit selon vos revenus. Pour une maison d'environ 100 m² au sol, le reste à charge après aides est souvent de l'ordre de 400 à 1 200 € selon les dossiers." },
     ],
   },
   {
@@ -754,9 +656,7 @@ export const cities: CityData[] = [
     localSpecificities: "Le nord de la Gironde est exposé à des vents d'ouest soutenus en hiver et à des orages violents en été, ce qui sollicite fortement les couvertures. Les maisons de bourg coutrasiennes en pierre calcaire possèdent souvent des charpentes anciennes nécessitant un traitement préventif contre les insectes xylophages, très actifs dans le secteur.",
     nearbyCommunes: ["Abzac", "Les Peintures", "Le Fieu", "Les Eglisottes-et-Chalaures", "Saint-Médard-de-Guizières", "Guitres", "Saint-Seurin-sur-l'Isle"],
     faq: [
-      { question: "Combien coûte un démoussage de toiture à Coutras ?", answer: "Pour une maison standard (environ 80 à 120 m² de toiture), le démoussage + traitement anti-mousse se situe souvent entre 650 € et 1 500 €, et entre 1 800 € et 3 200 € avec hydrofuge selon la surface et l'accès. Devis gratuit sur place." },
       { question: "DT Couverture est-il proche de Coutras ?", answer: "Oui, notre siège est à Saint-Denis-de-Pile, à seulement 12 km de Coutras. Nous pouvons être sur place en 15-20 minutes pour un devis ou une intervention d'urgence." },
-      { question: "Rénovation toiture à Coutras : quel budget prévoir ?", answer: "Pour une rénovation en tuiles mécaniques, beaucoup de chantiers se situent entre 55 et 110 €/m². Pour environ 100 m² de toiture, comptez souvent 7 000 à 13 000 € selon l'état de la charpente, le type de tuiles et l'accessibilité." },
       { question: "Traitez-vous les charpentes contre les termites à Coutras ?", answer: "Oui, nous réalisons le traitement préventif et curatif des charpentes contre tous les insectes xylophages, y compris les termites. Le traitement par injection sous pression est certifié CTB-P+ et garanti 10 ans." },
     ],
   },
@@ -795,7 +695,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Peut-on refaire sa toiture librement à Saint-Émilion ?", answer: "Non, Saint-Émilion étant classée UNESCO, l'Architecte des Bâtiments de France doit valider tout changement d'aspect extérieur. Même une réfection à l'identique nécessite une déclaration préalable. Nous connaissons ces procédures et vous accompagnons de A à Z." },
       { question: "Quel type de tuiles utiliser à Saint-Émilion ?", answer: "L'ABF impose généralement des tuiles canal en terre cuite aux teintes rouge vieilli ou ocre nuancé, fabriquées dans la tradition locale. Nous travaillons avec des fabricants agréés qui produisent des tuiles conformes aux exigences patrimoniales." },
-      { question: "Combien coûte une rénovation de toiture patrimoine à Saint-Émilion ?", answer: "Les toitures patrimoine sont plus coûteuses que les toitures standard : en pratique, souvent 85 à 175 €/m² en tuiles canal traditionnelles, contre 55 à 110 €/m² en tuiles mécaniques classiques. Les matériaux nobles et les techniques traditionnelles expliquent ce surcoût." },
       { question: "Intervenez-vous sur les propriétés viticoles ?", answer: "Oui, nous travaillons régulièrement sur les propriétés viticoles de la juridiction de Saint-Émilion : toitures de chais, hangars agricoles, bâtiments d'accueil. Nous planifions les chantiers en dehors des périodes critiques (vendanges, vinification)." },
     ],
   },
@@ -832,10 +731,8 @@ export const cities: CityData[] = [
     localSpecificities: "Bordeaux est classée au patrimoine mondial de l'UNESCO pour son centre historique. L'ardoise naturelle est imposée sur la majorité des immeubles du centre. La ville est en zone termitée. Les ouvrages de zinguerie (mansardes, dômes, lucarnes) sont parmi les plus complexes de France. La métropole bordelaise (800 000 habitants) génère une forte demande en couverture.",
     nearbyCommunes: ["Mérignac", "Pessac", "Talence", "Bègles", "Le Bouscat", "Cenon", "Lormont", "Floirac", "Bruges", "Blanquefort", "Eysines", "Gradignan"],
     faq: [
-      { question: "Combien coûte un couvreur à Bordeaux ?", answer: "Les tarifs varient selon la prestation : remplacement ponctuel d'ardoises souvent 120-450 €, rénovation toiture ardoises en pratique 85-175 €/m², réfection zinc mansarde environ 72-135 €/m², démoussage avec traitement 10-18 €/m². Le coût est souvent un peu plus élevé qu'en zone rurale (complexité des toits, accès centre-ville)." },
       { question: "Travaillez-vous sur les immeubles bordelais ?", answer: "Oui, nous intervenons sur les immeubles de rapport, les hôtels particuliers et les copropriétés de Bordeaux. Nous gérons les contraintes d'échafaudage en centre-ville, les autorisations de voirie, et les exigences architecturales (ABF en secteur sauvegardé)." },
       { question: "Bordeaux est-il en zone termites ?", answer: "Oui, Bordeaux et la plupart des communes de la métropole sont classées en zone à risque termites. Un diagnostic termites est obligatoire en cas de vente, et le traitement préventif de la charpente est fortement recommandé." },
-      { question: "Quelle ardoise pour une toiture à Bordeaux ?", answer: "L'ardoise naturelle est le matériau de référence à Bordeaux, imposé en centre-ville et secteur sauvegardé. Les ardoises d'Angers (française, haut de gamme) et d'Espagne (bon rapport qualité-prix) sont les plus utilisées. En pratique, comptez souvent 85 à 175 €/m² posé selon la qualité et la complexité." },
       { question: "Intervenez-vous dans toute la métropole bordelaise ?", answer: "Oui, nous intervenons à Bordeaux et dans toutes les communes de la métropole : Mérignac, Pessac, Talence, Bègles, Villenave-d'Ornon, Gradignan, Le Bouscat, Bruges, Cenon, Lormont, Floirac, Blanquefort, etc." },
     ],
   },
@@ -873,7 +770,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Cubzac-les-Ponts", "Gauriaguet", "Peujard", "Val-de-Virvée", "Saint-Gervais", "Berson", "Prignac-et-Marcamps"],
     faq: [
       { question: "Quel est le délai d'intervention à Saint-André-de-Cubzac ?", answer: "DT Couverture intervient sous 24-48h à Saint-André-de-Cubzac pour les urgences (fuite, tempête) et sous 1 à 2 semaines pour les travaux planifiés. Pour un devis gratuit, nous nous déplaçons généralement sous 48h." },
-      { question: "Combien coûte un démoussage à Saint-André-de-Cubzac ?", answer: "Pour une toiture d'environ 80 à 120 m², le nettoyage + anti-mousse se situe souvent entre 650 € et 1 500 €, et entre 1 800 € et 3 200 € avec hydrofuge. Devis gratuit sur place." },
       { question: "Peut-on poser des panneaux solaires à Saint-André-de-Cubzac ?", answer: "Oui, la pose de panneaux solaires est possible sur la plupart des toitures du Cubzaguais. Nous pouvons vérifier et renforcer votre charpente si nécessaire pour supporter le poids des panneaux. Une déclaration préalable de travaux est requise." },
       { question: "Intervenez-vous aussi à Cubzac-les-Ponts et dans les communes voisines ?", answer: "Oui, nous couvrons tout le Cubzaguais : Saint-André-de-Cubzac, Cubzac-les-Ponts, Gauriaguet, Peujard, Val-de-Virvée, Saint-Gervais, Berson, Prignac-et-Marcamps et toutes les communes alentour." },
     ],
@@ -913,10 +809,8 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Les Billaux", "Fronsac", "La Rivière", "Lalande-de-Pomerol", "Néac", "Arveyres", "Izon", "Galgon"],
     faq: [
       { question: "DT Couverture est-il vraiment basé à Saint-Denis-de-Pile ?", answer: "Oui, notre siège social et notre atelier sont implantés à Saint-Denis-de-Pile (27 T Route des Artigues, 33910). Vous pouvez nous appeler directement pour un devis ou une urgence : nous pouvons être chez vous en moins d'une heure." },
-      { question: "Quel est le prix d'une rénovation de toiture à Saint-Denis-de-Pile ?", answer: "Pour une maison standard en tuiles mécaniques (environ 80 à 120 m² de toiture), beaucoup de chantiers se situent entre 7 000 et 14 000 € en rénovation complète (tuiles + écran sous-toiture + zinguerie). En réparation ponctuelle, comptez 150 à 500 € selon l'étendue des dégâts. Devis gratuit et détaillé sur place." },
       { question: "Comment fonctionne le contrat d'entretien de toiture ?", answer: "Nous proposons une visite annuelle de toiture : inspection complète, nettoyage des gouttières, vérification des solins, rapport écrit avec photos. C'est un forfait annuel qui vous protège contre les dépenses imprévues. Contactez-nous pour un devis adapté à la taille de votre toiture." },
       { question: "Peut-on obtenir des aides pour l'isolation des combles à Saint-Denis-de-Pile ?", answer: "Oui. L'isolation de combles perdus est éligible à MaPrimeRénov' (montant selon revenus du foyer) et aux CEE (certificats d'économie d'énergie). Nous réalisons le chantier clé en main et vous aidons à monter les dossiers d'aide. Le reste à charge est souvent très faible voire nul pour les ménages modestes." },
-      { question: "Combien de temps dure un chantier de démoussage à Saint-Denis-de-Pile ?", answer: "Un démoussage complet (nettoyage basse pression + traitement anti-mousse + hydrofuge) d'une maison standard prend généralement 1 journée. Le produit hydrofuge nécessite un temps de séchage de 24 à 48h avant une pluie. Prix indicatif : 700 à 1 600 € pour 80 à 120 m² de toiture, devis gratuit sur place." },
     ],
   },
   {
@@ -956,7 +850,6 @@ export const cities: CityData[] = [
       { question: "Quelles tuiles utiliser à Fronsac ?", answer: "Les tuiles canal en terre cuite (nuances rouge vieilli, brun) sont le matériau de référence sur le bâti ancien de Fronsac. Elles sont généralement exigées dans le périmètre du site inscrit. Nous travaillons avec des fournisseurs qui proposent des tuiles de pays aux coloris conformes." },
       { question: "Intervenez-vous sur les châteaux viticoles de l'appellation ?", answer: "Oui, nous intervenons régulièrement sur les propriétés de l'appellation Fronsac et Canon-Fronsac : chais, cuviers, bâtiments d'accueil, logements de château. Nous planifions les chantiers en dehors des périodes de vendanges (septembre-octobre) pour éviter toute perturbation." },
       { question: "Comment gérer les eaux de ruissellement sur une propriété en pente à Fronsac ?", answer: "Les propriétés en pente nécessitent un réseau d'évacuation des eaux pluviales bien dimensionné. Nous réalisons le calcul hydraulique, posons des gouttières à section adaptée et des chéneaux sur-mesure pour les terrasses multiples. Un réseau correctement dimensionné évite les débordements et les dommages aux murs." },
-      { question: "Quel est le tarif pour un démoussage à Fronsac ?", answer: "Pour une maison de coteaux d'environ 80 à 100 m² de toiture, le démoussage + traitement anti-mousse se situe généralement entre 700 et 1 400 €. L'accès en pente peut légèrement augmenter le coût si un échafaudage spécifique est nécessaire. Devis gratuit sur place." },
     ],
   },
   {
@@ -993,7 +886,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Abzac", "Saint-Seurin-sur-l'Isle", "Saint-Médard-de-Guizières", "Les Peintures", "Le Fieu", "Coutras", "Lapouyade"],
     faq: [
       { question: "Y a-t-il de l'amiante dans les vieilles toitures à Guitres ?", answer: "Les bâtiments agricoles et les maisons construits avant 1997 peuvent contenir de l'amiante dans les plaques de fibrociment de toiture. Un diagnostic amiante par un opérateur certifié est obligatoire avant tout retrait. Nous vous orientons vers un diagnostiqueur agréé et prenons en charge les travaux après désamiantage." },
-      { question: "Combien coûte la rénovation d'une toiture de pavillon à Guitres ?", answer: "Pour un pavillon des années 70-90 d'environ 100 m² de toiture en tuiles mécaniques, une rénovation complète se situe souvent entre 8 000 et 15 000 € (couverture + écran sous-toiture + zinguerie). Une réparation partielle ou un démoussage coûte beaucoup moins. Devis gratuit sur place à Guitres." },
       { question: "Puis-je obtenir des aides pour isoler ma maison à Guitres ?", answer: "Oui. MaPrimeRénov' finance l'isolation des combles selon vos revenus. Les CEE (certificats d'économie d'énergie) complètent cette aide. Pour une maison de 100 m² classée E ou F, le reste à charge après aides peut être quasi nul pour les ménages modestes. Nous vous accompagnons dans les démarches." },
       { question: "Intervenez-vous sur les hangars agricoles autour de Guitres ?", answer: "Oui, nous intervenons sur les bâtiments agricoles de toute nature : hangars en bac acier, tôle galvanisée, tuile. Remplacement de bacs percés, reprise de fixations, peinture anti-corrosion, pose de lanterneaux. Nous réalisons les diagnostics amiante préalables pour les bâtiments anciens." },
       { question: "Quel est votre délai d'intervention pour une urgence à Guitres ?", answer: "Pour une urgence (fuite, dégâts de tempête), nous intervenons sous 24h à Guitres depuis notre siège de Saint-Denis-de-Pile (15 km). Nous bâchons votre toiture en urgence pour limiter les dégâts des eaux, puis réalisons la réparation définitive dans les jours suivants." },
@@ -1034,7 +926,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Intervenez-vous sur les châteaux viticoles de Pomerol ?", answer: "Oui, nous intervenons régulièrement sur des propriétés viticoles du plateau de Pomerol : toitures en ardoises, mansardes zinc, couvertures de chais et de bâtiments techniques. Nous planifions toujours les chantiers hors périodes de vendanges et de réception." },
       { question: "Quels matériaux pour une toiture de château viticole à Pomerol ?", answer: "Tout dépend de l'architecture du bâtiment. Pour une propriété néoclassique, l'ardoise naturelle d'Angers ou les tuiles plates sont le choix traditionnel. Pour des habillages de mansardes ou de décrochements, le zinc prépatiné s'impose. Nous vous conseillons en cohérence avec l'existant et le standing souhaité." },
-      { question: "Combien coûte une toiture en ardoise sur Pomerol ?", answer: "La rénovation en ardoises naturelles d'Angers posées au double chevron se situe souvent entre 120 et 200 €/m² (matériaux + main-d'œuvre). Le zinc prépatiné pour une mansarde ou un coyau est également dans cette fourchette haute selon la complexité. Devis personnalisé gratuit sur place." },
       { question: "Comment protéger les fondations d'une maison sur le plateau argileux de Pomerol ?", answer: "Les argiles gonflantes du plateau pomerolais peuvent fragiliser les fondations si les eaux de toiture ne sont pas évacuées loin des maçonneries. Nous raccordons systématiquement les descentes à des puisards ou à des drains périphériques. En cas de doute sur le drainage existant, nous travaillons avec des terrassiers pour sécuriser les fondations." },
       { question: "Réalisez-vous aussi la zinguerie cuivre à Pomerol ?", answer: "Oui. Nous façonnons et posons des gouttières, des faîtières et des ornements en cuivre naturel, qui développent avec le temps une patine verte caractéristique des toitures de prestige. Le cuivre est le matériau de longévité maximale (80 à 100 ans) pour la zinguerie des bâtiments de qualité." },
     ],
@@ -1073,7 +964,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Médard-de-Mussidan", "Villefranche-de-Lonchat", "Saint-Seurin-de-Prats", "Échourgnac", "Coutras", "Saint-Seurin-sur-l'Isle"],
     faq: [
       { question: "DT Couverture intervient-il en Dordogne ?", answer: "Oui, nous intervenons dans les communes proches de la frontière Gironde-Dordogne, dont Montpon-Ménestérol. Notre déplacement depuis Saint-Denis-de-Pile (35 km) est inclus dans le devis. Pour les chantiers importants (rénovation complète, corps de ferme), la distance ne constitue pas un obstacle." },
-      { question: "Quel est le coût d'une rénovation de corps de ferme périgordin à Montpon ?", answer: "La rénovation d'un corps de ferme avec grande portée (15 à 20 m) est plus coûteuse qu'un pavillon standard : la charpente, les volumes importants et les accès difficiles influencent le prix. Beaucoup de projets se situent entre 20 000 et 60 000 € selon l'étendue des travaux. Devis gratuit après visite sur place." },
       { question: "Les tuiles rondes périgourdines sont-elles difficiles à trouver ?", answer: "Les tuiles canal en terre cuite de couleur ocre-rouge du Périgord sont produites par plusieurs tuileries du sud-ouest (Terreal, Edilians). Nous pouvons approvisionner les nuances les plus proches de vos tuiles existantes pour les réparations et les rénovations partielles, ou proposer des tuiles neuves de pays pour les réfections complètes." },
       { question: "Y a-t-il des aides pour rénover une toiture à Montpon-Ménestérol ?", answer: "Oui. En Dordogne comme en Gironde, MaPrimeRénov' finance l'isolation, et l'ANAH peut aider pour la rénovation globale de logements dégradés. La Communauté de communes Isle Double Landais peut avoir des dispositifs complémentaires. Nous vous aidons à identifier et à mobiliser toutes les aides disponibles." },
       { question: "Intervenez-vous en urgence à Montpon-Ménestérol ?", answer: "Oui, pour les urgences (fuite soudaine, dégâts de grêle ou de tempête), nous intervenons sous 24 à 48h à Montpon-Ménestérol. Le trajet de 35 km depuis Saint-Denis-de-Pile ne représente que 30 à 35 minutes. Nous bâchons votre toiture en urgence puis planifions la réparation définitive." },
@@ -1114,7 +1004,6 @@ export const cities: CityData[] = [
     localSpecificities: "Lalande-de-Pomerol et Néac constituent un plateau argileux humide au nord de Pomerol. Le bâti viticole (châteaux, chais) côtoie des maisons résidentielles. L'humidité du sol argileux accélère la croissance des mousses. Les propriétés viticoles ont des exigences esthétiques élevées pour leurs couvertures.",
     nearbyCommunes: ["Néac", "Pomerol", "Saint-Émilion", "Montagne", "Lussac", "Libourne", "Saint-Denis-de-Pile"],
     faq: [
-      { question: "Combien coûte un démoussage à Lalande-de-Pomerol ?", answer: "Pour une maison ou une propriété viticole d'environ 80 à 120 m² de toiture, le nettoyage + traitement anti-mousse coûte souvent entre 700 et 1 500 €. Avec l'hydrofuge protecteur, comptez 1 800 à 3 000 € selon la surface et l'accès. Devis gratuit sur place." },
       { question: "Intervenez-vous sur Néac en plus de Lalande-de-Pomerol ?", answer: "Oui, Néac fait partie de notre zone d'intervention habituelle. Les deux communes sont voisines et nous y intervenons avec les mêmes délais. Devis gratuit, déplacement compris depuis Saint-Denis-de-Pile (13 km)." },
       { question: "Traitez-vous les charpentes contre la mérule ?", answer: "Oui. La mérule (champignon lignivore) nécessite un traitement curatif spécifique et une réduction de l'humidité. Nous identifions la cause de l'humidité (défaut d'étanchéité, manque de ventilation), réalisons le traitement curatif, et renforçons ou remplaçons les pièces de charpente dégradées." },
       { question: "Quelle tuile recommandez-vous pour une propriété viticole à Lalande-de-Pomerol ?", answer: "La tuile canal en terre cuite aux teintes rouge vieilli ou ocre nuancé est le matériau de référence pour les bâtiments anciens du vignoble. Pour les constructions récentes, les tuiles mécaniques à profil vieilli offrent un bon compromis entre esthétique et prix." },
@@ -1157,7 +1046,6 @@ export const cities: CityData[] = [
       { question: "Intervenez-vous dans tous les hameaux autour de Lussac ?", answer: "Oui, nous couvrons tout le secteur de Lussac : Saint-Christophe, Petit-Figeac, Puyblanquet, et les propriétés viticoles isolées. Pas de surcoût de déplacement dans un rayon de 5 km autour de Lussac." },
       { question: "Ma toiture en tuiles canal a 40 ans — dois-je tout refaire ?", answer: "Pas forcément. Tout dépend de l'état de la charpente, de l'écran sous-toiture et des tuiles elles-mêmes. Beaucoup de toitures de 40 ans ne nécessitent qu'une réfection partielle du versant le plus dégradé, un démoussage et la reprise des solins. Diagnostic gratuit sur place pour évaluer précisément." },
       { question: "Le sarking est-il adapté aux toitures en tuiles canal de Lussac ?", answer: "Oui, le sarking est une solution idéale pour les toitures en tuiles canal que l'on rénove : on pose les panneaux isolants rigides sur la charpente existante, puis on repose les tuiles dessus. L'intérieur des combles reste intact, ce qui est précieux pour les bâtiments anciens aux charpentes décoratives." },
-      { question: "Quel est le prix d'une réparation de gouttières à Lussac ?", answer: "Le remplacement d'une descente d'eau pluviale en zinc coûte généralement 80 à 180 € (matériau + pose). Le remplacement complet des gouttières d'une façade (10 à 15 ml) se situe souvent entre 350 et 750 €. Devis gratuit sur place." },
       { question: "Travaillez-vous avec les assurances pour les dégâts de tempête à Lussac ?", answer: "Oui, nous établissons un constat détaillé avec photos après les intempéries, que vous pouvez transmettre à votre assurance. Nous intervenons en urgence pour le bâchage et sécuriser la toiture, ce qui est remboursable par la plupart des contrats multirisques habitation." },
     ],
   },
@@ -1194,7 +1082,6 @@ export const cities: CityData[] = [
     localSpecificities: "Castillon-la-Bataille est à la frontière Gironde-Dordogne, en bord de Dordogne. Architecture mixte (pierre calcaire girondine et tuiles de pays périgourdines). Climat de vallée avec humidité et brouillards. Zone exposée aux orages et coups de vent du couloir fluvial. Vignoble Castillon-Côtes de Bordeaux.",
     nearbyCommunes: ["Sainte-Colombe", "Les Salles-de-Castillon", "Saint-Magne-de-Castillon", "Gardegan-et-Tourtirac", "Branne", "Saint-Jean-de-Blaignac", "Lussac"],
     faq: [
-      { question: "Combien coûte une rénovation de toiture à Castillon-la-Bataille ?", answer: "Pour un pavillon standard de 100 m² de toiture en tuiles mécaniques, beaucoup de rénovations complètes se situent entre 8 000 et 15 000 €. Pour une maison de bourg en tuiles canal avec réfection de zinguerie, comptez souvent 70 à 130 €/m². Devis gratuit et détaillé sur place." },
       { question: "Mon assurance couvre-t-elle les dégâts de tempête à Castillon ?", answer: "Les dégâts de tempête sont couverts par la garantie « tempête, grêle, neige » de votre multirisques habitation, obligatoire en France. Nous établissons un constat détaillé avec photos pour faciliter votre déclaration de sinistre et estimer le montant des réparations." },
       { question: "Peut-on utiliser des tuiles du Périgord à Castillon ?", answer: "Oui, les tuiles de pays périgourdines (canal, couleur ocre-rouge) sont bien adaptées à l'architecture castillonnaise. Nous pouvons approvisionner ces matériaux depuis les tuileries du sud-ouest et les poser conformément aux règles locales d'urbanisme." },
       { question: "Intervenez-vous dans les communes voisines comme Branne et Saint-Jean-de-Blaignac ?", answer: "Oui, nous couvrons tout le Castillonnais et le secteur de l'Entre-Deux-Mers oriental : Branne, Saint-Jean-de-Blaignac, Sainte-Colombe, Gardegan-et-Tourtirac et les communes environnantes." },
@@ -1234,7 +1121,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Savin est en Haute-Gironde, en pleine croissance démographique (périurbain bordelais-libournais). Exposition aux vents d'estuaire : fixations renforcées sur les versants exposés. Forte demande en isolation et en couverture neuve. À 20 km de Saint-Denis-de-Pile.",
     nearbyCommunes: ["Saint-Martin-du-Bois", "Gours", "Saint-Christophe-de-Double", "Abzac", "Coutras", "Libourne", "Blaye"],
     faq: [
-      { question: "Combien coûte la pose d'un Velux à Saint-Savin ?", answer: "La pose d'une fenêtre de toit standard (type Velux GGL 78×98 cm) se situe généralement entre 800 et 1 600 € fourni et posé, selon l'accès, le type de toiture et le modèle. La création d'une nouvelle ouverture (sciage de chevrons) coûte 200 à 400 € de plus. Devis gratuit sur place." },
       { question: "Comment renforcer une toiture exposée aux vents d'estuaire à Saint-Savin ?", answer: "Pour les toitures exposées, nous utilisons des crochets de fixation supplémentaires, du mortier de chaux sur les faîtières et les rives, et des gouttières avec supports renforcés. Pour une toiture existante, une visite préventive permet d'identifier les points faibles et de les consolider avant la saison des vents." },
       { question: "Quelles aides pour l'isolation des combles à Saint-Savin ?", answer: "MaPrimeRénov' et les CEE financent l'isolation des combles perdus. Pour une maison classée E ou F, le reste à charge peut être très faible voire nul pour les ménages modestes. Nous préparons votre dossier de demande d'aide et vous accompagnons jusqu'au versement." },
       { question: "Intervenez-vous sur les nouvelles constructions à Saint-Savin ?", answer: "Oui, nous intervenons sur les couvertures neuves dans les lotissements récents de Saint-Savin. Nous travaillons en coordination avec les maçons et les charpentiers pour assurer la bonne chronologie des interventions." },
@@ -1274,7 +1160,6 @@ export const cities: CityData[] = [
     localSpecificities: "Branne est un bourg de l'Entre-Deux-Mers Est, sur les coteaux dominant la Dordogne. Architecture de vignerons en pierre calcaire blanche. Humidité de vallée favorisant les mousses. Nombreux corps de ferme viticoles réhabilités. Secteur touristique (oenotourisme) : esthétique des bâtiments importante.",
     nearbyCommunes: ["Daignac", "Moulon", "Espiet", "Tizac-de-Curton", "Génissac", "Izon", "Castillon-la-Bataille"],
     faq: [
-      { question: "Combien coûte un démoussage à Branne ?", answer: "Pour une maison de vigneron avec environ 80 à 130 m² de toiture, le démoussage + traitement biocide se situe souvent entre 750 et 1 600 €. Avec hydrofuge protecteur, comptez 2 000 à 3 500 €. Prix proportionnel à la surface et à la complexité d'accès." },
       { question: "Intervenez-vous aussi à Daignac, Moulon et Génissac ?", answer: "Oui, nous couvrons tout le secteur de l'Entre-Deux-Mers Est : Branne, Daignac, Moulon, Espiet, Tizac-de-Curton, Génissac, Izon et les communes voisines. Déplacement inclus dans le devis." },
       { question: "Peut-on isoler une grange réhabilitée en gîte à Branne ?", answer: "Oui, c'est même indispensable pour le confort et la performance énergétique d'un gîte rural. Nous réalisons l'isolation sous rampants (laine de bois ou chanvre pour le confort acoustique et hygrothermique), la pose de Velux et la réfection de couverture en tuiles de pays. Devis sur mesure." },
       { question: "Comment savoir si ma charpente à Branne est encore saine ?", answer: "Un diagnostic visuel en combles permet d'identifier les signes d'attaque biologique (galeries d'insectes, taches de mérule, poutres ramollies) ou de désordre structurel (flèche du faîtage, écartement des murs). Nous réalisons ce diagnostic gratuitement lors de notre visite pour le devis." },
@@ -1318,9 +1203,7 @@ export const cities: CityData[] = [
     faq: [
       { question: "Quel est votre délai d'intervention à Arveyres ?", answer: "À 8 km de notre siège, nous pouvons être à Arveyres en 15 à 20 minutes pour une urgence. Pour un devis, nous nous déplaçons généralement sous 48h. Pour les travaux planifiés, le délai est de 1 à 3 semaines selon notre planning." },
       { question: "Mon pavillon de 1985 à Arveyres a-t-il besoin d'une rénovation toiture ?", answer: "Une toiture de 40 ans mérite un diagnostic. Selon l'entretien et le matériau, elle peut être en bon état ou nécessiter une réfection partielle ou totale. Notre diagnostic gratuit sur place vous donnera une évaluation précise et honnête de l'état réel." },
-      { question: "Combien coûte l'isolation des combles à Arveyres ?", answer: "L'isolation par soufflage de combles perdus coûte généralement 15 à 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être très faible (voire nul pour les ménages modestes). Nous vous aidons à monter le dossier d'aide." },
       { question: "Intervenez-vous aussi à Izon et Génissac depuis Arveyres ?", answer: "Oui, Izon et Génissac sont dans notre zone d'intervention habituelle, au même titre qu'Arveyres. Même réactivité, mêmes tarifs, même qualité d'intervention." },
-      { question: "Faites-vous le nettoyage des gouttières à Arveyres ?", answer: "Oui, le nettoyage et le débouchage de gouttières est une prestation courante que nous réalisons à Arveyres. Pour une maison standard, comptez 80 à 200 € selon la longueur et l'accès. Idéalement deux fois par an (printemps et automne) pour les maisons en milieu arboré." },
     ],
   },
   {
@@ -1358,7 +1241,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Qu'est-ce qu'une charpente en fermettes et est-ce solide ?", answer: "Une fermette industrielle est un triangle en bois assemblé par goussets métalliques, fabriqué en usine. C'est parfaitement solide si les goussets sont en bon état. Nous vérifions systématiquement ces assemblages lors de notre diagnostic gratuit — surtout sur les maisons construites entre 1985 et 2005." },
       { question: "À quelle fréquence démoussager sa toiture à Génissac ?", answer: "Dans l'environnement humide et arboré de Génissac, un démoussage tous les 5 à 8 ans est recommandé pour les toitures non hydrofugées. Avec hydrofuge, on peut espacer à 10-12 ans. Un traitement préventif annuel (biocide en pulvérisation) peut prolonger l'intervalle entre deux démoussages." },
-      { question: "Combien coûte un démoussage à Génissac ?", answer: "Pour une maison standard de 80 à 120 m² de toiture, comptez généralement 700 à 1 500 € (nettoyage + traitement). Avec l'hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place selon la surface et l'accessibilité." },
       { question: "Intervenez-vous en urgence à Génissac le week-end ?", answer: "Oui, nous assurons un service d'urgence 7j/7 pour les fuites et dégâts de tempête à Génissac. Appelez directement le 07 77 30 47 20 pour toute urgence toiture." },
       { question: "Puis-je aménager les combles de ma maison à fermettes à Génissac ?", answer: "L'aménagement des combles sur fermettes est possible mais nécessite une étude de structure préalable car les fermettes ne peuvent pas être modifiées sans recalcul. C'est faisable avec l'aide d'un bureau d'études, mais plus coûteux qu'un aménagement sur charpente artisanale." },
     ],
@@ -1397,10 +1279,8 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Arveyres", "Génissac", "Vayres", "Cadarsac", "Libourne", "Ambarès-et-Lagrave", "Carbon-Blanc"],
     faq: [
       { question: "Izon est-elle en zone termites ?", answer: "Oui, Izon est classée en zone à risque termites par arrêté préfectoral. Nous réalisons le traitement préventif CTB-P+ des charpentes et le traitement curatif en cas d'attaque active. Le traitement est garanti 10 ans." },
-      { question: "Combien coûte la réfection des solins à Izon ?", answer: "La reprise des solins d'une cheminée (4 faces) coûte généralement 200 à 500 € selon l'accessibilité et les matériaux. La reprise de solins d'un châssis de Velux se situe entre 120 et 280 €. Devis gratuit après inspection." },
       { question: "Quelle gouttière choisir pour ma maison à Izon ?", answer: "Pour une maison standard avec garage (surface de toiture 120-160 m²), une gouttière demi-ronde 150 mm en aluminium prélaqué offre le meilleur rapport durabilité-prix. Le zinc naturel est plus esthétique et durable (50-70 ans), mais 2 à 3 fois plus cher. Nous vous conseillons selon votre budget et l'architecture de votre maison." },
       { question: "DT Couverture intervient-il le week-end pour les urgences à Izon ?", answer: "Oui, 7j/7 pour les urgences toiture. À 10 km, nous pouvons être chez vous en 15-20 minutes. Appelez le 07 77 30 47 20." },
-      { question: "Combien coûte un démoussage à Izon ?", answer: "Pour une maison standard (80-120 m² de toiture), le démoussage + traitement se situe généralement entre 700 et 1 500 €. Avec hydrofuge protecteur, entre 1 800 et 3 200 €. Devis gratuit sur place." },
     ],
   },
   {
@@ -1430,7 +1310,7 @@ export const cities: CityData[] = [
       },
       {
         title: "Rénovation énergétique et isolation à Abzac : les aides disponibles",
-        content: "Le parc de logements anciens d'Abzac, souvent classé D, E ou F au DPE, représente un potentiel de rénovation énergétique important. L'isolation des combles est le premier geste à réaliser pour réduire les consommations de chauffage : pour une maison de bourg de 100 m² au sol sans isolation de combles, l'économie annuelle sur la facture de chauffage peut dépasser 400 € selon l'énergie utilisée. DT Couverture réalise l'isolation par soufflage (ouate de cellulose ou laine de verre) ou par panneaux sous rampants, avec montage complet des dossiers MaPrimeRénov' et CEE. Pour les propriétaires qui souhaitent aller plus loin, nous coordonnons avec des partenaires plombiers-chauffagistes pour les dossiers de rénovation globale (toiture + isolation + chauffage) permettant d'atteindre les aides maximales.",
+        content: "Le parc de logements anciens d'Abzac, souvent classé D, E ou F au DPE, représente un potentiel de rénovation énergétique important. DT Couverture réalise l'isolation par soufflage (ouate de cellulose ou laine de verre) ou par panneaux sous rampants, avec montage complet des dossiers MaPrimeRénov' et CEE. Pour les propriétaires qui souhaitent aller plus loin, nous coordonnons avec des partenaires plombiers-chauffagistes pour les dossiers de rénovation globale (toiture + isolation + chauffage) permettant d'atteindre les aides maximales.",
       },
     ],
     localSpecificities: "Abzac est une commune rurale du Nord-Gironde avec plusieurs hameaux épars. Charpentes anciennes (chêne, châtaignier) exposées aux insectes xylophages actifs dans le secteur. Humidité de l'Isle accélérant les mousses. DT Couverture à 14 km, connaissance des hameaux, pas de surcoût de déplacement.",
@@ -1440,7 +1320,6 @@ export const cities: CityData[] = [
       { question: "Mon charpente en châtaignier à Abzac est-elle menacée par les insectes ?", answer: "Le châtaignier résiste naturellement aux champignons grâce à ses tanins, mais il peut être attaqué par les capricornes des maisons. Un traitement préventif est recommandé sur les charpentes non traitées de plus de 20 ans dans le secteur nord-girondin." },
       { question: "Intervenez-vous dans les hameaux isolés autour d'Abzac ?", answer: "Oui, nous intervenons dans tous les hameaux de la commune — Lavinade, Le Rivaud, La Chapelle — et dans les écarts isolés. Le déplacement est inclus dans notre devis sans surcoût pour les communes de notre zone d'intervention." },
       { question: "Quelles aides pour rénover une vieille maison à Abzac ?", answer: "Pour les logements anciens classés D, E, F ou G, MaPrimeRénov' finance l'isolation (combles, murs, plancher). L'ANAH peut financer jusqu'à 50 % des travaux pour les ménages modestes en situation de précarité énergétique. Nous vous aidons à identifier et mobiliser toutes les aides disponibles." },
-      { question: "Combien coûte une réfection de toiture en tuiles canal à Abzac ?", answer: "Pour une maison de bourg de 80 à 120 m², une réfection complète en tuiles canal se situe souvent entre 70 et 130 €/m² selon l'état de la charpente et la pente du toit. Une réparation partielle (un versant ou quelques rangées) coûte bien moins. Devis précis après diagnostic gratuit." },
     ],
   },
   {
@@ -1519,10 +1398,8 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Abzac", "Camps-sur-l'Isle", "Savignac-de-l'Isle", "Guitres", "Coutras", "Saint-Médard-de-Guizières"],
     faq: [
       { question: "Quelle est la particularité des maisons en briques rouges de Saint-Seurin ?", answer: "Les maisons en briques rouges ont souvent des toitures à faible pente nécessitant une étanchéité renforcée (écran sous-toiture de qualité, tuiles à grand recouvrement). Leurs solins et leurs gouttières méritent une vérification régulière car les joints entre brique et zinguerie sont des points de faiblesse courants." },
-      { question: "Combien coûte l'isolation des combles à Saint-Seurin-sur-l'Isle ?", answer: "L'isolation par soufflage de combles perdus coûte généralement 15 à 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, le reste à charge peut être nul pour les ménages modestes. Nous vous aidons à monter le dossier." },
       { question: "Les crues de l'Isle peuvent-elles endommager une toiture à Saint-Seurin ?", answer: "Les crues n'atteignent pas les toitures directement, mais l'humidité prolongée après une crue accélère la croissance des mousses et les cycles gel-dégel sur les tuiles déjà fragilisées. Un démoussage après une période de crue intense peut prévenir des dégâts prématurés." },
       { question: "Intervenez-vous en urgence le soir ou le week-end à Saint-Seurin ?", answer: "Oui, 7j/7 pour les urgences toiture. Appelez le 07 77 30 47 20 — nous intervenons sous 24h depuis Saint-Denis-de-Pile (10 km)." },
-      { question: "Quel prix pour un démoussage à Saint-Seurin-sur-l'Isle ?", answer: "Pour une maison standard de 80 à 120 m² de toiture, comptez généralement 700 à 1 500 € (nettoyage + traitement). Avec hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place." },
     ],
   },
   {
@@ -1561,7 +1438,6 @@ export const cities: CityData[] = [
       { question: "Savignac-de-l'Isle est-elle dans votre zone d'intervention principale ?", answer: "Oui, c'est l'une de nos communes les plus proches (7 km). Nous intervenons à Savignac avec les mêmes conditions et tarifs que sur notre commune de Saint-Denis-de-Pile. Pas de surcoût de déplacement." },
       { question: "Comment évaluez-vous l'état de l'écran sous-toiture à Savignac ?", answer: "Nous inspectons l'écran depuis l'intérieur des combles (des perforations laissent passer la lumière) et depuis l'extérieur lors du diagnostic en toiture. Un écran perforé ou décollé doit être remplacé lors de la prochaine réfection de couverture." },
       { question: "Quel est le délai pour une urgence toiture à Savignac-de-l'Isle ?", answer: "Moins d'une heure dans la plupart des cas — nous sommes à 7 km. Pour les fuites actives ou les dégâts de tempête, nous intervenons en priorité pour le bâchage d'urgence." },
-      { question: "Combien coûte un démoussage à Savignac-de-l'Isle ?", answer: "Pour une maison standard (80-120 m²), comptez 700 à 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit et déplacement offert depuis Saint-Denis-de-Pile." },
       { question: "Proposez-vous des abonnements entretien à Savignac-de-l'Isle ?", answer: "Oui. Une visite annuelle avec inspection complète, nettoyage des gouttières, petites réparations préventives et rapport photo vous permet d'anticiper les dépenses et d'éviter les urgences coûteuses. Tarif sur devis selon la surface de votre toiture." },
     ],
   },
@@ -1599,7 +1475,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Denis-de-Pile", "Les Billaux", "Savignac-de-l'Isle", "Fronsac", "Vérac", "La Rivière"],
     faq: [
       { question: "Ma maison à Galgon date des années 1990 — ai-je besoin d'un démoussage ?", answer: "Si votre toiture présente des traces vertes ou grises sur les tuiles, un démoussage est nécessaire. Pour les tuiles mécaniques de 25-35 ans, un traitement suivi d'un hydrofuge peut prolonger leur durée de vie de 10 ans. Diagnostic gratuit pour évaluer l'état réel." },
-      { question: "Combien coûte la pose d'un Velux à Galgon ?", answer: "Entre 800 et 1 600 € fourni-posé pour un modèle standard. La création d'une nouvelle ouverture (modification de charpente) ajoute 200 à 400 €. Devis gratuit sur place." },
       { question: "Faites-vous des plans d'entretien pour les propriétés viticoles à Galgon ?", answer: "Oui. Nous proposons des contrats d'entretien pluriannuels combinant visite annuelle, démoussage tous les 5-7 ans et réparations ponctuelles incluses. Formule adaptée aux besoins oenotouristiques (bâtiments en parfait état pour les visites)." },
       { question: "Quel délai pour une urgence toiture à Galgon ?", answer: "À 9 km, nous pouvons être à Galgon en 15 minutes. Urgences traitées 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
       { question: "Intervenez-vous aussi à La Rivière et aux Billaux depuis Galgon ?", answer: "Oui, La Rivière et Les Billaux font partie de notre zone d'intervention courante. Mêmes tarifs et mêmes délais que pour Galgon. Devis gratuit, déplacement inclus." },
@@ -1641,7 +1516,6 @@ export const cities: CityData[] = [
       { question: "Comment protéger ma toiture à Vérac contre les tempêtes ?", answer: "Les points à renforcer : faîtières et rives au mortier de chaux NHL, clips de fixation supplémentaires sur les versants ouest, gouttières avec supports renforcés. Une visite préventive permet d'identifier et de consolider les points faibles avant la saison des tempêtes (novembre-mars)." },
       { question: "Intervenez-vous en urgence après une tempête à Vérac ?", answer: "Oui, 7j/7 sous 24h pour les urgences post-tempête. Nous sécurisons votre toiture par un bâchage professionnel, établissons un constat pour votre assurance et réalisons la réparation définitive dans les meilleurs délais." },
       { question: "Quelles aides pour améliorer le DPE de ma maison à Vérac ?", answer: "MaPrimeRénov' et les CEE financent l'isolation des combles (et d'autres gestes). Le bonus 'sortie de passoire' majore l'aide si votre logement passe de F/G à D ou mieux. Nous réalisons l'isolation et préparons tous les dossiers pour vous." },
-      { question: "Combien coûte un démoussage à Vérac ?", answer: "Pour une maison de 80 à 120 m² de toiture, le démoussage + traitement coûte généralement entre 700 et 1 500 €. Avec hydrofuge, entre 1 800 et 3 200 €. Devis gratuit sur place." },
       { question: "Quand faut-il remplacer les gouttières à Vérac ?", answer: "Les gouttières en aluminium durent 20 à 30 ans, en zinc 40 à 60 ans. Les signes de remplacement nécessaire : déformation, fissures, supports rouillés, joints décollés, débordements récurrents. Inspection gratuite lors du devis." },
     ],
   },
@@ -1710,7 +1584,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Lormont est-elle en zone termites ?", answer: "Oui, Lormont fait partie des communes de la Gironde classées en zone à risque termites. Nous réalisons le traitement préventif CTB-P+ lors des réfections de charpente." },
       { question: "Intervenez-vous sur les immeubles collectifs à Lormont ?", answer: "Oui, nous intervenons sur les immeubles de copropriété pour la réfection de toiture plate, de toiture-terrasse et de couvertures en tuiles ou ardoises. Nous réalisons les démarches nécessaires avec le syndic." },
-      { question: "Combien coûte une rénovation de toiture à Lormont ?", answer: "Pour un pavillon standard de 100 m² en tuiles mécaniques, souvent entre 8 000 et 15 000 € en rénovation complète. Pour les ardoises naturelles, entre 120 et 200 €/m². Devis gratuit sur place." },
       { question: "Intervenez-vous en urgence à Lormont le week-end ?", answer: "Oui, 7j/7 pour les urgences. Appelez le 07 77 30 47 20, nous intervenons sous 24h sur toute la rive droite bordelaise." },
       { question: "Quel délai pour un devis à Lormont ?", answer: "Nous nous déplaçons généralement sous 48h pour un devis à Lormont. Déplacement inclus dans notre zone habituelle." },
     ],
@@ -1737,8 +1610,7 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Lormont", "Floirac", "Carbon-Blanc", "Artigues-près-Bordeaux", "Bordeaux", "Bassens"],
     faq: [
       { question: "Intervenez-vous sur les villas bourgeoises des coteaux de Cenon ?", answer: "Oui, nous maîtrisons la réfection des toitures en ardoises, la zinguerie en zinc naturel et les couvertures à profil complexe (lucarnes, mansardes). Ces toitures demandent un savoir-faire spécifique que nous pratiquons régulièrement." },
-      { question: "Quel prix pour un démoussage à Cenon ?", answer: "Pour un pavillon de 80 à 120 m², entre 700 et 1 500 € pour nettoyage + traitement. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
-      { question: "Combien coûte la pose de gouttières en zinc à Cenon ?", answer: "Une gouttière demi-ronde en zinc naturel posée coûte environ 38 à 70 €/ml. Une descente complète (4 à 5 m) : 180 à 350 €. Devis gratuit sur place." },
+
       { question: "DT Couverture travaille-t-il avec les syndics de copropriété à Cenon ?", answer: "Oui, nous intervenons sur les immeubles en copropriété et travaillons avec les syndics pour les devis, les devis à l'identique et les contrats d'entretien." },
       { question: "Quel délai d'intervention pour une urgence à Cenon ?", answer: "Sous 24h sur la rive droite bordelaise. Appelez le 07 77 30 47 20." },
     ],
@@ -1765,7 +1637,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Cenon", "Lormont", "Artigues-près-Bordeaux", "Bouliac", "Carbon-Blanc", "Bordeaux"],
     faq: [
       { question: "Ma maison à Floirac est en zone termites — que faire ?", answer: "Le traitement préventif par injection sous pression est la protection la plus efficace. Certifié CTB-P+, garanti 10 ans. Nous le réalisons lors de tout chantier en toiture — inspection de charpente + traitement en même temps que la couverture." },
-      { question: "Combien coûte un démoussage à Floirac ?", answer: "Pour un pavillon de 80 à 120 m², entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Réalisez-vous des réfections complètes à Floirac ?", answer: "Oui. Dépose de l'ancienne couverture, vérification de charpente, écran HPV, lattage, couverture neuve. Devis complet avec détail de chaque poste, sans surprise." },
       { question: "Intervenez-vous sur les copropriétés à Floirac ?", answer: "Oui. Nous établissons les devis pour les syndics et travaillons selon les contraintes des AG de copropriété (délai de validation, planning)." },
       { question: "Quel délai pour une urgence à Floirac ?", answer: "Sous 24h. Appelez le 07 77 30 47 20 — nous couvrons toute la rive droite bordelaise 7j/7." },
@@ -1793,7 +1664,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Floirac", "Cenon", "Bouliac", "Tresses", "Yvrac", "Pompignac", "Fargues-Saint-Hilaire"],
     faq: [
       { question: "Intervenez-vous sur les nouvelles constructions à Artigues ?", answer: "Oui, nous posons des couvertures neuves sur les constructions des lotissements récents en coordination avec les maçons et les charpentiers." },
-      { question: "Combien coûte une réfection de toiture à Artigues-près-Bordeaux ?", answer: "Pour un pavillon de 100 m² en tuiles mécaniques, souvent entre 8 000 et 14 000 € en rénovation complète. Devis gratuit sur place." },
       { question: "Quel traitement termites à Artigues ?", answer: "Traitement par injection sous pression CTB-P+ sur les bois de charpente, garanti 10 ans. Réalisé lors du chantier de couverture, sans surcoût de déplacement." },
       { question: "Faites-vous des devis pour les grandes surfaces (toiture > 200 m²) à Artigues ?", answer: "Oui, sur tout type de surface. Notre devis est toujours détaillé par poste (couverture, écran, zinguerie, charpente, Velux si besoin)." },
       { question: "Quel délai pour un démoussage à Artigues ?", answer: "Délai de 1 à 2 semaines selon le planning. Devis gratuit, intervention sous 1 journée pour un pavillon standard." },
@@ -1821,7 +1691,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Ambarès-et-Lagrave", "Lormont", "Cenon", "Izon", "Saint-Loubès", "Sainte-Eulalie"],
     faq: [
       { question: "Carbon-Blanc est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ recommandé pour toutes les charpentes non traitées. Nous le réalisons lors des chantiers de couverture." },
-      { question: "Combien coûte une réfection de toiture à Carbon-Blanc ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 € en rénovation complète. Devis gratuit sur place." },
       { question: "Quel délai pour une urgence à Carbon-Blanc ?", answer: "Sous 24h, 7j/7. Appelez le 07 77 30 47 20." },
       { question: "Faites-vous aussi la zinguerie à Carbon-Blanc ?", answer: "Oui — gouttières aluminium ou zinc, descentes, solins, chéneaux sur-mesure. Devis gratuit, tous matériaux disponibles." },
       { question: "Proposez-vous l'isolation des combles à Carbon-Blanc ?", answer: "Oui. Soufflage en une journée, dossier MaPrimeRénov' inclus. Reste à charge souvent nul pour les ménages modestes." },
@@ -1848,7 +1717,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Loubès est en zone termites, entre Libourne et Bordeaux sur la rive droite. Parc pavillonnaire 1980-2000 en vieillissement. Forte demande en démoussage, isolation et rénovation. À 22 km de DT Couverture.",
     nearbyCommunes: ["Ambarès-et-Lagrave", "Sainte-Eulalie", "Carbon-Blanc", "Izon", "Bassens", "Créon"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Loubès ?", answer: "Pour 80 à 120 m² de toiture, entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Quel délai d'intervention à Saint-Loubès ?", answer: "Devis sous 48h, travaux sous 1 à 3 semaines selon le planning. Urgences sous 24h." },
       { question: "Traitez-vous les termites à Saint-Loubès ?", answer: "Oui, traitement préventif par injection CTB-P+, garanti 10 ans. Recommandé pour toute charpente non traitée en zone termites." },
       { question: "Faites-vous la réfection complète des toitures à Saint-Loubès ?", answer: "Oui. Dépose, charpente, écran HPV, lattage, couverture neuve. Devis détaillé sur place." },
@@ -1876,7 +1744,6 @@ export const cities: CityData[] = [
     localSpecificities: "Ambarès-et-Lagrave est en zone termites. Bâti mixte (maisons ouvrières + pavillons + constructions récentes). Forte demande en rénovation et isolation. À 25 km de DT Couverture.",
     nearbyCommunes: ["Carbon-Blanc", "Saint-Loubès", "Bassens", "Sainte-Eulalie", "Ambès", "Lormont"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Ambarès ?", answer: "Pour un pavillon de 100 m², souvent 8 000 à 15 000 € en réfection complète. Devis gratuit sur place." },
       { question: "Mes maisons anciennes d'Ambarès ont-elles des risques termites ?", answer: "Oui, toute maison ancienne non traitée en zone termites est à risque. Traitement préventif CTB-P+, garanti 10 ans, réalisé lors du chantier." },
       { question: "Faites-vous l'isolation des combles à Ambarès ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'. Reste à charge souvent nul pour les ménages modestes." },
       { question: "Quel délai pour une urgence à Ambarès-et-Lagrave ?", answer: "Sous 24h, 7j/7. Appelez le 07 77 30 47 20." },
@@ -1904,7 +1771,6 @@ export const cities: CityData[] = [
     localSpecificities: "Bassens est en zone termites, en bord de Garonne. Bâti pavillonnaire des années 1960-1990. Forte demande en isolation et réfection. Zone industrielle-résidentielle de la rive droite.",
     nearbyCommunes: ["Lormont", "Cenon", "Ambarès-et-Lagrave", "Carbon-Blanc", "Bordeaux", "Ambès"],
     faq: [
-      { question: "Combien coûte un démoussage à Bassens ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Quel délai pour un devis à Bassens ?", answer: "Nous nous déplaçons généralement sous 48h pour un devis à Bassens." },
       { question: "Intervenez-vous en urgence à Bassens ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
       { question: "Faites-vous le traitement termites à Bassens ?", answer: "Oui, traitement préventif CTB-P+ lors du chantier de couverture, garanti 10 ans." },
@@ -1936,7 +1802,6 @@ export const cities: CityData[] = [
       { question: "À quelle fréquence démoussager à Ambès ?", answer: "L'humidité de l'estuaire accélère la colonisation : tous les 4 à 6 ans pour les toitures non hydrofugées. L'hydrofuge spécial milieu humide prolonge l'intervalle à 8-10 ans." },
       { question: "Comment renforcer ma toiture contre les vents d'estuaire à Ambès ?", answer: "Faîtières et rives scellées à la chaux NHL, clips supplémentaires sur les versants exposés, gouttières avec supports renforcés. Visite préventive recommandée avant l'hiver." },
       { question: "Intervenez-vous en urgence à Ambès ?", answer: "Oui, 7j/7. Le trajet depuis Saint-Denis-de-Pile est d'environ 35 km (30-35 min). Intervention sous 24h garantie." },
-      { question: "Combien coûte une réfection de toiture à Ambès ?", answer: "Pour un pavillon de 100 m² en tuiles, souvent entre 9 000 et 17 000 € avec matériaux adaptés au milieu marin. Devis gratuit sur place." },
     ],
   },
   {
@@ -1961,7 +1826,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Carbon-Blanc", "Saint-Loubès", "Ambarès-et-Lagrave", "Izon", "Yvrac", "Pompignac"],
     faq: [
       { question: "Ma maison de 2000 à Sainte-Eulalie a-t-elle besoin d'entretien toiture ?", answer: "Oui. Les tuiles mécaniques de 20-25 ans méritent un démoussage + hydrofuge pour prolonger leur durée de vie de 10 ans. Diagnostic gratuit pour évaluer l'état réel." },
-      { question: "Combien coûte un démoussage à Sainte-Eulalie ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Quel délai pour un devis à Sainte-Eulalie ?", answer: "Nous nous déplaçons sous 48h pour un devis. Travaux sous 1 à 2 semaines selon le planning." },
       { question: "Faites-vous l'isolation des combles à Sainte-Eulalie ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'. Reste à charge souvent très faible." },
       { question: "Intervenez-vous en urgence à Sainte-Eulalie ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
@@ -1989,7 +1853,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Floirac", "Latresne", "Carignan-de-Bordeaux", "Fargues-Saint-Hilaire", "Artigues-près-Bordeaux", "Bordeaux"],
     faq: [
       { question: "Quelle ardoise recommandez-vous pour une villa de Bouliac ?", answer: "L'ardoise naturelle d'Angers (Ardoise d'Anjou NF) est la référence haut de gamme. Elle dure 80 à 100 ans et offre un rendu esthétique irréprochable. L'ardoise d'Espagne (classe S1) est une alternative de qualité à un prix un peu inférieur." },
-      { question: "Combien coûte une toiture en ardoises à Bouliac ?", answer: "La rénovation en ardoises naturelles d'Angers se situe souvent entre 120 et 200 €/m² (fourni-posé). Pour une maison de 120 m² de toiture, comptez environ 14 000 à 24 000 €. Devis personnalisé sur place." },
       { question: "Proposez-vous des contrats de maintenance à Bouliac ?", answer: "Oui. Visite annuelle, rapport photographique, démoussage planifié et petites réparations préventives. Formule sur-mesure selon la superficie et la complexité de votre toiture. Contactez-nous." },
       { question: "Intervenez-vous sur les piscines et terrasses couvertes à Bouliac ?", answer: "Oui, nous réalisons les couvertures de terrasses, pergolas et extensions en verre, zinc, tuile ou bac acier. Devis personnalisé selon votre projet." },
       { question: "Quel délai pour une urgence à Bouliac ?", answer: "À 33 km de Saint-Denis-de-Pile, nous pouvons être à Bouliac en 30-35 minutes. Urgences traitées sous 24h, 7j/7." },
@@ -2018,7 +1881,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "À quelle fréquence démoussager à Latresne ?", answer: "En bord de Garonne, tous les 5 à 7 ans pour les toitures non hydrofugées. Avec hydrofuge, on peut espacer à 10-12 ans." },
       { question: "Intervenez-vous sur les propriétés viticoles à Latresne ?", answer: "Oui. Nous planifions hors période de vendanges et connaissons les contraintes architecturales des Côtes de Bordeaux." },
-      { question: "Combien coûte un démoussage à Latresne ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Latresne ?", answer: "Oui, sous 24h, 7j/7. Appelez le 07 77 30 47 20." },
       { question: "Faites-vous aussi les toitures de chais à Latresne ?", answer: "Oui — tuiles canal, bac acier, isolation thermique pour les chais d'élevage. Devis sur mesure." },
     ],
@@ -2045,8 +1907,7 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Pompignac", "Artigues-près-Bordeaux", "Fargues-Saint-Hilaire", "Tresses", "Sainte-Eulalie", "Bordeaux"],
     faq: [
       { question: "À partir de quel âge faut-il rénover sa toiture à Yvrac ?", answer: "Une toiture de 25-30 ans mérite un diagnostic complet. Selon l'état de l'écran sous-toiture et des tuiles, un démoussage peut suffire ou une réfection s'imposer. Diagnostic gratuit sur place." },
-      { question: "Combien coûte un démoussage à Yvrac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 € (nettoyage + traitement). Avec hydrofuge, 1 800 à 3 200 €." },
-      { question: "Faites-vous des Velux à Yvrac ?", answer: "Oui, fourni-posé entre 800 et 1 600 € selon le modèle et la complexité de la toiture." },
+
       { question: "Intervenez-vous en urgence à Yvrac ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
       { question: "Réalisez-vous aussi des gouttières à Yvrac ?", answer: "Oui, en aluminium prélaqué ou zinc naturel. Devis gratuit sur place." },
     ],
@@ -2073,7 +1934,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Yvrac", "Tresses", "Artigues-près-Bordeaux", "Fargues-Saint-Hilaire", "Sainte-Eulalie"],
     faq: [
       { question: "Pourquoi ma toiture se couvre-t-elle vite de mousses à Pompignac ?", answer: "Les jardins arborés créent des zones d'ombre qui maintiennent l'humidité sur les tuiles. Démoussage + hydrofuge tous les 5-7 ans recommandé, ou traitement préventif seul tous les 2-3 ans." },
-      { question: "Combien coûte un démoussage à Pompignac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Pompignac ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
       { question: "Faites-vous l'isolation des combles à Pompignac ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'." },
       { question: "Quel délai pour un devis à Pompignac ?", answer: "Nous nous déplaçons généralement sous 48h pour un devis." },
@@ -2101,7 +1961,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Artigues-près-Bordeaux", "Yvrac", "Pompignac", "Fargues-Saint-Hilaire", "Bouliac"],
     faq: [
       { question: "Faites-vous des couvertures neuves pour les lotissements de Tresses ?", answer: "Oui, pose complète de couverture neuve en tuiles mécaniques ou plates, avec écran HPV, lattage et zinguerie complète. Devis en coordination avec le charpentier." },
-      { question: "Combien coûte un démoussage à Tresses ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Tresses ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous l'isolation des combles à Tresses ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'." },
       { question: "Quel délai pour un devis à Tresses ?", answer: "Nous nous déplaçons sous 48h pour tout devis." },
@@ -2129,7 +1988,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Bouliac", "Latresne", "Fargues-Saint-Hilaire", "Camblanes-et-Meynac", "Floirac"],
     faq: [
       { question: "Intervenez-vous sur les propriétés viticoles à Carignan-de-Bordeaux ?", answer: "Oui, chais, bâtiments d'accueil, logements de château. Planification hors vendanges." },
-      { question: "Combien coûte une réfection en tuiles canal à Carignan ?", answer: "Entre 70 et 130 €/m² selon la pente et l'état de charpente. Devis gratuit sur place." },
       { question: "Faites-vous l'isolation des combles à Carignan ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Carignan ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis à Carignan-de-Bordeaux ?", answer: "Nous nous déplaçons généralement sous 48h." },
@@ -2157,8 +2015,7 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Bouliac", "Artigues-près-Bordeaux", "Carignan-de-Bordeaux", "Yvrac", "Tresses"],
     faq: [
       { question: "Pourquoi les mousses poussent-elles si vite à Fargues-Saint-Hilaire ?", answer: "Les jardins boisés créent de l'ombre et de l'humidité persistante. Un hydrofuge protecteur après démoussage divise par deux la vitesse de recolonisation." },
-      { question: "Combien coûte un démoussage à Fargues-Saint-Hilaire ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
-      { question: "Faites-vous des Velux à Fargues ?", answer: "Oui, fourni-posé entre 800 et 1 600 € selon le modèle." },
+
       { question: "Intervenez-vous en urgence à Fargues-Saint-Hilaire ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Nous nous déplaçons sous 48h pour tout devis." },
     ],
@@ -2185,7 +2042,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Latresne", "Carignan-de-Bordeaux", "Saint-Médard-d'Eyrans", "Bouliac", "Créon"],
     faq: [
       { question: "Intervenez-vous sur les chais à Camblanes-et-Meynac ?", answer: "Oui, isolation thermique, couvertures de chais, tuiles canal. Planification hors vendanges." },
-      { question: "Combien coûte un démoussage à Camblanes ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous les gouttières en zinc à Camblanes ?", answer: "Oui, zinc naturel ou prélaqué selon votre budget. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Camblanes ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis à Camblanes-et-Meynac ?", answer: "Nous nous déplaçons sous 48h à 72h pour ce secteur." },
@@ -2212,7 +2068,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Médard-d'Eyrans est au sud de Bordeaux dans les Graves. Bâti mixte résidentiel. Zone termites. À 40 km de DT Couverture.",
     nearbyCommunes: ["Cadaujac", "La Brède", "Léognan", "Camblanes-et-Meynac", "Martillac", "Créon"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Médard-d'Eyrans ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Faites-vous l'isolation des combles à Saint-Médard-d'Eyrans ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Saint-Médard-d'Eyrans ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Nous nous déplaçons sous 48h à 72h pour ce secteur." },
@@ -2240,7 +2095,6 @@ export const cities: CityData[] = [
     localSpecificities: "Cadarsac est un village viticole de l'Entre-Deux-Mers avec bâti ancien en pierre calcaire et tuiles canal. À 20 km de DT Couverture.",
     nearbyCommunes: ["Arveyres", "Génissac", "Branne", "Moulon", "Daignac", "Libourne"],
     faq: [
-      { question: "Combien coûte un démoussage à Cadarsac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Cadarsac ?", answer: "Oui, 7j/7 sous 24h depuis Saint-Denis-de-Pile (20 km)." },
       { question: "Faites-vous la réfection des toitures en tuiles canal à Cadarsac ?", answer: "Oui, avec chaux NHL pour les mortiers. Devis gratuit sur place." },
       { question: "Quel délai pour un devis à Cadarsac ?", answer: "Nous nous déplaçons généralement sous 48h." },
@@ -2269,7 +2123,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Denis-de-Pile", "Libourne", "Galgon", "Savignac-de-l'Isle", "Fronsac", "Les Peintures"],
     faq: [
       { question: "Quel est le délai d'intervention aux Billaux ?", answer: "À 8 km, nous pouvons être sur place en 10-15 minutes pour une urgence. Pour un devis, sous 24h. Pour des travaux planifiés, 1 à 2 semaines selon le planning." },
-      { question: "Combien coûte un démoussage aux Billaux ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €. Devis gratuit et déplacement offert." },
       { question: "Faites-vous l'isolation des combles aux Billaux ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov' complet." },
       { question: "Traitez-vous les termites aux Billaux ?", answer: "Oui, traitement préventif CTB-P+, garanti 10 ans, réalisé lors du chantier." },
       { question: "Intervenez-vous le dimanche pour une urgence aux Billaux ?", answer: "Oui, 7j/7 pour les urgences toiture. Appelez le 07 77 30 47 20." },
@@ -2298,7 +2151,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Intervenez-vous sur les châteaux viticoles à Néac ?", answer: "Oui, toitures de chais, bâtiments d'accueil, logements. Planification hors périodes de vendanges et de réceptions." },
       { question: "Quelle tuile pour les bâtiments viticoles à Néac ?", answer: "La tuile canal en terre cuite aux teintes rouge vieilli ou ocre est la référence. Nous approvisionnons les fabricants locaux pour des nuances conformes aux usages de l'appellation." },
-      { question: "Combien coûte un démoussage à Néac ?", answer: "Pour une propriété de 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Néac ?", answer: "Oui, 7j/7 sous 24h depuis Saint-Denis-de-Pile (12 km)." },
       { question: "Quel délai pour un devis à Néac ?", answer: "Nous nous déplaçons sous 48h pour tout devis à Néac." },
     ],
@@ -2325,7 +2177,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Lussac", "Saint-Georges-Saint-Émilion", "Puisseguin", "Saint-Émilion", "Lalande-de-Pomerol", "Pomerol"],
     faq: [
       { question: "Intervenez-vous sur les châteaux de l'appellation Montagne-Saint-Émilion ?", answer: "Oui, toitures en tuiles canal, zinguerie, charpente. Planification hors vendanges." },
-      { question: "Combien coûte une réfection en tuiles canal à Montagne ?", answer: "Entre 70 et 130 €/m² selon la pente et l'état de charpente. Devis gratuit sur place." },
       { question: "Faites-vous le démoussage à Montagne ?", answer: "Oui, basse pression spécifique pour les tuiles canal anciennes + traitement biocide + hydrofuge. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Montagne ?", answer: "Oui, 7j/7 sous 24h depuis Saint-Denis-de-Pile (18 km)." },
       { question: "Quel délai pour un devis à Montagne ?", answer: "Nous nous déplaçons sous 48h." },
@@ -2353,7 +2204,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Montagne", "Lussac", "Saint-Georges-Saint-Émilion", "Saint-Émilion", "Castillon-la-Bataille"],
     faq: [
       { question: "Quel mortier pour les toitures à Puisseguin ?", answer: "Nous utilisons exclusivement de la chaux hydraulique naturelle (NHL 2) pour la compatibilité avec le calcaire local et la souplesse vis-à-vis des mouvements thermiques." },
-      { question: "Combien coûte un démoussage à Puisseguin ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Puisseguin ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Traitez-vous les charpentes contre les insectes à Puisseguin ?", answer: "Oui, traitement préventif ou curatif CTB-P+, garanti 10 ans." },
       { question: "Quel délai pour un devis à Puisseguin ?", answer: "Nous nous déplaçons sous 48h à 72h." },
@@ -2381,7 +2231,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Montagne", "Lussac", "Puisseguin", "Saint-Émilion", "Pomerol"],
     faq: [
       { question: "Intervenez-vous sur les bâtiments classés à Saint-Georges-Saint-Émilion ?", answer: "Oui, en respectant les prescriptions de l'ABF et les matériaux traditionnels (tuiles canal terre cuite, chaux NHL). Nous préparons les dossiers de déclaration préalable si nécessaire." },
-      { question: "Combien coûte une réfection en tuiles canal à Saint-Georges-Saint-Émilion ?", answer: "Entre 75 et 130 €/m² selon la complexité. Devis gratuit sur place." },
       { question: "Faites-vous le démoussage à Saint-Georges-Saint-Émilion ?", answer: "Oui, basse pression + biocide + hydrofuge. Devis gratuit." },
       { question: "Intervenez-vous en urgence à Saint-Georges-Saint-Émilion ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Nous nous déplaçons sous 48h à 72h." },
@@ -2411,7 +2260,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Denis-de-Pile", "Coutras", "Abzac", "Lagorce", "Les Peintures", "Guitres"],
     faq: [
       { question: "Quel délai d'intervention à Bonzac ?", answer: "À 10 km, nous pouvons être chez vous en 15 minutes pour une urgence. Devis sous 24h." },
-      { question: "Combien coûte un démoussage à Bonzac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Bonzac ?", answer: "Oui, soufflage en une journée avec dossier MaPrimeRénov'." },
       { question: "Intervenez-vous sur les corps de ferme à Bonzac ?", answer: "Oui, bâtiments agricoles, granges, hangars. Diagnostic préalable obligatoire pour l'amiante sur les bâtiments d'avant 1997." },
       { question: "Intervenez-vous en urgence à Bonzac ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
@@ -2438,7 +2286,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Médard-de-Guizières est en Nord-Gironde, bâti rural en pierre calcaire. Vallées humides favorisant les mousses. Charpentes anciennes exposées aux insectes xylophages. À 17 km de DT Couverture.",
     nearbyCommunes: ["Guitres", "Coutras", "Abzac", "Saint-Seurin-sur-l'Isle", "Lagorce", "Bonzac"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Médard-de-Guizières ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Traitez-vous les charpentes contre les insectes ?", answer: "Oui, traitement CTB-P+ garanti 10 ans. Recommandé pour les bâtiments anciens non traités." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous l'isolation à Saint-Médard-de-Guizières ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
@@ -2467,7 +2314,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Coutras", "Guitres", "Abzac", "Le Fieu", "Les Eglisottes-et-Chalaures", "Saint-Médard-de-Guizières"],
     faq: [
       { question: "Intervenez-vous dans les hameaux isolés des Peintures ?", answer: "Oui, sans surcoût dans notre zone d'intervention (rayon 40 km)." },
-      { question: "Combien coûte un démoussage aux Peintures ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous le diagnostic amiante ?", answer: "Nous vous orientons vers un opérateur certifié. Nous coordonnons ensuite le chantier de re-couverture." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h selon le planning." },
@@ -2495,7 +2341,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Les Peintures", "Coutras", "Guitres", "Lapouyade", "Saint-Médard-de-Guizières"],
     faq: [
       { question: "Intervenez-vous dans les propriétés isolées du Fieu ?", answer: "Oui, sans surcoût dans notre zone (rayon 40 km de Saint-Denis-de-Pile)." },
-      { question: "Combien coûte un démoussage au Fieu ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous aussi les bâtiments agricoles au Fieu ?", answer: "Oui, bac acier, tuile, fibrociment. Diagnostic amiante préalable si besoin." },
       { question: "Intervenez-vous en urgence au Fieu ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis au Fieu ?", answer: "Sous 48h à 72h." },
@@ -2522,7 +2367,6 @@ export const cities: CityData[] = [
     localSpecificities: "Les Eglisottes-et-Chalaures est en Nord-Gironde à 22 km de DT Couverture. Bâti rural en pierre calcaire. Charpentes anciennes exposées aux xylophages.",
     nearbyCommunes: ["Coutras", "Guitres", "Le Fieu", "Les Peintures", "Lapouyade", "Saint-Médard-de-Guizières"],
     faq: [
-      { question: "Combien coûte un démoussage aux Eglisottes-et-Chalaures ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Traitez-vous les charpentes contre les insectes ?", answer: "Oui, traitement CTB-P+ garanti 10 ans." },
       { question: "Faites-vous aussi les granges ?", answer: "Oui, tous types de bâtiments agricoles." },
@@ -2551,7 +2395,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Les Eglisottes-et-Chalaures", "Le Fieu", "Guitres", "Coutras", "Saint-Christophe-de-Double"],
     faq: [
       { question: "Pourquoi ma toiture à Lapouyade se couvre-t-elle vite de mousses ?", answer: "L'ombrage permanent des arbres maintient l'humidité sur les tuiles. Un démoussage tous les 4-5 ans est recommandé, plus fréquent qu'en zone dégagée." },
-      { question: "Combien coûte un démoussage à Lapouyade ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Lapouyade ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous aussi les bâtiments forestiers ?", answer: "Oui, hangars, remises, scieries. Diagnostic amiante préalable si nécessaire." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h." },
@@ -2580,7 +2423,6 @@ export const cities: CityData[] = [
     faq: [
       { question: "Pourquoi les mousses se développent-elles si vite à Saint-Christophe-de-Double ?", answer: "La Double est une zone forestière très humide avec des étangs et des forêts denses. L'ombre et l'humidité permanentes accélèrent la colonisation. Démoussage recommandé tous les 3-5 ans au lieu de 5-8 ans en zone normale." },
       { question: "Comment protéger ma charpente de l'humidité à Saint-Christophe ?", answer: "Traitement préventif fongicide-insecticide CTB-P+, bonne ventilation des combles, écran sous-toiture HPV performant. Diagnostic annuel recommandé pour les bâtiments anciens." },
-      { question: "Combien coûte un démoussage ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h." },
     ],
@@ -2606,7 +2448,6 @@ export const cities: CityData[] = [
     localSpecificities: "Chamadelle est un village isolé du Nord-Gironde à 24 km de DT Couverture. Bâti rural dispersé. Végétation dense favorisant les mousses.",
     nearbyCommunes: ["Saint-Christophe-de-Double", "Lapouyade", "Le Fieu", "Les Eglisottes-et-Chalaures", "Saint-Sauveur-de-Puynormand"],
     faq: [
-      { question: "Combien coûte un démoussage à Chamadelle ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Chamadelle ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous les bâtiments agricoles à Chamadelle ?", answer: "Oui, tous types de couvertures agricoles." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h." },
@@ -2635,7 +2476,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Denis-de-Pile", "Libourne", "Coutras", "Abzac", "Bonzac", "Saint-Savin"],
     faq: [
       { question: "Quel délai d'intervention à Saint-Martin-du-Bois ?", answer: "À 12 km, nous pouvons être sur place en 15 minutes pour une urgence. Devis sous 24h." },
-      { question: "Combien coûte un démoussage à Saint-Martin-du-Bois ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation des combles ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
       { question: "Traitez-vous les termites ?", answer: "Oui, traitement CTB-P+, garanti 10 ans." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
@@ -2662,7 +2502,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Sauveur-de-Puynormand est un village rural du Nord-Gironde à 18 km de DT Couverture. Bâti en pierre calcaire. Zone boisée humide.",
     nearbyCommunes: ["Camps-sur-l'Isle", "Saint-Seurin-sur-l'Isle", "Abzac", "Chamadelle", "Le Fieu"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Sauveur-de-Puynormand ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Traitez-vous les charpentes contre les champignons ?", answer: "Oui, traitement fongicide-insecticide CTB-P+." },
       { question: "Faites-vous des devis pour les hameaux isolés ?", answer: "Oui, déplacement inclus dans notre zone standard (rayon 40 km)." },
@@ -2691,7 +2530,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Saint-Gervais", "Ambès", "Saint-André-de-Cubzac", "Prignac-et-Marcamps", "Cubzac-les-Ponts"],
     faq: [
       { question: "Quels matériaux privilégier en milieu marin à Berson ?", answer: "Aluminium prélaqué ou zinc naturel pour les gouttières, plomb ou EPDM pour les solins, inox pour les crochets d'ardoises. Ces matériaux résistent mieux à la corrosion marine." },
-      { question: "Combien coûte un démoussage à Berson ?", answer: "Pour 80 à 120 m², entre 750 et 1 600 €. Avec hydrofuge marin, 1 900 à 3 300 €." },
       { question: "Intervenez-vous en urgence à Berson ?", answer: "Oui, sous 24 à 48h depuis Saint-Denis-de-Pile (40 km)." },
       { question: "Faites-vous les toitures de chais dans le Blayais ?", answer: "Oui, tuiles canal, bac acier, couvertures agricoles. Planification hors vendanges." },
       { question: "Quel délai pour un devis à Berson ?", answer: "Nous nous déplaçons sous 72h pour ce secteur." },
@@ -2718,7 +2556,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Gervais est entre Blaye et Cubzac, avec exposition aux vents de l'estuaire. Commune résidentielle en croissance. À 30 km de DT Couverture.",
     nearbyCommunes: ["Saint-André-de-Cubzac", "Berson", "Ambès", "Cubzac-les-Ponts", "Prignac-et-Marcamps"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Gervais ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Saint-Gervais ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous l'isolation des combles à Saint-Gervais ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
       { question: "Comment renforcer une toiture contre les vents d'estuaire ?", answer: "Faîtières et rives scellées à la chaux NHL, clips supplémentaires sur les versants exposés, gouttières renforcées." },
@@ -2746,7 +2583,6 @@ export const cities: CityData[] = [
     localSpecificities: "Moulon est un village viticole de l'Entre-Deux-Mers à 17 km de DT Couverture. Bâti en pierre calcaire avec tuiles canal.",
     nearbyCommunes: ["Branne", "Génissac", "Cadarsac", "Daignac", "Espiet", "Arveyres"],
     faq: [
-      { question: "Combien coûte un démoussage à Moulon ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Moulon ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous des réfections en tuiles canal à Moulon ?", answer: "Oui, avec mortier de chaux NHL. Devis gratuit." },
       { question: "Faites-vous l'isolation à Moulon ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
@@ -2774,7 +2610,6 @@ export const cities: CityData[] = [
     localSpecificities: "Daignac est un village de l'Entre-Deux-Mers à 16 km de DT Couverture. Bâti mixte (pierre ancienne + pavillons récents).",
     nearbyCommunes: ["Branne", "Génissac", "Moulon", "Espiet", "Tizac-de-Curton", "Cadarsac"],
     faq: [
-      { question: "Combien coûte un démoussage à Daignac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Daignac ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous des réfections en tuiles canal à Daignac ?", answer: "Oui, avec chaux NHL. Devis gratuit." },
       { question: "Faites-vous l'isolation à Daignac ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
@@ -2802,7 +2637,6 @@ export const cities: CityData[] = [
     localSpecificities: "Espiet est un village de l'Entre-Deux-Mers à 18 km de DT Couverture. Bâti en calcaire blanc avec tuiles canal.",
     nearbyCommunes: ["Branne", "Daignac", "Moulon", "Créon", "Tizac-de-Curton", "Génissac"],
     faq: [
-      { question: "Combien coûte un démoussage à Espiet ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Intervenez-vous en urgence à Espiet ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Faites-vous des réfections en tuiles canal à Espiet ?", answer: "Oui, mortier de chaux NHL. Devis gratuit." },
       { question: "Faites-vous l'isolation à Espiet ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
@@ -2830,9 +2664,7 @@ export const cities: CityData[] = [
     localSpecificities: "Mérignac (70 000 hab.) est la deuxième ville de Gironde, en zone termites. Parc pavillonnaire très important des années 1960-2010. Forte demande en rénovation et isolation. À 45 km de DT Couverture.",
     nearbyCommunes: ["Bordeaux", "Pessac", "Le Haillan", "Eysines", "Canéjan", "Cestas", "Saint-Jean-d'Illac"],
     faq: [
-      { question: "Combien coûte une rénovation de toiture à Mérignac ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 € en rénovation complète. Devis gratuit sur place." },
       { question: "Mérignac est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ fortement recommandé pour toutes les charpentes non traitées, garanti 10 ans." },
-      { question: "Combien coûte l'isolation des combles à Mérignac ?", answer: "15 à 28 €/m² avant aides. Avec MaPrimeRénov' et les CEE, reste à charge souvent très faible." },
       { question: "Intervenez-vous en urgence à Mérignac ?", answer: "Oui, 7j/7 sous 24h. Appelez le 07 77 30 47 20." },
       { question: "Quel délai pour un devis à Mérignac ?", answer: "Nous nous déplaçons sous 48h à 72h pour Mérignac." },
     ],
@@ -2859,7 +2691,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Bordeaux", "Mérignac", "Talence", "Gradignan", "Léognan", "Canéjan", "Cestas"],
     faq: [
       { question: "Intervenez-vous sur les châteaux viticoles de Pessac-Léognan ?", answer: "Oui, toitures en ardoises, zinc, cuivre pour les propriétés de prestige. Devis personnalisé sur place." },
-      { question: "Combien coûte une rénovation de toiture à Pessac ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €. Pour les ardoises naturelles, 120 à 200 €/m². Devis gratuit." },
       { question: "Pessac est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ garanti 10 ans recommandé pour les charpentes non traitées." },
       { question: "Faites-vous l'isolation des combles à Pessac ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
       { question: "Quel délai pour une urgence à Pessac ?", answer: "Sous 24h, 7j/7. Appelez le 07 77 30 47 20." },
@@ -2886,7 +2717,6 @@ export const cities: CityData[] = [
     localSpecificities: "Talence est une commune urbaine dense de la métropole bordelaise, en zone termites. Bâti mixte (maisons bourgeoises en ardoises + pavillons récents). Contraintes d'accès urbain.",
     nearbyCommunes: ["Bordeaux", "Pessac", "Gradignan", "Villenave-d'Ornon", "Mérignac", "Bègles"],
     faq: [
-      { question: "Combien coûte une réfection en ardoises à Talence ?", answer: "Entre 120 et 200 €/m² pour les ardoises naturelles d'Angers posées. Devis gratuit sur place." },
       { question: "Faites-vous aussi les zingueries complexes à Talence ?", answer: "Oui, mansardes, lucarnes, chéneaux moulurés, zinc naturel. Expertise confirmée sur ce type d'ouvrages." },
       { question: "Talence est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ recommandé." },
       { question: "Intervenez-vous en urgence à Talence ?", answer: "Oui, 7j/7 sous 24h." },
@@ -2914,7 +2744,6 @@ export const cities: CityData[] = [
     localSpecificities: "Bègles est en zone termites, rive gauche de la Garonne. Bâti pavillonnaire des années 1960-1990 en vieillissement. À 43 km de DT Couverture.",
     nearbyCommunes: ["Bordeaux", "Talence", "Villenave-d'Ornon", "Floirac", "Latresne"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Bègles ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €. Devis gratuit." },
       { question: "Faites-vous l'isolation des combles à Bègles ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Bègles est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ lors du chantier de couverture." },
       { question: "Intervenez-vous en urgence à Bègles ?", answer: "Oui, 7j/7 sous 24h." },
@@ -2942,7 +2771,6 @@ export const cities: CityData[] = [
     localSpecificities: "Villenave-d'Ornon est en zone termites, sud de la métropole bordelaise. Parc pavillonnaire important 1970-1990. Quelques propriétés viticoles (Graves). À 43 km de DT Couverture.",
     nearbyCommunes: ["Bordeaux", "Talence", "Bègles", "Gradignan", "Cadaujac", "Léognan"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Villenave-d'Ornon ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €. Devis gratuit." },
       { question: "Faites-vous l'isolation des combles à Villenave-d'Ornon ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Villenave-d'Ornon est-il en zone termites ?", answer: "Oui. Traitement CTB-P+ lors du chantier." },
       { question: "Intervenez-vous en urgence à Villenave-d'Ornon ?", answer: "Oui, 7j/7 sous 24h." },
@@ -2971,7 +2799,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Bordeaux", "Pessac", "Talence", "Villenave-d'Ornon", "Canéjan", "Léognan"],
     faq: [
       { question: "Pourquoi les mousses poussent-elles vite à Gradignan ?", answer: "L'environnement boisé (pins, chênes) maintient l'ombre et l'humidité. Démoussage + hydrofuge tous les 4-6 ans recommandé." },
-      { question: "Combien coûte une toiture en ardoises à Gradignan ?", answer: "Entre 120 et 200 €/m² pour les ardoises naturelles. Devis personnalisé sur place." },
       { question: "Faites-vous des toitures en tuiles plates à Gradignan ?", answer: "Oui, tuiles plates grand moule, ardoises, zinc, toutes couvertures de standing." },
       { question: "Intervenez-vous en urgence à Gradignan ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis à Gradignan ?", answer: "Sous 48h à 72h." },
@@ -2998,7 +2825,6 @@ export const cities: CityData[] = [
     localSpecificities: "Le Bouscat est une commune bourgeoise au nord de Bordeaux, en zone termites. Bâti de qualité (ardoises, zinc, tuiles plates). Contraintes d'accès urbain. À 42 km de DT Couverture.",
     nearbyCommunes: ["Bordeaux", "Bruges", "Eysines", "Mérignac", "Le Taillan-Médoc"],
     faq: [
-      { question: "Combien coûte une toiture en ardoises au Bouscat ?", answer: "Pour les ardoises d'Angers, entre 120 et 200 €/m² posé. Devis personnalisé selon la complexité." },
       { question: "Faites-vous la zinguerie en cuivre au Bouscat ?", answer: "Oui, gouttières, faîtières et ornements en cuivre naturel. Durée de vie 80-100 ans." },
       { question: "Le Bouscat est-il en zone termites ?", answer: "Oui. Traitement préventif CTB-P+ lors du chantier, garanti 10 ans." },
       { question: "Intervenez-vous en urgence au Bouscat ?", answer: "Oui, 7j/7 sous 24h." },
@@ -3026,7 +2852,6 @@ export const cities: CityData[] = [
     localSpecificities: "Bruges est en zone termites, nord-ouest de Bordeaux. Bâti pavillonnaire 1960-2000. À 42 km de DT Couverture.",
     nearbyCommunes: ["Le Bouscat", "Bordeaux", "Eysines", "Blanquefort", "Mérignac"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Bruges ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €." },
       { question: "Faites-vous l'isolation à Bruges ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Bruges est-il en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
       { question: "Intervenez-vous en urgence à Bruges ?", answer: "Oui, 7j/7 sous 24h." },
@@ -3054,7 +2879,6 @@ export const cities: CityData[] = [
     localSpecificities: "Eysines est en zone termites, métropole bordelaise. Bâti pavillonnaire important 1970-2000. À 44 km de DT Couverture.",
     nearbyCommunes: ["Le Haillan", "Bruges", "Le Bouscat", "Mérignac", "Saint-Médard-en-Jalles"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Eysines ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €." },
       { question: "Faites-vous l'isolation à Eysines ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Eysines est-il en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
       { question: "Intervenez-vous en urgence à Eysines ?", answer: "Oui, 7j/7 sous 24h." },
@@ -3082,7 +2906,6 @@ export const cities: CityData[] = [
     localSpecificities: "Le Haillan est en zone termites, métropole bordelaise. Bâti pavillonnaire 1960-2000. À 44 km de DT Couverture.",
     nearbyCommunes: ["Mérignac", "Eysines", "Saint-Médard-en-Jalles", "Bruges", "Bordeaux"],
     faq: [
-      { question: "Combien coûte une réfection de toiture au Haillan ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €." },
       { question: "Faites-vous l'isolation au Haillan ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Le Haillan est-il en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
       { question: "Intervenez-vous en urgence au Haillan ?", answer: "Oui, 7j/7 sous 24h." },
@@ -3112,7 +2935,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Médard-en-Jalles est en zone termites, aux portes du Médoc. Bâti pavillonnaire récent (1990-2015). Microclimat forêt/lacs favorable aux mousses. À 48 km de DT Couverture.",
     nearbyCommunes: ["Le Taillan-Médoc", "Eysines", "Mérignac", "Blanquefort", "Saint-Aubin-de-Médoc", "Le Haillan"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Médard-en-Jalles ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Saint-Médard-en-Jalles ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+ recommandé." },
@@ -3140,7 +2962,6 @@ export const cities: CityData[] = [
     localSpecificities: "Le Taillan-Médoc est en zone termites, entre Bordeaux et le Médoc. Bâti pavillonnaire 1970-2005. À 45 km de DT Couverture.",
     nearbyCommunes: ["Saint-Médard-en-Jalles", "Eysines", "Bruges", "Blanquefort", "Le Haillan"],
     faq: [
-      { question: "Combien coûte un démoussage au Taillan-Médoc ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation au Taillan-Médoc ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
@@ -3168,7 +2989,6 @@ export const cities: CityData[] = [
     localSpecificities: "Blanquefort est en zone termites, début du Médoc. Bâti résidentiel + propriétés viticoles (Haut-Médoc). À 44 km de DT Couverture.",
     nearbyCommunes: ["Parempuyre", "Bruges", "Le Taillan-Médoc", "Le Bouscat", "Ludon-Médoc", "Macau"],
     faq: [
-      { question: "Combien coûte une réfection de toiture à Blanquefort ?", answer: "Pour un pavillon de 100 m², souvent entre 8 000 et 15 000 €." },
       { question: "Intervenez-vous sur les châteaux viticoles à Blanquefort ?", answer: "Oui, toitures en ardoises, zinc, tuile. Planification hors vendanges." },
       { question: "Faites-vous l'isolation à Blanquefort ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Blanquefort ?", answer: "Oui, 7j/7 sous 24h." },
@@ -3196,7 +3016,6 @@ export const cities: CityData[] = [
     localSpecificities: "Parempuyre est en zone termites, entre Bordeaux et le Médoc. Microclimat légèrement marin. À 44 km de DT Couverture.",
     nearbyCommunes: ["Blanquefort", "Le Taillan-Médoc", "Ludon-Médoc", "Bruges", "Ambès"],
     faq: [
-      { question: "Combien coûte un démoussage à Parempuyre ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Parempuyre ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Parempuyre ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
@@ -3224,7 +3043,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Aubin-de-Médoc est en zone termites, entre forêt et vignoble médocain. Forte croissance résidentielle. À 48 km de DT Couverture.",
     nearbyCommunes: ["Saint-Médard-en-Jalles", "Le Pian-Médoc", "Le Taillan-Médoc", "Martignas-sur-Jalle", "Saint-Jean-d'Illac"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Aubin-de-Médoc ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Saint-Aubin-de-Médoc ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
@@ -3253,7 +3071,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Blanquefort", "Parempuyre", "Ludon-Médoc", "Macau", "Saint-Médard-en-Jalles"],
     faq: [
       { question: "Intervenez-vous sur les châteaux viticoles au Pian-Médoc ?", answer: "Oui, ardoises, zinc, tuile. Planification hors vendanges." },
-      { question: "Combien coûte un démoussage au Pian-Médoc ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation au Pian-Médoc ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h." },
@@ -3281,7 +3098,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Macau", "Blanquefort", "Parempuyre", "Le Pian-Médoc", "Ambès"],
     faq: [
       { question: "Intervenez-vous sur le Château Agassac à Ludon-Médoc ?", answer: "Oui, nous réalisons les rénovations de toiture sur les propriétés patrimoniales, avec matériaux nobles et respect de l'architecture." },
-      { question: "Combien coûte un démoussage à Ludon-Médoc ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h." },
@@ -3309,7 +3125,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Ludon-Médoc", "Le Pian-Médoc", "Blanquefort", "Parempuyre", "Arsac", "Labarde"],
     faq: [
       { question: "Quels matériaux utiliser pour les toitures à Macau en bord d'estuaire ?", answer: "Aluminium prélaqué ou zinc naturel pour les gouttières, plomb/EPDM pour les solins, inox pour les fixations. La résistance à la corrosion marine est déterminante." },
-      { question: "Combien coûte un démoussage à Macau ?", answer: "Pour 80 à 120 m², entre 750 et 1 600 €. Avec hydrofuge marin, 1 900 à 3 300 €." },
       { question: "Faites-vous les toitures de châteaux médocains ?", answer: "Oui, ardoises, zinc, tuile noble. Planification hors vendanges." },
       { question: "Intervenez-vous en urgence à Macau ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 48h à 72h." },
@@ -3336,7 +3151,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saint-Jean-d'Illac est en zone termites, lande bordelaise. Forêt favorisant les mousses. Forte croissance résidentielle. À 50 km de DT Couverture.",
     nearbyCommunes: ["Martignas-sur-Jalle", "Saint-Aubin-de-Médoc", "Saint-Médard-en-Jalles", "Mérignac", "Canéjan"],
     faq: [
-      { question: "Combien coûte un démoussage à Saint-Jean-d'Illac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+ lors des chantiers." },
@@ -3364,7 +3178,6 @@ export const cities: CityData[] = [
     localSpecificities: "Martignas-sur-Jalle est en zone termites. Bâti récent (1995-2015) dans la lande. Forêt environnante favorisant les mousses. À 48 km de DT Couverture.",
     nearbyCommunes: ["Saint-Jean-d'Illac", "Saint-Aubin-de-Médoc", "Mérignac", "Cestas", "Canéjan"],
     faq: [
-      { question: "Combien coûte un démoussage à Martignas-sur-Jalle ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+." },
@@ -3393,7 +3206,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Pessac", "Cestas", "Léognan", "Gradignan", "Mérignac", "Villenave-d'Ornon"],
     faq: [
       { question: "Pourquoi les mousses poussent-elles vite à Canéjan ?", answer: "L'ombre permanente des pins maintient l'humidité. Démoussage + hydrofuge tous les 4-6 ans recommandé." },
-      { question: "Combien coûte un démoussage à Canéjan ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Canéjan ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 72h." },
@@ -3420,7 +3232,6 @@ export const cities: CityData[] = [
     localSpecificities: "Cestas est en zone termites. Bâti récent dans un environnement forestier. Forte demande en démoussage et isolation. À 47 km de DT Couverture.",
     nearbyCommunes: ["Pessac", "Canéjan", "Léognan", "Martignas-sur-Jalle", "Mérignac"],
     faq: [
-      { question: "Combien coûte un démoussage à Cestas ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Cestas ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+." },
@@ -3449,7 +3260,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Pessac", "Cadaujac", "Cestas", "Canéjan", "La Brède", "Gradignan"],
     faq: [
       { question: "Intervenez-vous sur les châteaux de Pessac-Léognan ?", answer: "Oui, toitures en ardoises, zinc, cuivre. Expérience sur les propriétés de prestige." },
-      { question: "Combien coûte une toiture en ardoises à Léognan ?", answer: "Entre 120 et 200 €/m² pour les ardoises d'Angers. Devis personnalisé." },
       { question: "Faites-vous l'isolation à Léognan ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 72h." },
@@ -3476,7 +3286,6 @@ export const cities: CityData[] = [
     localSpecificities: "Cadaujac est en bord de Garonne, zone termites. Microclimat humide favorisant les mousses. À 42 km de DT Couverture.",
     nearbyCommunes: ["Léognan", "Villenave-d'Ornon", "La Brède", "Martillac", "Créon", "Saint-Médard-d'Eyrans"],
     faq: [
-      { question: "Combien coûte un démoussage à Cadaujac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Cadaujac ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+." },
@@ -3505,7 +3314,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Branne", "Cadaujac", "Camblanes-et-Meynac", "Espiet", "Daignac", "Saint-Loubès"],
     faq: [
       { question: "Intervenez-vous dans le secteur protégé de Créon ?", answer: "Oui, avec matériaux traditionnels (tuile canal, chaux NHL) et dossier de déclaration préalable si requis par l'ABF." },
-      { question: "Combien coûte un démoussage à Créon ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation à Créon ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Créon ?", answer: "Oui, 7j/7 sous 24h." },
       { question: "Quel délai pour un devis ?", answer: "Nous nous déplaçons sous 48h." },
@@ -3533,7 +3341,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Cadaujac", "Martillac", "Léognan", "Beautiran", "Saint-Médard-d'Eyrans"],
     faq: [
       { question: "Intervenez-vous sur les bâtiments classés à La Brède ?", answer: "Oui, avec matériaux traditionnels et démarches ABF si nécessaires." },
-      { question: "Combien coûte une toiture en ardoises à La Brède ?", answer: "Entre 120 et 200 €/m² pour les ardoises d'Angers. Devis personnalisé." },
       { question: "Faites-vous l'isolation à La Brède ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 72h." },
@@ -3561,7 +3368,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Léognan", "La Brède", "Cadaujac", "Pessac", "Gradignan"],
     faq: [
       { question: "Intervenez-vous sur les propriétés viticoles à Martillac ?", answer: "Oui, ardoises, zinc, tuile noble. Planification hors vendanges." },
-      { question: "Combien coûte un démoussage à Martillac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "Quel délai pour un devis ?", answer: "Sous 72h." },
@@ -3588,7 +3394,6 @@ export const cities: CityData[] = [
     localSpecificities: "Beautiran est en bord de Garonne dans les Graves. Humidité fluviale favorisant les mousses. Zone termites. À 46 km de DT Couverture.",
     nearbyCommunes: ["Portets", "La Brède", "Saucats", "Cadaujac", "Martillac"],
     faq: [
-      { question: "Combien coûte un démoussage à Beautiran ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+." },
@@ -3616,7 +3421,6 @@ export const cities: CityData[] = [
     localSpecificities: "Saucats est en zone termites. Forêt landaise favorisant les mousses. Bâti pavillonnaire récent. À 47 km de DT Couverture.",
     nearbyCommunes: ["La Brède", "Léognan", "Beautiran", "Cestas", "Canéjan"],
     faq: [
-      { question: "Combien coûte un démoussage à Saucats ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
       { question: "La commune est-elle en zone termites ?", answer: "Oui. Traitement CTB-P+." },
@@ -3644,7 +3448,6 @@ export const cities: CityData[] = [
     localSpecificities: "Portets est en bord de Garonne dans les Graves. Humidité fluviale. Zone termites. À 46 km de DT Couverture.",
     nearbyCommunes: ["Beautiran", "Podensac", "La Brède", "Cadaujac", "Saucats"],
     faq: [
-      { question: "Combien coûte un démoussage à Portets ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous les toitures de châteaux viticoles à Portets ?", answer: "Oui, tuile canal, ardoises, planification hors vendanges." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence ?", answer: "Oui, sous 24 à 48h." },
@@ -3672,7 +3475,6 @@ export const cities: CityData[] = [
     localSpecificities: "Podensac est dans les Graves, en bord de Garonne. Bâti en calcaire blond avec tuiles canal. Microclimat humide. À 50 km de DT Couverture.",
     nearbyCommunes: ["Portets", "Beautiran", "Saucats", "Cérons", "Barsac"],
     faq: [
-      { question: "Combien coûte un démoussage à Podensac ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous les toitures de chais à Podensac ?", answer: "Oui, tuile canal, bac acier, isolation thermique pour chais d'élevage." },
       { question: "Faites-vous l'isolation à Podensac ?", answer: "Oui, soufflage avec MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Podensac ?", answer: "Oui, sous 24 à 48h depuis Saint-Denis-de-Pile (50 km)." },
@@ -3701,7 +3503,6 @@ export const cities: CityData[] = [
     nearbyCommunes: ["Branne", "Génissac", "Daignac", "Moulon", "Espiet", "Cadarsac"],
     faq: [
       { question: "Quel délai d'intervention à Tizac-de-Curton ?", answer: "À 20 km, nous pouvons être sur place en 20 minutes pour une urgence. Devis sous 24h." },
-      { question: "Combien coûte un démoussage à Tizac-de-Curton ?", answer: "Pour 80 à 120 m², entre 700 et 1 500 €. Avec hydrofuge, 1 800 à 3 200 €." },
       { question: "Faites-vous des réfections en tuiles canal à Tizac-de-Curton ?", answer: "Oui, mortier de chaux NHL. Devis gratuit sur place." },
       { question: "Faites-vous l'isolation ?", answer: "Oui, soufflage avec dossier MaPrimeRénov'." },
       { question: "Intervenez-vous en urgence à Tizac-de-Curton ?", answer: "Oui, 7j/7 sous 24h." },

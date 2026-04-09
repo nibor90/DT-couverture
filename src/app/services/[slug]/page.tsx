@@ -48,7 +48,6 @@ export default async function ServicePage({ params }: PageProps) {
   const tocItems = [
     ...service.sections.map((s, i) => ({ id: `section-${i}`, label: s.title })),
     { id: "etapes", label: "Les étapes de notre intervention" },
-    { id: "tarifs", label: "Tarifs indicatifs" },
     { id: "signes", label: "Quand faire appel à un professionnel ?" },
     { id: "avantages", label: "Pourquoi choisir DT Couverture ?" },
     { id: "faq", label: "Questions fréquentes" },
@@ -170,37 +169,6 @@ export default async function ServicePage({ params }: PageProps) {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-
-              {/* Tarifs indicatifs */}
-              <div id="tarifs" className="mb-12 scroll-mt-24">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-dark">
-                  Tarifs indicatifs — {service.shortTitle}
-                </h2>
-                <div className="bg-white rounded-2xl border border-lighter-gray overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="bg-dark text-white">
-                          <th className="text-left px-6 py-4 font-semibold">Prestation</th>
-                          <th className="text-right px-6 py-4 font-semibold">Fourchette de prix TTC</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {service.priceRange.items.map((item, i) => (
-                          <tr key={i} className={i % 2 === 0 ? "bg-off-white" : "bg-white"}>
-                            <td className="px-6 py-3.5 text-dark font-medium">{item.label}</td>
-                            <td className="px-6 py-3.5 text-right text-secondary font-bold whitespace-nowrap">{item.range}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="px-6 py-4 bg-primary-lighter text-sm text-dark-gray">
-                    <i className="fas fa-info-circle text-primary mr-1.5" />
-                    {service.priceRange.note}
-                  </div>
                 </div>
               </div>
 
