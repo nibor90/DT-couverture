@@ -1,5 +1,5 @@
-import { siteConfig } from "@/lib/data";
 import Link from "next/link";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 interface CtaBannerProps {
   title?: string;
@@ -31,9 +31,7 @@ export default function CtaBanner({
           {text}
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <a href={siteConfig.phoneHref} className="btn btn-white btn-lg">
-            <i className="fas fa-phone-alt" /> {siteConfig.phone}
-          </a>
+          <PhoneCtaButton variant="white" size="lg" />
           <Link href="/contact" className="btn btn-outline-white btn-lg">
             <i className="fas fa-file-alt" /> Devis en ligne
           </Link>

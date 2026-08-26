@@ -13,6 +13,7 @@ import CtaBanner from "@/components/CtaBanner";
 import ContactForm from "@/components/ContactForm";
 import { BreadcrumbJsonLd, FAQJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import ServiceIcon from "@/components/ServiceIcon";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 interface PageProps {
   params: Promise<{ citySlug: string }>;
@@ -100,9 +101,7 @@ export default async function CityPage({ params }: PageProps) {
               <Link href="/contact" className="btn btn-primary btn-lg">
                 <i className="fas fa-file-alt" /> Devis gratuit à {city.name}
               </Link>
-              <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
-                <i className="fas fa-phone-alt" /> {siteConfig.phone}
-              </a>
+              <PhoneCtaButton variant="secondary" size="lg" />
             </div>
             {city.population && (
               <div className="flex items-center gap-6 mt-8 text-white/60 text-sm">
@@ -344,9 +343,7 @@ export default async function CityPage({ params }: PageProps) {
                   <Link href="/contact" className="btn !bg-white !text-primary font-bold btn-lg hover:!bg-off-white">
                     <i className="fas fa-file-alt" /> Demander un devis gratuit
                   </Link>
-                  <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
-                    <i className="fas fa-phone-alt" /> {siteConfig.phone}
-                  </a>
+                  <PhoneCtaButton variant="secondary" size="lg" />
                 </div>
               </div>
             </div>
@@ -365,12 +362,11 @@ export default async function CityPage({ params }: PageProps) {
                   <p className="text-white/80 text-sm mb-4">
                     Réponse immédiate, devis en 24h
                   </p>
-                  <a
-                    href={siteConfig.phoneHref}
-                    className="block btn !bg-white !text-secondary font-bold w-full"
-                  >
-                    {siteConfig.phone}
-                  </a>
+                  <PhoneCtaButton
+                    variant="white"
+                    size="md"
+                    className="w-full !bg-white !text-secondary font-bold"
+                  />
                 </div>
 
                 {/* Nos services */}

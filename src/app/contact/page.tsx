@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
 import GirondeMapEmbed from "@/components/GirondeMapEmbed";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 export const metadata: Metadata = {
   title: "Contact & Devis Gratuit | Couvreur Gironde",
@@ -119,12 +120,11 @@ export default function ContactPage() {
                 <p className="text-white/85 mb-4 font-medium">
                   Besoin d&apos;une réponse rapide ?
                 </p>
-                <a
-                  href={siteConfig.phoneHref}
-                  className="btn btn-primary btn-lg w-full justify-center !bg-secondary !border-secondary"
-                >
-                  <i className="fas fa-phone-alt" /> Appelez-nous directement
-                </a>
+                <PhoneCtaButton
+                  variant="primary"
+                  size="lg"
+                  className="w-full !bg-secondary !border-secondary"
+                />
               </div>
 
               {/* Carte : département de la Gironde (zone d&apos;intervention) */}

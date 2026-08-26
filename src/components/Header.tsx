@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig, services } from "@/lib/data";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 const navItems = [
   { label: "Accueil", href: "/" },
@@ -130,16 +131,15 @@ export default function Header() {
             </ul>
 
             <div className="flex items-center gap-4">
+              <PhoneCtaButton
+                variant="primary"
+                size="sm"
+                className="hidden sm:inline-flex"
+              />
               <a
                 href={siteConfig.phoneHref}
-                className="btn-primary btn hidden sm:inline-flex text-sm !px-4 !py-2.5"
-              >
-                <i className="fas fa-phone" />
-                <span className="hidden md:inline">{siteConfig.phone}</span>
-              </a>
-              <a
-                href={siteConfig.phoneHref}
-                className="sm:hidden w-[42px] h-[42px] rounded-full bg-secondary text-white flex items-center justify-center"
+                className="sm:hidden w-[42px] h-[42px] rounded-full bg-secondary text-white flex items-center justify-center animate-pulse-phone"
+                aria-label={`Appelez-nous 24h/24 et 7j/7 au ${siteConfig.phone}`}
               >
                 <i className="fas fa-phone" />
               </a>
@@ -256,13 +256,11 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={siteConfig.phoneHref}
-            className="btn btn-primary w-full justify-center mt-6"
-          >
-            <i className="fas fa-phone" />
-            {siteConfig.phone}
-          </a>
+          <PhoneCtaButton
+            variant="primary"
+            size="md"
+            className="w-full mt-6"
+          />
         </div>
       </div>
     </>

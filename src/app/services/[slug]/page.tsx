@@ -11,6 +11,7 @@ import {
   ServiceJsonLd,
 } from "@/components/JsonLd";
 import ServiceIcon from "@/components/ServiceIcon";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -94,9 +95,7 @@ export default async function ServicePage({ params }: PageProps) {
               <Link href="/contact" className="btn btn-primary btn-lg">
                 <i className="fas fa-file-alt" /> Devis gratuit
               </Link>
-              <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
-                <i className="fas fa-phone-alt" /> {siteConfig.phone}
-              </a>
+              <PhoneCtaButton variant="secondary" size="lg" />
             </div>
           </div>
         </div>
@@ -269,12 +268,11 @@ export default async function ServicePage({ params }: PageProps) {
                   <p className="text-white/75 text-sm mb-5">
                     Appelez-nous pour une réponse immédiate
                   </p>
-                  <a
-                    href={siteConfig.phoneHref}
-                    className="btn btn-primary btn-lg w-full justify-center !bg-secondary !border-secondary"
-                  >
-                    <i className="fas fa-phone-alt" /> {siteConfig.phone}
-                  </a>
+                  <PhoneCtaButton
+                    variant="primary"
+                    size="lg"
+                    className="w-full !bg-secondary !border-secondary"
+                  />
                 </div>
 
                 {/* Trust badges */}

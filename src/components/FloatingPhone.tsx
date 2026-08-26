@@ -18,11 +18,11 @@ export default function FloatingPhone() {
       <a
         href={siteConfig.phoneHref}
         className="fixed bottom-5 right-5 md:bottom-8 md:right-8 bg-secondary text-white w-14 h-14 md:w-[60px] md:h-[60px] rounded-full flex items-center justify-center text-2xl z-[999] animate-pulse-phone hover:scale-110 transition-transform group"
-        aria-label="Appelez-nous"
+        aria-label="Appelez-nous 24h/24 et 7j/7"
       >
         <i className="fas fa-phone-alt" />
         <span className="absolute right-[calc(100%+0.75rem)] bg-dark text-white px-3 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap opacity-0 translate-x-2.5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none hidden md:block">
-          Appelez-nous
+          24h/24 et 7j/7
         </span>
       </a>
 

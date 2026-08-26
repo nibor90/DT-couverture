@@ -9,6 +9,7 @@ import GoogleReviewsBadge from "@/components/GoogleReviewsBadge";
 import HomeRealisationsMobileCarousel from "@/components/HomeRealisationsMobileCarousel";
 import TestimonialVideo from "@/components/TestimonialVideo";
 import { HOME_REALISATIONS_SHOWCASE } from "@/lib/realisations-shared";
+import PhoneCtaButton from "@/components/PhoneCtaButton";
 import {
   FadeIn,
   FadeInUp,
@@ -93,9 +94,7 @@ export default function HomePage() {
                   <i className="fas fa-file-alt" /> Demander un devis gratuit
                 </Link>
                 <div className="flex flex-col gap-2.5 items-center sm:items-start">
-                  <a href={siteConfig.phoneHref} className="btn btn-secondary btn-lg">
-                    <i className="fas fa-phone-alt" /> {siteConfig.phone}
-                  </a>
+                  <PhoneCtaButton variant="secondary" size="lg" />
                   <div
                     className="flex items-center gap-2 justify-center sm:justify-start pl-0 sm:pl-1"
                     aria-live="polite"
