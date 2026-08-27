@@ -22,9 +22,9 @@ const labelClass: Record<Variant, string> = {
 };
 
 const sizeClass: Record<Size, string> = {
-  sm: "text-sm !px-4 !py-2",
-  md: "",
-  lg: "btn-lg !py-3.5",
+  sm: "text-sm !px-4 !py-2.5 !gap-2",
+  md: "!py-3.5 !gap-2.5",
+  lg: "btn-lg !py-4.5 !gap-3",
 };
 
 export default function PhoneCtaButton({
@@ -35,7 +35,7 @@ export default function PhoneCtaButton({
   return (
     <a
       href={siteConfig.phoneHref}
-      className={`btn ${variantClass[variant]} ${sizeClass[size]} animate-pulse-phone !flex-col !gap-1 !items-center justify-center ${className}`}
+      className={`btn ${variantClass[variant]} ${sizeClass[size]} animate-pulse-phone !flex-col !items-center justify-center ${className}`}
       aria-label={`Appelez-nous 24h/24 et 7j/7 au ${siteConfig.phone}`}
     >
       <span
