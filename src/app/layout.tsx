@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingPhone from "@/components/FloatingPhone";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
+import GoogleTag from "@/components/GoogleTag";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -75,6 +76,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${montserrat.variable} ${openSans.variable}`}>
       <head>
+        <GoogleTag />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"

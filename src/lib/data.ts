@@ -19,6 +19,8 @@ export const siteConfig = {
   },
   hours: "Tous les jours 24/24",
   url: "https://dt-couverture.fr",
+  /** Identifiant Google Ads (balise gtag.js) */
+  googleAdsId: "AW-11226752530",
   social: {
     facebook: "#",
     instagram: "#",

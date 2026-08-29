@@ -145,8 +145,16 @@ export default function MentionsLegalesPage() {
               </h2>
               <p>
                 Ce site utilise des cookies techniques nécessaires à son
-                fonctionnement. Aucun cookie de tracking ou publicitaire n&apos;est
-                utilisé sans votre consentement préalable.
+                fonctionnement, ainsi qu&apos;une balise Google Ads (
+                {siteConfig.googleAdsId}) pour mesurer l&apos;activité et les
+                conversions. Le détail figure dans la{" "}
+                <a
+                  href="/politique-de-confidentialite"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  politique de confidentialité
+                </a>
+                .
               </p>
             </div>
 

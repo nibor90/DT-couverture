@@ -159,14 +159,24 @@ export default function PolitiqueConfidentialitePage() {
                 6. Cookies
               </h2>
               <p>
-                Le site dt-couverture.fr utilise uniquement des cookies
-                techniques strictement nécessaires à son fonctionnement. Ces
-                cookies ne collectent aucune donnée personnelle et ne
-                nécessitent pas votre consentement.
+                Le site dt-couverture.fr utilise des cookies techniques
+                strictement nécessaires à son fonctionnement.
               </p>
               <p className="mt-3">
-                Aucun cookie publicitaire, de tracking ou d&apos;analyse n&apos;est
-                déposé sans votre consentement préalable.
+                Une balise Google (Google Ads, identifiant{" "}
+                {siteConfig.googleAdsId}) est également installée pour mesurer
+                l&apos;activité du site et les conversions publicitaires. Cette
+                balise peut déposer des cookies de mesure. Pour en savoir plus
+                sur le traitement des données par Google, consultez{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  la politique de confidentialité de Google
+                </a>
+                .
               </p>
             </div>
 
