@@ -7,7 +7,6 @@ import { siteConfig, services } from "@/lib/data";
 import PhoneCtaButton from "@/components/PhoneCtaButton";
 
 const navItems = [
-  { label: "Accueil", href: "/" },
   { label: "À propos", href: "/a-propos" },
   { label: "Réalisations", href: "/realisations" },
   { label: "Avis", href: "/#temoignages" },
