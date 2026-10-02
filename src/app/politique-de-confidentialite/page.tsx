@@ -163,10 +163,11 @@ export default function PolitiqueConfidentialitePage() {
                 strictement nécessaires à son fonctionnement.
               </p>
               <p className="mt-3">
-                Une balise Google (Google Ads, identifiant{" "}
-                {siteConfig.googleAdsId}) est également installée pour mesurer
-                l&apos;activité du site et les conversions publicitaires. Cette
-                balise peut déposer des cookies de mesure. Pour en savoir plus
+                Le suivi est assuré par Google Tag Manager (identifiant{" "}
+                {siteConfig.gtmId}) et Google Ads (identifiant{" "}
+                {siteConfig.googleAdsId}), pour mesurer l&apos;activité du site
+                et les conversions publicitaires. Ces outils peuvent déposer
+                des cookies de mesure. Pour en savoir plus
                 sur le traitement des données par Google, consultez{" "}
                 <a
                   href="https://policies.google.com/privacy"

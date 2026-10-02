@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { services } from "@/lib/data";
+import { trackFormSubmit } from "@/lib/gtm";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -51,6 +52,7 @@ export default function ContactForm() {
       }
       setSubmitted(true);
       form.reset();
+      trackFormSubmit("devis");
     } catch {
       setError("Impossible d’envoyer le message. Vérifiez votre connexion.");
     } finally {

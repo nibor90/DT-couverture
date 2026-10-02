@@ -21,6 +21,8 @@ export const siteConfig = {
   url: "https://dt-couverture.fr",
   /** Identifiant Google Ads (balise gtag.js) */
   googleAdsId: "AW-11226752530",
+  /** Conteneur Google Tag Manager */
+  gtmId: "GTM-WDRHHKVF",
   social: {
     facebook: "#",
     instagram: "#",

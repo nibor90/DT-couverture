@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackFormSubmit } from "@/lib/gtm";
 
 export default function CallbackBanner() {
   const [submitted, setSubmitted] = useState(false);
@@ -40,6 +41,7 @@ export default function CallbackBanner() {
       }
       setSubmitted(true);
       form.reset();
+      trackFormSubmit("rappel");
     } catch {
       setError("Impossible d’envoyer le message. Vérifiez votre connexion.");
     } finally {
