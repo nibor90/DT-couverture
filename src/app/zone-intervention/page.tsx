@@ -74,7 +74,8 @@ export default function ZoneInterventionPage() {
                 href={siteConfig.phoneHref}
                 className="btn btn-primary btn-lg mt-6"
               >
-                <i className="fas fa-phone-alt" /> Vérifier notre disponibilité
+                <i className="fas fa-phone-alt" /> Vérifier notre disponibilité{" "}
+                {siteConfig.phone}
               </a>
             </div>
           </div>

@@ -141,6 +141,7 @@ export default function Header() {
                 aria-label={`Appelez-nous 24h/24 et 7j/7 au ${siteConfig.phone}`}
               >
                 <i className="fas fa-phone" />
+                <span className="sr-only">{siteConfig.phone}</span>
               </a>
               <button
                 type="button"

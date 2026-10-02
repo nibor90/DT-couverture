@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingPhone from "@/components/FloatingPhone";
+import PhoneClickTracker from "@/components/PhoneClickTracker";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import GoogleTagManager, {
   GoogleTagManagerNoScript,
@@ -91,6 +92,7 @@ export default function RootLayout({
         <main className="min-w-0 w-full overflow-x-clip">{children}</main>
         <Footer />
         <FloatingPhone />
+        <PhoneClickTracker />
       </body>
     </html>
   );
